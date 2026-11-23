@@ -1,0 +1,251 @@
+{
+ "id": "N008",
+ "unit_master": "UNIT_MASTER_CH_N008",
+ "party_param": "BATTLE_UNITPARAM_CH_N008_PARTY",
+ "param_template": "BATTLE_UNITPARAM_CH_N008",
+ "stats": {
+  "elite_source": "BATTLE_UNITGROWTH_CH_N008",
+  "keep_from_source": [
+   "fMoveForce",
+   "fJumpForceUp",
+   "fJumpForceDown",
+   "fGainTacticalPoint"
+  ],
+  "scale": {
+   "fMaxHitPoint": 0.51,
+   "fStrength": 0.97,
+   "fIntelligence": 0.98,
+   "fDefence": 0.94,
+   "fMagicDefence": 0.93
+  },
+  "speed_at_50": 26
+ },
+ "own_abilities": [
+  {
+   "id": "BATTLE_ABILITY_FIRE_ARROW_N008P",
+   "copy_from": "BATTLE_ABILITY_FIRE_ARROW",
+   "name": "Scorched Harvest",
+   "help": "Deal fire-type physical damage to all enemies within range and set the ground ablaze.",
+   "set": {
+    "iSortNumber": 1101
+   },
+   "attack": {
+    "id": "BATTLE_ATTACKPARAM_ABILITY_FIRE_ARROW_N008P",
+    "copy_from": "BATTLE_ATTACKPARAM_ABILITY_FIRE_ARROW",
+    "set": {
+     "eEffectableRangeType": "EEffectableRangeType::CIRCLE",
+     "fEffectiveRangeLevel": 1.0,
+     "fPower": 0.9,
+     "fUseTP": 3.0,
+     "eAutoFocusType": "EAutoFocusType::AREA_DAMAGE",
+     "SourceId": "None"
+    }
+   }
+  },
+  {
+   "id": "BATTLE_ABILITY_AUTO_ATTACK_BOW_N008P",
+   "copy_from": "BATTLE_ABILITY_AUTO_ATTACK_BOW",
+   "name": "Loyal Vigil",
+   "set": {
+    "FNameParam1": "BATTLE_ABILITY_AUTO_ATTACK_BOW_ATTACK_N008P",
+    "iSortNumber": 1102
+   },
+   "attack": {
+    "id": "BATTLE_ATTACKPARAM_ABILITY_AUTO_ATTACK_BOW_N008P",
+    "copy_from": "BATTLE_ATTACKPARAM_ABILITY_AUTO_ATTACK_BOW",
+    "set": {
+     "FlipbookId": "ABL_POWER_SHOT",
+     "eBattleSequence": "EBattleSequence::LS_ABILITY_POWER_SHOT"
+    }
+   }
+  },
+  {
+   "id": "BATTLE_ABILITY_AUTO_ATTACK_BOW_ATTACK_N008P",
+   "copy_from": "BATTLE_ABILITY_AUTO_ATTACK_BOW_ATTACK",
+   "attack": {
+    "id": "BATTLE_ATTACKPARAM_ABILITY_AUTO_ATTACK_BOW_ATTACK_N008P",
+    "copy_from": "BATTLE_ATTACKPARAM_ABILITY_AUTO_ATTACK_BOW_ATTACK",
+    "set": {
+     "FlipbookId": "ATK_BOW_N008"
+    }
+   }
+  },
+  {
+   "id": "BATTLE_ABILITY_POWER_SHOOT_N008P",
+   "note": "Heroic End (user, 2026-11-19): replaces Last Stand under the same id, so saves that registered Last Stand become Heroic End. Test 32 variant B (user's pick): the skill's own attack is an ally-targeted 100%-max-HP hit on himself, so the forecast shows his HP draining to 0 and the game KOs him through the normal damage path. mods/landroi_heroic_end Lua then buffs every ally for 2 turns (fallback KO if he survives). 2026-11-22 (user: Yes, both): bIgnoreDef and fPower 2.0, because in Test 45b the hit drained only ~50% (reduced, likely by his magic defense) and the fallback KO looked abrupt.",
+   "copy_from": "BATTLE_ABILITY_MOV_UP",
+   "name": "Heroic End",
+   "help": "Fall in battle. Every ally gains strength, magic, defense, magic defense, accuracy, evasion, luck and speed for 2 turns.",
+   "attack": {
+    "id": "BATTLE_ATTACKPARAM_ABILITY_POWER_SHOOT_N008P",
+    "copy_from": "BATTLE_ATTACKPARAM_ABILITY_MOV_UP",
+    "set": {
+     "fUseTP": 0.0,
+     "BuffEffectId": "None",
+     "SourceId": "None",
+     "eAttackEvaluationType": "EAttackEvaluationType::DAMAGE",
+     "eDamageType": "EDamageType::MAX_HP_RATE",
+     "fPower": 2.0,
+     "fBasePowerRate": 1.0,
+     "bIgnoreDef": true,
+     "bMustHit": true,
+     "eAttackBaseType": "EAttackBaseType::MAGIC",
+     "eAutoFocusType": "EAutoFocusType::NONE",
+     "eTargetCategory": "ETargetCategory::FOR_FRIEND",
+     "bFriendlyFire": false
+    }
+   },
+   "set": {
+    "eAbilityType": "EAbilityType::DAMAGE",
+    "eAbilityEffect": "EAbilityEffect::ATTACK"
+   }
+  }
+ ],
+ "classes": [
+  {
+   "rank": 1,
+   "template": "BATTLE_JOB_CH_P009_1",
+   "learn": [
+    [
+     1,
+     "BATTLE_ABILITY_BIND_ARROW"
+    ],
+    [
+     1,
+     "BATTLE_ABILITY_KB_ARROW"
+    ],
+    [
+     3,
+     "BATTLE_ABILITY_FIRE_ARROW_N008P"
+    ]
+   ],
+   "name_text": "TEXT_JOB_NAME_N008_M"
+  },
+  {
+   "rank": 2,
+   "template": "BATTLE_JOB_CH_P009_2",
+   "learn": [
+    [
+     14,
+     "BATTLE_ABILITY_AUTO_ATTACK_BOW_N008P"
+    ],
+    [
+     18,
+     "BATTLE_ABILITY_RESIST_BLIND_ANGRY"
+    ]
+   ],
+   "name": "Falkes Archer"
+  },
+  {
+   "rank": 3,
+   "template": "BATTLE_JOB_CH_P009_3",
+   "learn": [
+    [
+     22,
+     "BATTLE_ABILITY_RESIST_CHARM_DEATH"
+    ]
+   ],
+   "name": "Bow Lord"
+  }
+ ],
+ "class_help": "Lord of House Falkes, whose bow-arm surpasses even Symon's. Loyal to the crown to the very last.",
+ "job_type": "EJobType::ARCHER",
+ "weapon": {
+  "attack_template": "BATTLE_ATTACKPARAM_WEAPON_N_008",
+  "power": 5.0,
+  "icon": "EWeaponIconType::BOW",
+  "ranks": [
+   {
+    "template": "BATTLE_WEAPON_P009",
+    "name_text": "TEXT_WEAPON_NAME_N008"
+   },
+   {
+    "template": "BATTLE_WEAPON_RANK2_P009",
+    "name": "Oathbound Bow",
+    "rankup_material": "ITEM_UPGRADEMATERIAL_RANKUP_FIBER"
+   },
+   {
+    "template": "BATTLE_WEAPON_RANK3_P009",
+    "name": "Crown's Bow",
+    "rankup_material": "ITEM_UPGRADEMATERIAL_RANKUP_WING",
+    "weapon_skill": "BATTLE_ABILITY_POWER_SHOOT_N008P"
+   }
+  ]
+ },
+ "tree_abilities": [
+  {
+   "id": "BATTLE_ABILITY_TP_REDUCTION_KB_ARROW_N008P",
+   "template": "BATTLE_ABILITY_TP_REDUCTION_TWO_STAGE_THRUST",
+   "targets": [
+    "BATTLE_ABILITY_KB_ARROW"
+   ],
+   "name": "Staggering Arrow TP -1",
+   "help": "Decreases TP cost of Staggering Arrow by 1."
+  },
+  {
+   "id": "BATTLE_ABILITY_ABILITY_EXTENSION_BIND_ARROW_N008P",
+   "template": "BATTLE_ABILITY_ABILITY_EXTENSION_CHARM",
+   "targets": [
+    "BATTLE_ABILITY_BIND_ARROW"
+   ],
+   "name": "Shadowstitching Arrow Success Rate Up",
+   "help": "Increases the success rate of Shadowstitching Arrow."
+  },
+  {
+   "id": "BATTLE_ABILITY_ABILITY_DAMAGE_UP_FIRE_ARROW_N008P",
+   "template": "BATTLE_ABILITY_ABILITY_DAMAGE_UP_INTIMIDATION_SWORD",
+   "targets": [
+    "BATTLE_ABILITY_FIRE_ARROW_N008P"
+   ],
+   "name": "Scorched Harvest Damage Up",
+   "help": "Increases damage dealt by Scorched Harvest."
+  },
+  {
+   "id": "BATTLE_ABILITY_TP_REDUCTION_AUTO_ATTACK_BOW_N008P",
+   "template": "BATTLE_ABILITY_TP_REDUCTION_TWO_STAGE_THRUST",
+   "targets": [
+    "BATTLE_ABILITY_AUTO_ATTACK_BOW_N008P"
+   ],
+   "name": "Loyal Vigil TP -1",
+   "help": "Decreases TP cost of Loyal Vigil by 1."
+  }
+ ],
+ "tree": [
+  {
+   "template": "BATTLE_WEAPONABILITYTREE_P001_RANK1",
+   "nodes": [
+    "BATTLE_ABILITY_WEAPON_POWER_CORRECTION_DAMAGE_UP",
+    "BATTLE_ABILITY_WEAPON_BONUS_HP_UP",
+    "BATTLE_ABILITY_WEAPON_BONUS_STR_UP",
+    "BATTLE_ABILITY_WEAPON_BONUS_DEF_UP",
+    "BATTLE_ABILITY_TP_REDUCTION_KB_ARROW_N008P"
+   ]
+  },
+  {
+   "template": "BATTLE_WEAPONABILITYTREE_P001_RANK2",
+   "nodes": [
+    "BATTLE_ABILITY_WEAPON_POWER_CORRECTION_DAMAGE_UP_RANK2",
+    "BATTLE_ABILITY_WEAPON_BONUS_STR_UP_II",
+    "BATTLE_ABILITY_ABILITY_EXTENSION_BIND_ARROW_N008P",
+    "BATTLE_ABILITY_ABILITY_DAMAGE_UP_FIRE_ARROW_N008P",
+    "BATTLE_ABILITY_WEAPON_BONUS_MDF_UP"
+   ]
+  },
+  {
+   "template": "BATTLE_WEAPONABILITYTREE_P001_RANK3",
+   "nodes": [
+    "BATTLE_ABILITY_WEAPON_POWER_CORRECTION_DAMAGE_UP_II",
+    "BATTLE_ABILITY_TP_REDUCTION_AUTO_ATTACK_BOW_N008P",
+    "BATTLE_ABILITY_POWER_SHOOT_N008P"
+   ]
+  }
+ ],
+ "param_set": {
+  "eUnitCamp": "EUnitCamp::FRIEND",
+  "fUnitResistStatus": 1.0,
+  "DropItem": "None",
+  "EquippedAccessary1": "None",
+  "fJumpForceUp": 2.0,
+  "fJumpForceDown": 2.0
+ }
+}

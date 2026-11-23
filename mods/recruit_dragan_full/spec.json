@@ -1,0 +1,316 @@
+{
+ "id": "N105",
+ "unit_master": "UNIT_MASTER_CH_N105",
+ "party_param": "BATTLE_UNITPARAM_CH_N105_PARTY",
+ "param_template": "BATTLE_UNITPARAM_CH_P035",
+ "stats": {
+  "elite_source": "BATTLE_UNITGROWTH_CH_N105",
+  "keep_from_source": [
+   "fMoveForce",
+   "fJumpForceUp",
+   "fJumpForceDown",
+   "fUnitSpeed",
+   "fGainTacticalPoint"
+  ]
+ },
+ "own_abilities": [
+  {
+   "id": "BATTLE_ABILITY_OIL_N105P",
+   "copy_from": "BATTLE_ABILITY_OIL",
+   "set": {
+    "iSortNumber": 1101
+   }
+  },
+  {
+   "id": "BATTLE_ABILITY_BOOBY_TRAP_N105P",
+   "copy_from": "BATTLE_ABILITY_BOOBY_TRAP",
+   "name": "Sticky Charge",
+   "help": "Throw a lit charge at an enemy. After their next turn, it explodes, dealing fire-type damage to them and adjacent enemies.",
+   "set": {
+    "eAbilityClassType": "EAbilityClassType::NONE",
+    "FNameParam1": "None",
+    "FNameParam2": "None",
+    "FNameParam3": "None",
+    "eAbilityType": "EAbilityType::DAMAGE",
+    "eFunctionIconType": "EFunctionIconType::FIRE",
+    "bEnableCopyAtEnemySide": false,
+    "iSortNumber": 1102
+   },
+   "attack": {
+    "id": "BATTLE_ATTACKPARAM_ABILITY_BOOBY_TRAP_N105P",
+    "copy_from": "BATTLE_ATTACKPARAM_ABILITY_BOMB_THROW",
+    "set": {
+     "eAttackEvaluationType": "EAttackEvaluationType::STATUS_EFFECT",
+     "eAttackBaseType": "EAttackBaseType::SPECIAL",
+     "eDamageType": "EDamageType::NONE",
+     "fPower": 0.0,
+     "bDamageReaction": false,
+     "bEffectObject": false,
+     "eEffectableRangeType": "EEffectableRangeType::POINT",
+     "fEffectiveRangeLevel": 0.0,
+     "eAutoFocusType": "EAutoFocusType::STATUS_EFFECT_APPLY",
+     "StatusEffectId": "BATTLE_STATUSEFFECTATK_APLLY_DELAY_DAMAGE_1T_N105P",
+     "fUseTP": 2.0,
+     "SourceId": "None"
+    }
+   }
+  },
+  {
+   "id": "BATTLE_ABILITY_BLASTING_CHARGE_N105P",
+   "copy_from": "BATTLE_ABILITY_BOOBY_TRAP",
+   "name": "Blasting Charge",
+   "help": "Plant a charge on a square. An enemy who steps on it sets it off, blasting them and adjacent enemies and igniting the ground.",
+   "set": {
+    "FNameParam2": "BATTLE_TRAP_BOMB_N105P",
+    "iSortNumber": 1103
+   }
+  },
+  {
+   "id": "BATTLE_ABILITY_KB_WIND_N105P",
+   "copy_from": "BATTLE_ABILITY_KB_WIND",
+   "name": "Concussive Blast",
+   "help": "Deal fire-type magic damage to enemies across 3 horizontal squares, and knock them back 2 squares.",
+   "set": {
+    "iSortNumber": 1103,
+    "eFunctionIconType": "EFunctionIconType::FIRE"
+   },
+   "attack": {
+    "id": "BATTLE_ATTACKPARAM_ABILITY_KB_WIND_N105P",
+    "copy_from": "BATTLE_ATTACKPARAM_ABILITY_KB_WIND",
+    "set": {
+     "FlipbookId": "ABL_FIRE_MAGIC",
+     "eBattleSequence": "EBattleSequence::LS_ABILITY_FIRE_MAGIC",
+     "eElementalType": "EElementalType::FIRE",
+     "fUseTP": 3.0,
+     "fPower": 1.0,
+     "HitSE": "SE_BTL_ABL_FIRE01_HIT",
+     "HitSEToLand": "SE_BTL_ABL_FIRE01_HIT",
+     "HitEffectSocket": "Center"
+    }
+   },
+   "note": "v2: removed from the kit; rows kept for old test saves (Test 23 rule)"
+  },
+  {
+   "id": "BATTLE_ABILITY_DELAY_DAMAGE_EXEC_N105P",
+   "copy_from": "BATTLE_ABILITY_DELAY_DAMAGE_EXEC",
+   "name": "Sticky Charge",
+   "attack": {
+    "id": "BATTLE_ATTACKPARAM_ABILITY_DELAY_DAMAGE_EXEC_N105P",
+    "copy_from": "BATTLE_ATTACKPARAM_ABILITY_DELAY_DAMAGE_EXEC",
+    "set": {
+     "eElementalType": "EElementalType::FIRE",
+     "fPower": 0.25,
+     "FlipbookId": "None",
+     "SourceId": "None"
+    }
+   }
+  },
+  {
+   "id": "BATTLE_ABILITY_FIRE_MAGIC_N105_N105P",
+   "copy_from": "BATTLE_ABILITY_FIRE_MAGIC_N105",
+   "name": "Ignite",
+   "help": "Deal fire-type magic damage to enemies within range, lower their movement by 1 for %_BUFF_EFFECT_TURN_% turn(s), and set any ground ablaze.",
+   "set": {
+    "eAbilityClassType": "EAbilityClassType::FORCE_FLAME",
+    "FNameParam1": "BATTLE_FORCE_FLAME_BURNABLE"
+   },
+   "attack": {
+    "id": "BATTLE_ATTACKPARAM_ABILITY_FIRE_MAGIC_N105_N105P",
+    "copy_from": "BATTLE_ATTACKPARAM_ABILITY_FIRE_MAGIC_N105",
+    "set": {
+     "fUseTP": 4.0,
+     "fPower": 1.25,
+     "BuffEffectId": "BATTLE_BUFFEFFECTATK_B_FLAME_CHAIN",
+     "bIsLandEffectForceTransitionToEndStatus": true,
+     "SourceId": "None"
+    }
+   }
+  }
+ ],
+ "classes": [
+  {
+   "rank": 1,
+   "template": "BATTLE_JOB_CH_P004_1",
+   "learn": [
+    [
+     1,
+     "BATTLE_ABILITY_FIRE_MAGIC_N105"
+    ],
+    [
+     1,
+     "BATTLE_ABILITY_OIL_N105P"
+    ],
+    [
+     3,
+     "BATTLE_ABILITY_BOOBY_TRAP_N105P"
+    ]
+   ],
+   "name_text": "TEXT_JOB_NAME_N105_M"
+  },
+  {
+   "rank": 2,
+   "template": "BATTLE_JOB_CH_P004_2",
+   "learn": [
+    [
+     14,
+     "BATTLE_ABILITY_BLASTING_CHARGE_N105P"
+    ],
+    [
+     18,
+     "BATTLE_ABILITY_INVALID_FLAME"
+    ]
+   ],
+   "name": "Ash Scholar"
+  },
+  {
+   "rank": 3,
+   "template": "BATTLE_JOB_CH_P004_3",
+   "learn": [
+    [
+     22,
+     "BATTLE_ABILITY_RESIST_POISON_SILENSE_TAUNT"
+    ]
+   ],
+   "name": "Ember Sage"
+  }
+ ],
+ "class_help": "A young genius of the Archives who discovered how to make explosives, out to restore his family's honor.",
+ "job_type": "EJobType::WIZARD",
+ "weapon": {
+  "attack_template": "BATTLE_ATTACKPARAM_WEAPON_N_105",
+  "power": 5.0,
+  "icon": "EWeaponIconType::BOOK",
+  "ranks": [
+   {
+    "template": "BATTLE_WEAPON_P004",
+    "name_text": "TEXT_WEAPON_NAME_N105"
+   },
+   {
+    "template": "BATTLE_WEAPON_RANK2_P004",
+    "name": "Tome of Embers",
+    "rankup_material": "ITEM_UPGRADEMATERIAL_RANKUP_LEATHER"
+   },
+   {
+    "template": "BATTLE_WEAPON_RANK3_P004",
+    "name": "Tome of Cinders",
+    "rankup_material": "ITEM_UPGRADEMATERIAL_RANKUP_PAPER",
+    "weapon_skill": "BATTLE_ABILITY_FIRE_MAGIC_N105_N105P"
+   }
+  ]
+ },
+ "tree_abilities": [
+  {
+   "id": "BATTLE_ABILITY_ABILITY_DAMAGE_UP_FIRE_MAGIC_N105P",
+   "template": "BATTLE_ABILITY_ABILITY_DAMAGE_UP_FIRE_MAGIC",
+   "targets": [
+    "BATTLE_ABILITY_FIRE_MAGIC_N105"
+   ],
+   "name": "Scorch Damage Up",
+   "help": "Increases damage dealt by Scorch."
+  },
+  {
+   "id": "BATTLE_ABILITY_TP_REDUCTION_FIRE_MAGIC_N105P",
+   "template": "BATTLE_ABILITY_TP_REDUCTION_TWO_STAGE_THRUST",
+   "targets": [
+    "BATTLE_ABILITY_FIRE_MAGIC_N105"
+   ],
+   "name": "Scorch TP -1",
+   "help": "Decreases TP cost of Scorch by 1."
+  },
+  {
+   "id": "BATTLE_ABILITY_ABILITY_RANGE_UP_FLAME_MAGIC_N105P",
+   "template": "BATTLE_ABILITY_ABILITY_RANGE_UPASSAULT",
+   "targets": [
+    "BATTLE_ABILITY_KB_WIND_N105P"
+   ],
+   "name": "Concussive Blast Range Up",
+   "help": "Increases the range of Concussive Blast by 1.",
+   "note": "v2: out of the tree; row kept for old test saves"
+  },
+  {
+   "id": "BATTLE_ABILITY_ABILITY_DAMAGE_UP_FLAME_MAGIC_N105P",
+   "template": "BATTLE_ABILITY_ABILITY_DAMAGE_UP_FIRE_MAGIC",
+   "targets": [
+    "BATTLE_ABILITY_KB_WIND_N105P"
+   ],
+   "name": "Concussive Blast Damage Up",
+   "help": "Increases damage dealt by Concussive Blast.",
+   "note": "v2: out of the tree; row kept for old test saves"
+  },
+  {
+   "id": "BATTLE_ABILITY_ABILITY_DAMAGE_UP_DELAY_DAMAGE_N105P",
+   "template": "BATTLE_ABILITY_ABILITY_DAMAGE_UP_FIRE_MAGIC",
+   "targets": [
+    "BATTLE_ABILITY_DELAY_DAMAGE_EXEC_N105P"
+   ],
+   "name": "Sticky Charge Damage Up",
+   "help": "Increases damage dealt by Sticky Charge's blast.",
+   "set": {
+    "fParam1": 0.2
+   }
+  },
+  {
+   "id": "BATTLE_ABILITY_ABILITY_RANGE_UP_OIL_N105P",
+   "template": "BATTLE_ABILITY_ABILITY_RANGE_UPASSAULT",
+   "targets": [
+    "BATTLE_ABILITY_OIL_N105P"
+   ],
+   "name": "Oil Range +1",
+   "help": "Increases the range of Oil by 1."
+  }
+ ],
+ "tree": [
+  {
+   "template": "BATTLE_WEAPONABILITYTREE_P001_RANK1",
+   "nodes": [
+    "BATTLE_ABILITY_WEAPON_POWER_CORRECTION_DAMAGE_UP",
+    "BATTLE_ABILITY_WEAPON_BONUS_HP_UP",
+    "BATTLE_ABILITY_WEAPON_BONUS_INT_UP",
+    "BATTLE_ABILITY_WEAPON_BONUS_MDF_UP",
+    "BATTLE_ABILITY_ABILITY_DAMAGE_UP_FIRE_MAGIC_N105P"
+   ]
+  },
+  {
+   "template": "BATTLE_WEAPONABILITYTREE_P001_RANK2",
+   "nodes": [
+    "BATTLE_ABILITY_WEAPON_POWER_CORRECTION_DAMAGE_UP_RANK2",
+    "BATTLE_ABILITY_WEAPON_BONUS_INT_UP_II",
+    "BATTLE_ABILITY_TP_REDUCTION_FIRE_MAGIC_N105P",
+    "BATTLE_ABILITY_ABILITY_DAMAGE_UP_DELAY_DAMAGE_N105P",
+    "BATTLE_ABILITY_WEAPON_BONUS_DEF_UP"
+   ]
+  },
+  {
+   "template": "BATTLE_WEAPONABILITYTREE_P001_RANK3",
+   "nodes": [
+    "BATTLE_ABILITY_WEAPON_POWER_CORRECTION_DAMAGE_UP_II",
+    "BATTLE_ABILITY_ABILITY_RANGE_UP_OIL_N105P",
+    "BATTLE_ABILITY_FIRE_MAGIC_N105_N105P"
+   ]
+  }
+ ],
+ "extra_edits": [
+  {
+   "table": "GOP_Battle_StatusEffect",
+   "add_row": "BATTLE_STATUSEFFECT_DELAY_DAMAGE_1T_N105P",
+   "copy_from": "BATTLE_STATUSEFFECT_DELAY_DAMAGE_1T"
+  },
+  {
+   "table": "GOP_Battle_StatusEffect",
+   "row": "BATTLE_STATUSEFFECT_DELAY_DAMAGE_1T_N105P",
+   "field": "ExecuteAbilityID",
+   "value": "BATTLE_ABILITY_DELAY_DAMAGE_EXEC_N105P"
+  },
+  {
+   "table": "GOP_Battle_StatusEffectAtk",
+   "add_row": "BATTLE_STATUSEFFECTATK_APLLY_DELAY_DAMAGE_1T_N105P",
+   "copy_from": "BATTLE_STATUSEFFECTATK_APLLY_DELAY_DAMAGE_1T"
+  },
+  {
+   "table": "GOP_Battle_StatusEffectAtk",
+   "row": "BATTLE_STATUSEFFECTATK_APLLY_DELAY_DAMAGE_1T_N105P",
+   "field": "StatusEffect1",
+   "value": "BATTLE_STATUSEFFECT_DELAY_DAMAGE_1T_N105P"
+  }
+ ]
+}

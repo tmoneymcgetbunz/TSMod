@@ -1,0 +1,301 @@
+{
+ "id": "N301",
+ "unit_master": "UNIT_MASTER_CH_N301",
+ "party_param": "BATTLE_UNITPARAM_CH_N301_PARTY",
+ "param_template": "BATTLE_UNITPARAM_CH_N301",
+ "stats": {
+  "elite_source": "BATTLE_UNITGROWTH_CH_N301",
+  "keep_from_source": [
+   "fMoveForce",
+   "fJumpForceUp",
+   "fJumpForceDown",
+   "fGainTacticalPoint"
+  ],
+  "scale": {
+   "fMaxHitPoint": 0.51,
+   "fStrength": 0.97,
+   "fIntelligence": 0.98,
+   "fDefence": 0.94,
+   "fMagicDefence": 0.93
+  },
+  "speed_at_50": 26
+ },
+ "own_abilities": [
+  {
+   "id": "BATTLE_ABILITY_MONEY_IS_POWER_N301P",
+   "copy_from": "BATTLE_ABILITY_MONEY_IS_POWER",
+   "help": "Deal physical damage to a single enemy, based on the gold you hold. Cost: %_GOLDNUM_%",
+   "set": {
+    "iSortNumber": 1101
+   }
+  },
+  {
+   "id": "BATTLE_ABILITY_RICH_APPEAL_N301P",
+   "copy_from": "BATTLE_ABILITY_RICH_APPEAL",
+   "set": {
+    "iSortNumber": 1102
+   }
+  },
+  {
+   "id": "BATTLE_ABILITY_EMBARGO_N301P",
+   "copy_from": "BATTLE_ABILITY_RICH_APPEAL",
+   "name": "Embargo",
+   "help": "Chance to silence all enemies within range for %_STATUS_EFFECT_TURN_% turn(s).",
+   "set": {
+    "iSortNumber": 1103
+   },
+   "attack": {
+    "id": "BATTLE_ATTACKPARAM_ABILITY_EMBARGO_N301P",
+    "copy_from": "BATTLE_ATTACKPARAM_ABILITY_RICH_APPEAL",
+    "set": {
+     "FlipbookId": "ABL_READY_TO_RUN",
+     "eBattleSequence": "EBattleSequence::LS_ABILITY_READY_TO_RUN",
+     "StatusEffectId": "BATTLE_STATUSEFFECTATK_APLLY_SILENCE_II",
+     "SourceId": "None"
+    }
+   }
+  },
+  {
+   "id": "BATTLE_ABILITY_GOLD_RUSH_N301P",
+   "copy_from": "BATTLE_ABILITY_GOLD_RUSH",
+   "name": "Everyone Has a Price",
+   "help": "Deal physical damage to a single enemy and tempt them for %_STATUS_EFFECT_TURN_% turn(s), without fail. Cost: %_GOLDNUM_%",
+   "set": {
+    "bIsWeaponAbility": false,
+    "eFunctionIconTypeAbilityTree": "EFunctionIconTypeAbilityTree::ETC",
+    "iSortNumber": 1104
+   },
+   "attack": {
+    "id": "BATTLE_ATTACKPARAM_ABILITY_GOLD_RUSH_N301P",
+    "copy_from": "BATTLE_ATTACKPARAM_ABILITY_MONEY_IS_POWER",
+    "set": {
+     "eAttackEvaluationType": "EAttackEvaluationType::STATUS_EFFECT",
+     "StatusEffectId": "BATTLE_STATUSEFFECTATK_APLLY_TEMPTATION_1T",
+     "bMustHit": true,
+     "fHitRate": 0.0,
+     "fPower": 0.5,
+     "fBasePowerRate": 1.0,
+     "bCriticalHit": false,
+     "bPursuit": false,
+     "fUseTP": 4.0,
+     "eAutoFocusType": "EAutoFocusType::STATUS_EFFECT_APPLY",
+     "SourceId": "None"
+    }
+   }
+  },
+  {
+   "id": "BATTLE_ABILITY_ORDER_CHANGE_N301P",
+   "copy_from": "BATTLE_ABILITY_ORDER_CHANGE",
+   "name": "Smuggle",
+   "help": "Swap an ally for a party member who isn't deployed.",
+   "set": {
+    "iSortNumber": 1105
+   },
+   "attack": {
+    "id": "BATTLE_ATTACKPARAM_ABILITY_ORDER_CHANGE_N301P",
+    "copy_from": "BATTLE_ATTACKPARAM_ORDER_CHANGE",
+    "set": {
+     "FlipbookId": "ABL_RICH_APPEAL",
+     "eBattleSequence": "EBattleSequence::LS_ABILITY_RICH_APPEAL",
+     "fUseTP": 5.0,
+     "iMinTargetRange": 1,
+     "bOrderSequence": false,
+     "SourceId": "None"
+    }
+   }
+  }
+ ],
+ "classes": [
+  {
+   "rank": 1,
+   "template": "BATTLE_JOB_CH_P025_1",
+   "learn": [
+    [
+     1,
+     "BATTLE_ABILITY_MONEY_IS_POWER_N301P"
+    ],
+    [
+     1,
+     "BATTLE_ABILITY_RICH_APPEAL_N301P"
+    ],
+    [
+     1,
+     "BATTLE_ABILITY_WEAK_RIDE"
+    ],
+    [
+     3,
+     "BATTLE_ABILITY_EMBARGO_N301P"
+    ]
+   ],
+   "name_text": "TEXT_JOB_NAME_N301_M"
+  },
+  {
+   "rank": 2,
+   "template": "BATTLE_JOB_CH_P025_2",
+   "learn": [
+    [
+     14,
+     "BATTLE_ABILITY_RESIST_POISON_IMMOVABLE_BLIND"
+    ],
+    [
+     18,
+     "BATTLE_ABILITY_RESIST_CHARM_DEATH"
+    ]
+   ],
+   "name": "Trade Magnate"
+  },
+  {
+   "rank": 3,
+   "template": "BATTLE_JOB_CH_P025_3",
+   "learn": [
+    [
+     22,
+     "BATTLE_ABILITY_GOLD_RUSH_N301P"
+    ]
+   ],
+   "name": "Consortium Grandee"
+  }
+ ],
+ "class_help": "A merchant of the Norzelia Consortium, which trades iron and salt with every nation. He takes no side, and he can buy anything.",
+ "job_type": "EJobType::SWORDSMAN",
+ "weapon": {
+  "attack_template": "BATTLE_ATTACKPARAM_WEAPON_N_301",
+  "power": 5.0,
+  "icon": "EWeaponIconType::WHIP",
+  "ranks": [
+   {
+    "template": "BATTLE_WEAPON_P025",
+    "name_text": "TEXT_WEAPON_NAME_N301"
+   },
+   {
+    "template": "BATTLE_WEAPON_RANK2_P025",
+    "name": "Consortium Lash",
+    "rankup_material": "ITEM_UPGRADEMATERIAL_RANKUP_STEEL"
+   },
+   {
+    "template": "BATTLE_WEAPON_RANK3_P025",
+    "name": "Brokker's Bargain",
+    "rankup_material": "ITEM_UPGRADEMATERIAL_RANKUP_JADE",
+    "weapon_skill": "BATTLE_ABILITY_ORDER_CHANGE_N301P"
+   }
+  ]
+ },
+ "tree_abilities": [
+  {
+   "id": "BATTLE_ABILITY_ABILITY_DAMAGE_UP_MONEY_IS_POWER_N301P",
+   "template": "BATTLE_ABILITY_ABILITY_DAMAGE_UP_INTIMIDATION_SWORD",
+   "targets": [
+    "BATTLE_ABILITY_MONEY_IS_POWER_N301P"
+   ],
+   "name": "Coin Toss Damage Up",
+   "help": "Increases damage dealt by Coin Toss."
+  },
+  {
+   "id": "BATTLE_ABILITY_ABILITY_RANGE_UP_RICH_APPEAL_N301P",
+   "template": "BATTLE_ABILITY_ABILITY_RANGE_UPASSAULT",
+   "targets": [
+    "BATTLE_ABILITY_RICH_APPEAL_N301P"
+   ],
+   "name": "Money Talks Range +1",
+   "help": "Increases the range of Money Talks by 1."
+  },
+  {
+   "id": "BATTLE_ABILITY_ABILITY_RANGE_UP_EMBARGO_N301P",
+   "template": "BATTLE_ABILITY_ABILITY_RANGE_UPASSAULT",
+   "targets": [
+    "BATTLE_ABILITY_EMBARGO_N301P"
+   ],
+   "name": "Embargo Range +1",
+   "help": "Increases the range of Embargo by 1."
+  },
+  {
+   "id": "BATTLE_ABILITY_TP_REDUCTION_GOLD_RUSH_N301P",
+   "template": "BATTLE_ABILITY_TP_REDUCTION_TWO_STAGE_THRUST",
+   "targets": [
+    "BATTLE_ABILITY_GOLD_RUSH_N301P"
+   ],
+   "name": "Everyone Has a Price TP -1",
+   "help": "Decreases TP cost of Everyone Has a Price by 1."
+  }
+ ],
+ "tree": [
+  {
+   "template": "BATTLE_WEAPONABILITYTREE_P001_RANK1",
+   "nodes": [
+    "BATTLE_ABILITY_WEAPON_POWER_CORRECTION_DAMAGE_UP",
+    "BATTLE_ABILITY_WEAPON_BONUS_HP_UP",
+    "BATTLE_ABILITY_WEAPON_BONUS_STR_UP",
+    "BATTLE_ABILITY_WEAPON_BONUS_MDF_UP",
+    "BATTLE_ABILITY_ABILITY_DAMAGE_UP_MONEY_IS_POWER_N301P"
+   ]
+  },
+  {
+   "template": "BATTLE_WEAPONABILITYTREE_P001_RANK2",
+   "nodes": [
+    "BATTLE_ABILITY_WEAPON_POWER_CORRECTION_DAMAGE_UP_RANK2",
+    "BATTLE_ABILITY_WEAPON_BONUS_STR_UP_II",
+    "BATTLE_ABILITY_ABILITY_RANGE_UP_RICH_APPEAL_N301P",
+    "BATTLE_ABILITY_ABILITY_RANGE_UP_EMBARGO_N301P",
+    "BATTLE_ABILITY_WEAPON_BONUS_DEF_UP"
+   ]
+  },
+  {
+   "template": "BATTLE_WEAPONABILITYTREE_P001_RANK3",
+   "nodes": [
+    "BATTLE_ABILITY_WEAPON_POWER_CORRECTION_DAMAGE_UP_II",
+    "BATTLE_ABILITY_TP_REDUCTION_GOLD_RUSH_N301P",
+    "BATTLE_ABILITY_ORDER_CHANGE_N301P"
+   ]
+  }
+ ],
+ "param_set": {
+  "eUnitCamp": "EUnitCamp::FRIEND",
+  "fUnitResistStatus": 1.0,
+  "DropItem": "None",
+  "EquippedAccessary1": "None",
+  "fJumpForceUp": 2.0,
+  "fJumpForceDown": 2.0,
+  "eSpecificEffectType2": "ESpecificEffectType2::CAVALRY"
+ },
+ "sprite_clones": [
+  {
+   "char": "N301",
+   "from": "HORSE",
+   "to": [
+    "HORSE_RANK2",
+    "HORSE_RANK3"
+   ],
+   "note": "animation assets for the new variants, like P017's / Exharme's (Test 12h)"
+  },
+  {
+   "char": "N301",
+   "frames_from": "TypeHorse",
+   "to_folder": "",
+   "only": "UIC_",
+   "note": "menu fix: menus read Frames/UIC_* by path [tested 12e]"
+  }
+ ],
+ "bp_sprite": [
+  {
+   "char": "N301",
+   "copy_override": "HORSE",
+   "to": [
+    "HORSE_RANK2",
+    "HORSE_RANK3"
+   ],
+   "note": "BP_N301 lists only HORSE; promoted cavalry asks for HORSE_RANK2/3 and falls back to on foot (Exharme, Test 12h)."
+  }
+ ],
+ "flipbook_static": [
+  {
+   "char": "N301",
+   "copy_override": "HORSE",
+   "to": [
+    "HORSE_RANK2",
+    "HORSE_RANK3"
+   ],
+   "rename_paths": true,
+   "note": "table entries for the new variants, like P017's / Exharme's"
+  }
+ ]
+}

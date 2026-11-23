@@ -1,0 +1,232 @@
+{
+ "id": "N206",
+ "unit_master": "UNIT_MASTER_CH_N206",
+ "party_param": "BATTLE_UNITPARAM_CH_N206_PARTY",
+ "param_template": "BATTLE_UNITPARAM_CH_N206",
+ "stats": {
+  "elite_source": "BATTLE_UNITGROWTH_CH_N206",
+  "keep_from_source": [
+   "fMoveForce",
+   "fJumpForceUp",
+   "fJumpForceDown",
+   "fGainTacticalPoint"
+  ],
+  "scale": {
+   "fMaxHitPoint": 0.51,
+   "fStrength": 0.97,
+   "fIntelligence": 0.98,
+   "fDefence": 0.94,
+   "fMagicDefence": 0.93
+  },
+  "speed_at_50": 26
+ },
+ "own_abilities": [
+  {
+   "id": "BATTLE_ABILITY_JUDGMENT_N206P",
+   "copy_from": "BATTLE_ABILITY_JUDGMENT",
+   "set": {
+    "iSortNumber": 1101
+   },
+   "attack": {
+    "id": "BATTLE_ATTACKPARAM_ABILITY_JUDGMENT_N206P",
+    "copy_from": "BATTLE_ATTACKPARAM_ABILITY_JUDGMENT",
+    "set": {
+     "FlipbookId": "ABL_THUNDER_MAGIC_STK"
+    }
+   }
+  },
+  {
+   "id": "BATTLE_ABILITY_ACTION_ORDER_N206P",
+   "copy_from": "BATTLE_ABILITY_ACTION_ORDER",
+   "set": {
+    "iSortNumber": 1102
+   },
+   "attack": {
+    "id": "BATTLE_ATTACKPARAM_ABILITY_ACTION_ORDER_N206P",
+    "copy_from": "BATTLE_ATTACKPARAM_ABILITY_ACTION_ORDER",
+    "set": {
+     "FlipbookId": "ABL_POWER_RISE"
+    }
+   }
+  },
+  {
+   "id": "BATTLE_ABILITY_ATTRACTION_N206P",
+   "copy_from": "BATTLE_ABILITY_ATTRACTION",
+   "set": {
+    "iSortNumber": 1103
+   },
+   "attack": {
+    "id": "BATTLE_ATTACKPARAM_ABILITY_ATTRACTION_N206P",
+    "copy_from": "BATTLE_ATTACKPARAM_ABILITY_ATTRACTION",
+    "set": {
+     "FlipbookId": "ABL_SECRET_CURSE"
+    }
+   }
+  },
+  {
+   "id": "BATTLE_ABILITY_PUPPET_SUMMON_N206P",
+   "copy_from": "BATTLE_ABILITY_PUPPET_SUMMON",
+   "set": {
+    "iSortNumber": 1104
+   },
+   "attack": {
+    "id": "BATTLE_ATTACKPARAM_ABILITY_PUPPET_SUMMON_N206P",
+    "copy_from": "BATTLE_ATTACKPARAM_ABILITY_PUPPET_SUMMON",
+    "set": {
+     "FlipbookId": "ABL_TELEPORT"
+    }
+   }
+  }
+ ],
+ "classes": [
+  {
+   "rank": 1,
+   "template": "BATTLE_JOB_CH_P018_1",
+   "learn": [
+    [
+     1,
+     "BATTLE_ABILITY_WIDE_WIND"
+    ],
+    [
+     1,
+     "BATTLE_ABILITY_AROUND_TP_CHARGE"
+    ],
+    [
+     3,
+     "BATTLE_ABILITY_ICE_MAZE"
+    ],
+    [
+     5,
+     "BATTLE_ABILITY_ALL_QUICKNESS"
+    ]
+   ],
+   "name_text": "TEXT_JOB_NAME_N206_M"
+  },
+  {
+   "rank": 2,
+   "template": "BATTLE_JOB_CH_P018_2",
+   "learn": [
+    [
+     14,
+     "BATTLE_ABILITY_ATTRACTION_N206P"
+    ],
+    [
+     16,
+     "BATTLE_ABILITY_ACTION_ORDER_N206P"
+    ]
+   ],
+   "name": "High Priest"
+  },
+  {
+   "rank": 3,
+   "template": "BATTLE_JOB_CH_P018_3",
+   "learn": [
+    [
+     22,
+     "BATTLE_ABILITY_JUDGMENT_N206P"
+    ]
+   ],
+   "name_text": "TEXT_JOB_NAME_N206_M_2"
+  }
+ ],
+ "class_help": "Hyzante's high priest and the hand behind the hierophant. He means to rise above mortals, and his spells answer him.",
+ "job_type": "EJobType::WIZARD",
+ "weapon": {
+  "attack_template": "BATTLE_ATTACKPARAM_WEAPON_N_206",
+  "power": 5.0,
+  "icon": "EWeaponIconType::STAFF",
+  "ranks": [
+   {
+    "template": "BATTLE_WEAPON_P018",
+    "name_text": "TEXT_WEAPON_NAME_N206_1"
+   },
+   {
+    "template": "BATTLE_WEAPON_RANK2_P018",
+    "name": "Staff of the Seven",
+    "rankup_material": "ITEM_UPGRADEMATERIAL_RANKUP_STAR"
+   },
+   {
+    "template": "BATTLE_WEAPON_RANK3_P018",
+    "rankup_material": "ITEM_UPGRADEMATERIAL_RANKUP_OBSIDIAN",
+    "weapon_skill": "BATTLE_ABILITY_PUPPET_SUMMON_N206P",
+    "name_text": "TEXT_WEAPON_NAME_N206_2"
+   }
+  ]
+ },
+ "tree_abilities": [
+  {
+   "id": "BATTLE_ABILITY_ABILITY_DAMAGE_UP_WIDE_WIND_N206P",
+   "template": "BATTLE_ABILITY_ABILITY_DAMAGE_UP_FIRE_MAGIC",
+   "targets": [
+    "BATTLE_ABILITY_WIDE_WIND"
+   ],
+   "name": "Raging Winds Damage Up",
+   "help": "Increases damage dealt by Raging Winds."
+  },
+  {
+   "id": "BATTLE_ABILITY_ABILITY_RANGE_UP_ICE_MAZE_N206P",
+   "template": "BATTLE_ABILITY_ABILITY_RANGE_UPASSAULT",
+   "targets": [
+    "BATTLE_ABILITY_ICE_MAZE"
+   ],
+   "name": "Icy Impediment Range +1",
+   "help": "Increases the range of Icy Impediment by 1."
+  },
+  {
+   "id": "BATTLE_ABILITY_TP_REDUCTION_JUDGMENT_N206P",
+   "template": "BATTLE_ABILITY_TP_REDUCTION_TWO_STAGE_THRUST",
+   "targets": [
+    "BATTLE_ABILITY_JUDGMENT_N206P"
+   ],
+   "name": "Bolt of Judgment TP -1",
+   "help": "Decreases TP cost of Bolt of Judgment by 1."
+  },
+  {
+   "id": "BATTLE_ABILITY_TP_REDUCTION_PUPPET_SUMMON_N206P",
+   "template": "BATTLE_ABILITY_TP_REDUCTION_TWO_STAGE_THRUST",
+   "targets": [
+    "BATTLE_ABILITY_PUPPET_SUMMON_N206P"
+   ],
+   "name": "Puppet Master TP -1",
+   "help": "Decreases TP cost of Puppet Master by 1."
+  }
+ ],
+ "tree": [
+  {
+   "template": "BATTLE_WEAPONABILITYTREE_P001_RANK1",
+   "nodes": [
+    "BATTLE_ABILITY_WEAPON_POWER_CORRECTION_DAMAGE_UP",
+    "BATTLE_ABILITY_TP_PLUS2",
+    "BATTLE_ABILITY_WEAPON_BONUS_INT_UP",
+    "BATTLE_ABILITY_BLESSING",
+    "BATTLE_ABILITY_ABILITY_DAMAGE_UP_WIDE_WIND_N206P"
+   ]
+  },
+  {
+   "template": "BATTLE_WEAPONABILITYTREE_P001_RANK2",
+   "nodes": [
+    "BATTLE_ABILITY_WEAPON_POWER_CORRECTION_DAMAGE_UP_RANK2",
+    "BATTLE_ABILITY_ACT_TWICE",
+    "BATTLE_ABILITY_ABILITY_RANGE_UP_ICE_MAZE_N206P",
+    "BATTLE_ABILITY_TP_REDUCTION_JUDGMENT_N206P",
+    "BATTLE_ABILITY_AUTO_SEALD"
+   ]
+  },
+  {
+   "template": "BATTLE_WEAPONABILITYTREE_P001_RANK3",
+   "nodes": [
+    "BATTLE_ABILITY_WEAPON_POWER_CORRECTION_DAMAGE_UP_II",
+    "BATTLE_ABILITY_TP_REDUCTION_PUPPET_SUMMON_N206P",
+    "BATTLE_ABILITY_PUPPET_SUMMON_N206P"
+   ]
+  }
+ ],
+ "param_set": {
+  "eUnitCamp": "EUnitCamp::FRIEND",
+  "fUnitResistStatus": 1.0,
+  "DropItem": "None",
+  "EquippedAccessary1": "None",
+  "fJumpForceUp": 2.0,
+  "fJumpForceDown": 2.0
+ }
+}

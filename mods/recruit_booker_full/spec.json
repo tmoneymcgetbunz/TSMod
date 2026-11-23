@@ -1,0 +1,236 @@
+{
+ "id": "N203",
+ "unit_master": "UNIT_MASTER_CH_N203",
+ "party_param": "BATTLE_UNITPARAM_CH_N203_PARTY",
+ "param_template": "BATTLE_UNITPARAM_CH_P037",
+ "stats": {
+  "elite_source": "BATTLE_UNITGROWTH_CH_N203",
+  "keep_from_source": [
+   "fMoveForce",
+   "fJumpForceUp",
+   "fJumpForceDown",
+   "fUnitSpeed",
+   "fGainTacticalPoint"
+  ]
+ },
+ "own_abilities": [
+  {
+   "id": "BATTLE_ABILITY_SLEEPY_THROW_N203P",
+   "copy_from": "BATTLE_ABILITY_SLEEPY_THROW",
+   "name": "Sleeping Draught",
+   "set": {
+    "iSortNumber": 1101
+   },
+   "attack": {
+    "id": "BATTLE_ATTACKPARAM_ABILITY_SLEEPY_THROW_N203P",
+    "copy_from": "BATTLE_ATTACKPARAM_ABILITY_SLEEPY_THROW",
+    "set": {
+     "FlipbookId": "ITEM_ATTACK001"
+    }
+   }
+  },
+  {
+   "id": "BATTLE_ABILITY_STATUS_CURE_MAGIC_N203P",
+   "copy_from": "BATTLE_ABILITY_STATUS_CURE_MAGIC",
+   "name": "Antidote Kit",
+   "help": "Heal an ally's status ailments.",
+   "set": {
+    "iSortNumber": 1102
+   },
+   "attack": {
+    "id": "BATTLE_ATTACKPARAM_ABILITY_STATUS_CURE_MAGIC_N203P",
+    "copy_from": "BATTLE_ATTACKPARAM_ABILITY_STATUS_CURE_MAGIC",
+    "set": {
+     "FlipbookId": "ITEM_HEAL001",
+     "eBattleSequence": "EBattleSequence::LS_ITEM_HEAL_ALL"
+    }
+   }
+  },
+  {
+   "id": "BATTLE_ABILITY_POISON_ARROW_N203P",
+   "copy_from": "BATTLE_ABILITY_POISON_ARROW",
+   "set": {
+    "iSortNumber": 1001
+   },
+   "attack": {
+    "id": "BATTLE_ATTACKPARAM_ABILITY_POISON_ARROW_N203P",
+    "copy_from": "BATTLE_ATTACKPARAM_ABILITY_POISON_ARROW",
+    "set": {
+     "FlipbookId": "ITEM_ATTACK001"
+    }
+   }
+  },
+  {
+   "id": "BATTLE_ABILITY_TP_CHARGE_N203_N203P",
+   "copy_from": "BATTLE_ABILITY_TP_CHARGE_N203",
+   "set": {
+    "iSortNumber": 1002
+   },
+   "attack": {
+    "id": "BATTLE_ATTACKPARAM_ABILITY_TP_CHARGE_N203_N203P",
+    "copy_from": "BATTLE_ATTACKPARAM_ABILITY_TP_CHARGE_N203",
+    "set": {
+     "FlipbookId": "ABL_CHARGE"
+    }
+   }
+  },
+  {
+   "id": "BATTLE_ABILITY_MULTI_ACTION_N203P",
+   "copy_from": "BATTLE_ABILITY_MULTI_ACTION",
+   "name": "At Your Service",
+   "help": "Grant an ally the chance to act twice on their next turn.",
+   "attack": {
+    "id": "BATTLE_ATTACKPARAM_ABILITY_MULTI_ACTION_N203P",
+    "copy_from": "BATTLE_ATTACKPARAM_ABILITY_MULTI_ACTION",
+    "set": {
+     "FlipbookId": "ABL_READY_TO_RUN",
+     "eBattleSequence": "EBattleSequence::LS_ABILITY_READY_TO_RUN",
+     "HitEffect": ""
+    }
+   }
+  }
+ ],
+ "classes": [
+  {
+   "rank": 1,
+   "template": "BATTLE_JOB_CH_P019_1",
+   "learn": [
+    [
+     1,
+     "BATTLE_ABILITY_ACT_TWICE"
+    ],
+    [
+     1,
+     "BATTLE_ABILITY_POISON_ARROW_N203P"
+    ],
+    [
+     1,
+     "BATTLE_ABILITY_TP_CHARGE_N203_N203P"
+    ],
+    [
+     3,
+     "BATTLE_ABILITY_BAD_CONDITION_KILLER"
+    ]
+   ],
+   "name_text": "TEXT_JOB_NAME_N203_M"
+  },
+  {
+   "rank": 2,
+   "template": "BATTLE_JOB_CH_P019_2",
+   "learn": [
+    [
+     14,
+     "BATTLE_ABILITY_SLEEPY_THROW_N203P"
+    ],
+    [
+     18,
+     "BATTLE_ABILITY_STATUS_CURE_MAGIC_N203P"
+    ]
+   ],
+   "name": "Venomist"
+  },
+  {
+   "rank": 3,
+   "template": "BATTLE_JOB_CH_P019_3",
+   "learn": [
+    [
+     22,
+     "BATTLE_ABILITY_RESIST_SLEEP_IMMOVABLE_TAUNT"
+    ]
+   ],
+   "name": "Master Poisoner"
+  }
+ ],
+ "class_help": "Sorsley Ende's most trusted retainer. His duties are many, so he does everything twice.",
+ "job_type": "EJobType::SWORDSMAN",
+ "weapon": {
+  "attack_template": "BATTLE_ATTACKPARAM_WEAPON_N_203",
+  "power": 5.0,
+  "icon": "EWeaponIconType::DAGGER",
+  "ranks": [
+   {
+    "template": "BATTLE_WEAPON_P019",
+    "name_text": "TEXT_WEAPON_NAME_N203"
+   },
+   {
+    "template": "BATTLE_WEAPON_RANK2_P019",
+    "name": "Scorpion's Sting",
+    "rankup_material": "ITEM_UPGRADEMATERIAL_RANKUP_STONE"
+   },
+   {
+    "template": "BATTLE_WEAPON_RANK3_P019",
+    "name": "Emperor's Sting",
+    "rankup_material": "ITEM_UPGRADEMATERIAL_RANKUP_THORN",
+    "weapon_skill": "BATTLE_ABILITY_MULTI_ACTION_N203P"
+   }
+  ]
+ },
+ "tree_abilities": [
+  {
+   "id": "BATTLE_ABILITY_ABILITY_EXTENSION_POISON_ARROW_N203P",
+   "template": "BATTLE_ABILITY_ABILITY_EXTENSION_CHARM",
+   "targets": [
+    "BATTLE_ABILITY_POISON_ARROW_N203P"
+   ],
+   "name": "Throw Poison Success Rate Up",
+   "help": "Increases the success rate of Throw Poison."
+  },
+  {
+   "id": "BATTLE_ABILITY_TP_REDUCTION_POISON_ARROW_N203P",
+   "template": "BATTLE_ABILITY_TP_REDUCTION_TWO_STAGE_THRUST",
+   "targets": [
+    "BATTLE_ABILITY_POISON_ARROW_N203P"
+   ],
+   "name": "Throw Poison TP -1",
+   "help": "Decreases TP cost of Throw Poison by 1."
+  },
+  {
+   "id": "BATTLE_ABILITY_ABILITY_EXTENSION_SLEEPY_THROW_N203P",
+   "template": "BATTLE_ABILITY_ABILITY_EXTENSION_CHARM",
+   "targets": [
+    "BATTLE_ABILITY_SLEEPY_THROW_N203P"
+   ],
+   "name": "Sleeping Draught Success Rate Up",
+   "help": "Increases the success rate of Sleeping Draught."
+  },
+  {
+   "id": "BATTLE_ABILITY_ABILITY_RANGE_UP_POISON_ARROW_N203P",
+   "template": "BATTLE_ABILITY_ABILITY_RANGE_UPASSAULT",
+   "targets": [
+    "BATTLE_ABILITY_POISON_ARROW_N203P"
+   ],
+   "name": "Throw Poison Range +1",
+   "help": "Increases the range of Throw Poison by 1."
+  }
+ ],
+ "tree": [
+  {
+   "template": "BATTLE_WEAPONABILITYTREE_P001_RANK1",
+   "nodes": [
+    "BATTLE_ABILITY_WEAPON_POWER_CORRECTION_DAMAGE_UP",
+    "BATTLE_ABILITY_WEAPON_BONUS_HP_UP",
+    "BATTLE_ABILITY_WEAPON_BONUS_STR_UP",
+    "BATTLE_ABILITY_WEAPON_BONUS_DEF_UP",
+    "BATTLE_ABILITY_ABILITY_EXTENSION_POISON_ARROW_N203P"
+   ]
+  },
+  {
+   "template": "BATTLE_WEAPONABILITYTREE_P001_RANK2",
+   "nodes": [
+    "BATTLE_ABILITY_WEAPON_POWER_CORRECTION_DAMAGE_UP_RANK2",
+    "BATTLE_ABILITY_WEAPON_BONUS_STR_UP_II",
+    "BATTLE_ABILITY_TP_REDUCTION_POISON_ARROW_N203P",
+    "BATTLE_ABILITY_ABILITY_EXTENSION_SLEEPY_THROW_N203P",
+    "BATTLE_ABILITY_RESIST_CHARM_DEATH"
+   ]
+  },
+  {
+   "template": "BATTLE_WEAPONABILITYTREE_P001_RANK3",
+   "nodes": [
+    "BATTLE_ABILITY_WEAPON_POWER_CORRECTION_DAMAGE_UP_II",
+    "BATTLE_ABILITY_ABILITY_RANGE_UP_POISON_ARROW_N203P",
+    "BATTLE_ABILITY_MULTI_ACTION_N203P"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,178 @@
+{
+ "id": "N007",
+ "unit_master": "UNIT_MASTER_CH_N007",
+ "party_param": "BATTLE_UNITPARAM_CH_N007_PARTY",
+ "param_template": "BATTLE_UNITPARAM_CH_P033",
+ "stats": {
+  "elite_source": "BATTLE_UNITGROWTH_CH_N007",
+  "keep_from_source": [
+   "fMoveForce",
+   "fJumpForceUp",
+   "fJumpForceDown",
+   "fUnitSpeed",
+   "fGainTacticalPoint"
+  ]
+ },
+ "own_abilities": [
+  {
+   "id": "BATTLE_ABILITY_SUPPRESS_N007P",
+   "copy_from": "BATTLE_ABILITY_SUPPRESS",
+   "name": "Herosbane",
+   "set": {
+    "iSortNumber": 1101
+   },
+   "attack": {
+    "id": "BATTLE_ATTACKPARAM_ABILITY_SUPPRESS_N007P",
+    "copy_from": "BATTLE_ATTACKPARAM_ABILITY_SUPPRESS",
+    "set": {
+     "FlipbookId": "ABL_POWER_BREAK",
+     "eBattleSequence": "EBattleSequence::LS_ABILITY_POWER_BREAK"
+    }
+   }
+  }
+ ],
+ "classes": [
+  {
+   "rank": 1,
+   "template": "BATTLE_JOB_CH_P014_1",
+   "learn": [
+    [
+     1,
+     "BATTLE_ABILITY_ACCUMULATE"
+    ],
+    [
+     1,
+     "BATTLE_ABILITY_LONG_CAST"
+    ],
+    [
+     3,
+     "BATTLE_ABILITY_DEF_DOWN_ATTACK"
+    ]
+   ],
+   "name_text": "TEXT_JOB_NAME_N007_M"
+  },
+  {
+   "rank": 2,
+   "template": "BATTLE_JOB_CH_P014_2",
+   "learn": [
+    [
+     14,
+     "BATTLE_ABILITY_SUPPRESS_N007P"
+    ],
+    [
+     18,
+     "BATTLE_ABILITY_RESIST_PARALYSIS_SILENSE_SLEEP"
+    ]
+   ],
+   "name_text": "TEXT_JOB_NAME_N007_M_2"
+  },
+  {
+   "rank": 3,
+   "template": "BATTLE_JOB_CH_P014_3",
+   "learn": [
+    [
+     22,
+     "BATTLE_ABILITY_RESIST_CHARM_DEATH"
+    ]
+   ],
+   "name": "Cudgel Lord"
+  }
+ ],
+ "class_help": "\"Herosbane\", a mercenary loyal only to coin who delights in cutting confident warriors down to size.",
+ "job_type": "EJobType::SWORDSMAN",
+ "weapon": {
+  "attack_template": "BATTLE_ATTACKPARAM_WEAPON_N_007",
+  "power": 5.0,
+  "icon": "EWeaponIconType::CLUB",
+  "ranks": [
+   {
+    "template": "BATTLE_WEAPON_P014",
+    "name_text": "TEXT_WEAPON_NAME_N007"
+   },
+   {
+    "template": "BATTLE_WEAPON_RANK2_P014",
+    "name": "Spiked Cudgel",
+    "rankup_material": "ITEM_UPGRADEMATERIAL_RANKUP_OAK"
+   },
+   {
+    "template": "BATTLE_WEAPON_RANK3_P014",
+    "name": "Brigand's Maul",
+    "rankup_material": "ITEM_UPGRADEMATERIAL_RANKUP_THORN",
+    "weapon_skill": "BATTLE_ABILITY_KB"
+   }
+  ],
+  "weapon_skill_id": "BATTLE_ABILITY_KB_N007P"
+ },
+ "tree_abilities": [
+  {
+   "id": "BATTLE_ABILITY_ABILITY_DAMAGE_UP_LONG_CAST_N007P",
+   "template": "BATTLE_ABILITY_ABILITY_DAMAGE_UP_INTIMIDATION_SWORD",
+   "targets": [
+    "BATTLE_ABILITY_LONG_CAST"
+   ],
+   "name": "Pitch Damage Up",
+   "help": "Increases damage dealt by Pitch."
+  },
+  {
+   "id": "BATTLE_ABILITY_ABILITY_DAMAGE_UP_DEF_DOWN_ATTACK_N007P",
+   "template": "BATTLE_ABILITY_ABILITY_DAMAGE_UP_INTIMIDATION_SWORD",
+   "targets": [
+    "BATTLE_ABILITY_DEF_DOWN_ATTACK"
+   ],
+   "name": "Armor Break Damage Up",
+   "help": "Increases damage dealt by Armor Break."
+  },
+  {
+   "id": "BATTLE_ABILITY_TP_REDUCTION_DEF_DOWN_ATTACK_N007P",
+   "template": "BATTLE_ABILITY_TP_REDUCTION_TWO_STAGE_THRUST",
+   "targets": [
+    "BATTLE_ABILITY_DEF_DOWN_ATTACK"
+   ],
+   "name": "Armor Break TP -1",
+   "help": "Decreases TP cost of Armor Break by 1."
+  },
+  {
+   "id": "BATTLE_ABILITY_ABILITY_DAMAGE_UP_SUPPRESS_N007P",
+   "template": "BATTLE_ABILITY_ABILITY_DAMAGE_UP_INTIMIDATION_SWORD",
+   "targets": [
+    "BATTLE_ABILITY_SUPPRESS_N007P"
+   ],
+   "name": "Herosbane Damage Up",
+   "help": "Increases damage dealt by Herosbane."
+  }
+ ],
+ "tree": [
+  {
+   "template": "BATTLE_WEAPONABILITYTREE_P001_RANK1",
+   "nodes": [
+    "BATTLE_ABILITY_WEAPON_POWER_CORRECTION_DAMAGE_UP",
+    "BATTLE_ABILITY_WEAPON_BONUS_HP_UP",
+    "BATTLE_ABILITY_WEAPON_BONUS_STR_UP",
+    "BATTLE_ABILITY_WEAPON_BONUS_DEF_UP",
+    "BATTLE_ABILITY_ABILITY_DAMAGE_UP_LONG_CAST_N007P"
+   ]
+  },
+  {
+   "template": "BATTLE_WEAPONABILITYTREE_P001_RANK2",
+   "nodes": [
+    "BATTLE_ABILITY_WEAPON_POWER_CORRECTION_DAMAGE_UP_RANK2",
+    "BATTLE_ABILITY_WEAPON_BONUS_STR_UP_II",
+    "BATTLE_ABILITY_ABILITY_DAMAGE_UP_DEF_DOWN_ATTACK_N007P",
+    "BATTLE_ABILITY_TP_REDUCTION_DEF_DOWN_ATTACK_N007P",
+    "BATTLE_ABILITY_WEAPON_BONUS_DEF_UP_II"
+   ]
+  },
+  {
+   "template": "BATTLE_WEAPONABILITYTREE_P001_RANK3",
+   "nodes": [
+    "BATTLE_ABILITY_WEAPON_POWER_CORRECTION_DAMAGE_UP_II",
+    "BATTLE_ABILITY_ABILITY_DAMAGE_UP_SUPPRESS_N007P",
+    "BATTLE_ABILITY_KB"
+   ]
+  }
+ ],
+ "param_set": {
+  "fJumpForceUp": 2.0,
+  "fJumpForceDown": 2.0
+ }
+}

@@ -1,0 +1,274 @@
+{
+ "id": "M103",
+ "unit_master": "UNIT_MASTER_CH_M103",
+ "party_param": "BATTLE_UNITPARAM_CH_M103_PARTY",
+ "param_template": "BATTLE_UNITPARAM_CH_N302",
+ "stats": {
+  "elite_source": "BATTLE_UNITGROWTH_CH_P005_R3",
+  "keep_from_source": [
+   "fMoveForce",
+   "fJumpForceUp",
+   "fJumpForceDown",
+   "fGainTacticalPoint"
+  ],
+  "scale": {
+   "fMaxHitPoint": 1.0454545454545454,
+   "fStrength": 0.8125,
+   "fIntelligence": 1.0,
+   "fDefence": 0.8205128205128205,
+   "fMagicDefence": 1.0740740740740742
+  },
+  "speed_at_50": 25
+ },
+ "own_abilities": [
+  {
+   "id": "BATTLE_ABILITY_REGEN_M103P",
+   "copy_from": "BATTLE_ABILITY_REGEN",
+   "name": "Cold Compress",
+   "set": {
+    "iSortNumber": 1101
+   }
+  },
+  {
+   "id": "BATTLE_ABILITY_DEFFENCE_MEASURE_M103P",
+   "copy_from": "BATTLE_ABILITY_DEFFENCE_MEASURE",
+   "name": "Frozen Fortitude",
+   "set": {
+    "iSortNumber": 1102
+   },
+   "attack": {
+    "id": "BATTLE_ATTACKPARAM_ABILITY_DEFFENCE_MEASURE_M103P",
+    "copy_from": "BATTLE_ATTACKPARAM_ABILITY_DEFFENCE_MEASURE",
+    "set": {
+     "FlipbookId": "ABL_HEAL_MAGIC",
+     "eBattleSequence": "EBattleSequence::LS_ABILITY_REGEN",
+     "SourceId": "None"
+    }
+   }
+  },
+  {
+   "id": "BATTLE_ABILITY_ICE_MAGIC_M103P",
+   "copy_from": "BATTLE_ABILITY_ICE_MAGIC",
+   "name": "Winter's Touch",
+   "help": "Cover every square within 2 of you, your own included, in ice. Deals no damage.",
+   "set": {
+    "iSortNumber": 1103
+   },
+   "attack": {
+    "id": "BATTLE_ATTACKPARAM_ABILITY_ICE_MAGIC_M103P",
+    "copy_from": "BATTLE_ATTACKPARAM_ABILITY_ICE_MAGIC_N302",
+    "set": {
+     "FlipbookId": "ABL_ICE_MAGIC_STK",
+     "eBattleSequence": "EBattleSequence::LS_ABILITY_ICE_MAGIC",
+     "eTargetCategory": "ETargetCategory::NONE",
+     "eAttackEvaluationType": "EAttackEvaluationType::OTHER",
+     "eDamageType": "EDamageType::NONE",
+     "eElementalType": "EElementalType::ICE",
+     "fPower": 0.0,
+     "iMinTargetRange": 0,
+     "iMaxTargetRange": 0,
+     "eAttackableRangeType": "EAttackableRangeType::STANDARD",
+     "eEffectableRangeType": "EEffectableRangeType::CIRCLE",
+     "fEffectiveRangeLevel": 2.0,
+     "eAdoptableRangeType": "EAdoptableRangeType::NO_CONDITIONAL",
+     "eAutoFocusType": "EAutoFocusType::NONE",
+     "bDamageReaction": false,
+     "bIsLandEffectForceTransitionToEndStatus": true,
+     "StatusEffectId": "None",
+     "fUseTP": 1.0,
+     "SourceId": "None"
+    }
+   }
+  },
+  {
+   "id": "BATTLE_ABILITY_STATUS_CURE_MAGIC_M103P",
+   "copy_from": "BATTLE_ABILITY_STATUS_CURE_MAGIC",
+   "name": "Cryostasis",
+   "help": "Freeze an ally solid: fully restore their HP and make them invincible, but they cannot act for 1 turn.",
+   "attack": {
+    "id": "BATTLE_ATTACKPARAM_ABILITY_STATUS_CURE_MAGIC_M103P",
+    "copy_from": "BATTLE_ATTACKPARAM_ABILITY_STATUS_CURE_MAGIC",
+    "set": {
+     "eDamageType": "EDamageType::MAX_HP_RATE",
+     "fPower": 1.0,
+     "fBasePowerRate": 1.0,
+     "StatusEffectId": "BATTLE_STATUSEFFECTATK_APLLY_CRYOSTASIS_M103P",
+     "fUseTP": 3.0,
+     "SourceId": "None"
+    }
+   }
+  }
+ ],
+ "classes": [
+  {
+   "rank": 1,
+   "template": "BATTLE_JOB_CH_P005_1",
+   "learn": [
+    [
+     1,
+     "BATTLE_ABILITY_ICE_MAGIC_N302"
+    ],
+    [
+     1,
+     "BATTLE_ABILITY_REGEN_M103P"
+    ],
+    [
+     3,
+     "BATTLE_ABILITY_DEFFENCE_MEASURE_M103P"
+    ]
+   ],
+   "name_text": "TEXT_JOB_NAME_N302_M"
+  },
+  {
+   "rank": 2,
+   "template": "BATTLE_JOB_CH_P005_2",
+   "learn": [
+    [
+     14,
+     "BATTLE_ABILITY_ICE_MAGIC_M103P"
+    ],
+    [
+     18,
+     "BATTLE_ABILITY_ICE_UNIT"
+    ]
+   ],
+   "name": "Frost Scholar"
+  },
+  {
+   "rank": 3,
+   "template": "BATTLE_JOB_CH_P005_3",
+   "learn": [
+    [
+     22,
+     "BATTLE_ABILITY_RESIST_CHARM_DEATH"
+    ]
+   ],
+   "name": "Ministry Savant"
+  }
+ ],
+ "class_help": "A researcher at Hyzante's Ministry of Medicine who would rather study what he likes. Ice in his hands is medicine.",
+ "job_type": "EJobType::CLERIC",
+ "weapon": {
+  "attack_template": "BATTLE_ATTACKPARAM_WEAPON_N_302",
+  "power": 5.0,
+  "icon": "EWeaponIconType::STAFF",
+  "ranks": [
+   {
+    "template": "BATTLE_WEAPON_P005",
+    "name_text": "TEXT_WEAPON_NAME_N302"
+   },
+   {
+    "template": "BATTLE_WEAPON_RANK2_P005",
+    "name": "Researcher's Staff",
+    "rankup_material": "ITEM_UPGRADEMATERIAL_RANKUP_RESIN"
+   },
+   {
+    "template": "BATTLE_WEAPON_RANK3_P005",
+    "name": "Staff of Inquiry",
+    "rankup_material": "ITEM_UPGRADEMATERIAL_RANKUP_TREE",
+    "weapon_skill": "BATTLE_ABILITY_STATUS_CURE_MAGIC_M103P"
+   }
+  ]
+ },
+ "tree_abilities": [
+  {
+   "id": "BATTLE_ABILITY_ABILITY_DAMAGE_UP_ICE_MAGIC_M103P",
+   "template": "BATTLE_ABILITY_ABILITY_DAMAGE_UP_FIRE_MAGIC",
+   "targets": [
+    "BATTLE_ABILITY_ICE_MAGIC_N302"
+   ],
+   "name": "Icy Breath Damage Up",
+   "help": "Increases damage dealt by Icy Breath."
+  },
+  {
+   "id": "BATTLE_ABILITY_ABILITY_RANGE_UP_REGEN_M103P",
+   "template": "BATTLE_ABILITY_ABILITY_RANGE_UPASSAULT",
+   "targets": [
+    "BATTLE_ABILITY_REGEN_M103P"
+   ],
+   "name": "Cold Compress Range +1",
+   "help": "Increases the range of Cold Compress by 1."
+  },
+  {
+   "id": "BATTLE_ABILITY_TP_REDUCTION_ICE_MAGIC_M103P",
+   "template": "BATTLE_ABILITY_TP_REDUCTION_TWO_STAGE_THRUST",
+   "targets": [
+    "BATTLE_ABILITY_ICE_MAGIC_N302"
+   ],
+   "name": "Icy Breath TP -1",
+   "help": "Decreases TP cost of Icy Breath by 1."
+  },
+  {
+   "id": "BATTLE_ABILITY_ABILITY_RANGE_UP_CRYOSTASIS_M103P",
+   "template": "BATTLE_ABILITY_ABILITY_RANGE_UPASSAULT",
+   "targets": [
+    "BATTLE_ABILITY_STATUS_CURE_MAGIC_M103P"
+   ],
+   "name": "Cryostasis Range +1",
+   "help": "Increases the range of Cryostasis by 1."
+  }
+ ],
+ "tree": [
+  {
+   "template": "BATTLE_WEAPONABILITYTREE_P001_RANK1",
+   "nodes": [
+    "BATTLE_ABILITY_WEAPON_POWER_CORRECTION_DAMAGE_UP",
+    "BATTLE_ABILITY_WEAPON_BONUS_HP_UP",
+    "BATTLE_ABILITY_WEAPON_BONUS_INT_UP",
+    "BATTLE_ABILITY_WEAPON_BONUS_MDF_UP",
+    "BATTLE_ABILITY_ABILITY_DAMAGE_UP_ICE_MAGIC_M103P"
+   ]
+  },
+  {
+   "template": "BATTLE_WEAPONABILITYTREE_P001_RANK2",
+   "nodes": [
+    "BATTLE_ABILITY_WEAPON_POWER_CORRECTION_DAMAGE_UP_RANK2",
+    "BATTLE_ABILITY_WEAPON_BONUS_INT_UP_II",
+    "BATTLE_ABILITY_ABILITY_RANGE_UP_REGEN_M103P",
+    "BATTLE_ABILITY_TP_REDUCTION_ICE_MAGIC_M103P",
+    "BATTLE_ABILITY_WEAPON_BONUS_DEF_UP"
+   ]
+  },
+  {
+   "template": "BATTLE_WEAPONABILITYTREE_P001_RANK3",
+   "nodes": [
+    "BATTLE_ABILITY_WEAPON_POWER_CORRECTION_DAMAGE_UP_II",
+    "BATTLE_ABILITY_ABILITY_RANGE_UP_CRYOSTASIS_M103P",
+    "BATTLE_ABILITY_STATUS_CURE_MAGIC_M103P"
+   ]
+  }
+ ],
+ "param_set": {
+  "eUnitCamp": "EUnitCamp::FRIEND",
+  "fUnitResistStatus": 1.0,
+  "DropItem": "None",
+  "EquippedAccessary1": "None",
+  "fJumpForceUp": 2.0,
+  "fJumpForceDown": 2.0
+ },
+ "extra_edits": [
+  {
+   "table": "GOP_Battle_StatusEffectAtk",
+   "add_row": "BATTLE_STATUSEFFECTATK_APLLY_CRYOSTASIS_M103P",
+   "copy_from": "BATTLE_STATUSEFFECTATK_APLLY_STOP_ORDER"
+  },
+  {
+   "table": "GOP_Battle_StatusEffectAtk",
+   "row": "BATTLE_STATUSEFFECTATK_APLLY_CRYOSTASIS_M103P",
+   "field": "fApplyPer1",
+   "value": 1.0
+  },
+  {
+   "table": "GOP_Battle_StatusEffectAtk",
+   "row": "BATTLE_STATUSEFFECTATK_APLLY_CRYOSTASIS_M103P",
+   "field": "StatusEffect2",
+   "value": "BATTLE_STATUSEFFECT_INVINCIBLE_TURN_1"
+  },
+  {
+   "table": "GOP_Battle_StatusEffectAtk",
+   "row": "BATTLE_STATUSEFFECTATK_APLLY_CRYOSTASIS_M103P",
+   "field": "fApplyPer2",
+   "value": 1.0
+  }
+ ]
+}

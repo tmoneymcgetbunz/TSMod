@@ -1,0 +1,204 @@
+{
+ "id": "N005",
+ "unit_master": "UNIT_MASTER_CH_N005",
+ "party_param": "BATTLE_UNITPARAM_CH_N005_PARTY",
+ "param_template": "BATTLE_UNITPARAM_CH_P041",
+ "stats": {
+  "elite_source": "BATTLE_UNITGROWTH_CH_N005",
+  "keep_from_source": [
+   "fMoveForce",
+   "fJumpForceUp",
+   "fJumpForceDown",
+   "fUnitSpeed",
+   "fGainTacticalPoint"
+  ]
+ },
+ "own_abilities": [
+  {
+   "id": "BATTLE_ABILITY_LOD_SLASH_P_N005P",
+   "copy_from": "BATTLE_ABILITY_LOD_SLASH_P",
+   "name": "Saltiron Valor",
+   "set": {
+    "iSortNumber": 1101
+   },
+   "attack": {
+    "id": "BATTLE_ATTACKPARAM_ABILITY_LOD_SLASH_P_N005P",
+    "copy_from": "BATTLE_ATTACKPARAM_ABILITY_LOD_SLASH",
+    "set": {
+     "FlipbookId": "ABL_FULL_SWING_3",
+     "eBattleSequence": "EBattleSequence::LS_ABILITY_FULL_SWING_2"
+    }
+   }
+  },
+  {
+   "id": "BATTLE_ABILITY_COVER_P001_N005P",
+   "copy_from": "BATTLE_ABILITY_COVER_P001",
+   "set": {
+    "iSortNumber": 1102
+   },
+   "attack": {
+    "id": "BATTLE_ATTACKPARAM_ABILITY_COVER_P001_N005P",
+    "copy_from": "BATTLE_ATTACKPARAM_ABILITY_COVER_P001",
+    "set": {
+     "FlipbookId": "ABL_QUICK_LINK",
+     "eBattleSequence": "EBattleSequence::LS_ABILITY_COVER"
+    }
+   }
+  },
+  {
+   "id": "BATTLE_ABILITY_SEL_FLAG_N005P",
+   "copy_from": "BATTLE_ABILITY_SEL_FLAG",
+   "attack": {
+    "id": "BATTLE_ATTACKPARAM_ABILITY_SEL_FLAG_N005P",
+    "copy_from": "BATTLE_ATTACKPARAM_ABILITY_SEL_FLAG",
+    "set": {
+     "FlipbookId": "ABL_SUCCESSOR",
+     "eBattleSequence": "EBattleSequence::LS_ABILITY_SUCCESSOR"
+    }
+   }
+  }
+ ],
+ "classes": [
+  {
+   "rank": 1,
+   "template": "BATTLE_JOB_CH_P016_1",
+   "learn": [
+    [
+     1,
+     "BATTLE_ABILITY_GIANT_SLALOM_SLASH"
+    ],
+    [
+     1,
+     "BATTLE_ABILITY_ADVESITY"
+    ],
+    [
+     3,
+     "BATTLE_ABILITY_LOD_SLASH_P_N005P"
+    ]
+   ],
+   "name_text": "TEXT_JOB_NAME_N005_M"
+  },
+  {
+   "rank": 2,
+   "template": "BATTLE_JOB_CH_P016_2",
+   "learn": [
+    [
+     14,
+     "BATTLE_ABILITY_COVER_P001_N005P"
+    ],
+    [
+     18,
+     "BATTLE_ABILITY_RESIST_PARALYSIS_SILENSE_SLEEP"
+    ]
+   ],
+   "name": "Exalted Blade"
+  },
+  {
+   "rank": 3,
+   "template": "BATTLE_JOB_CH_P016_3",
+   "learn": [
+    [
+     22,
+     "BATTLE_ABILITY_RESIST_CHARM_DEATH"
+    ]
+   ],
+   "name": "Divine Hero"
+  }
+ ],
+ "class_help": "The legendary hero of the Saltiron War. His body is failing, but his blade is not.",
+ "job_type": "EJobType::SWORDSMAN",
+ "weapon": {
+  "attack_template": "BATTLE_ATTACKPARAM_WEAPON_N_005",
+  "power": 5.0,
+  "icon": "EWeaponIconType::SWORD",
+  "ranks": [
+   {
+    "template": "BATTLE_WEAPON_P016",
+    "name_text": "TEXT_WEAPON_NAME_N005"
+   },
+   {
+    "template": "BATTLE_WEAPON_RANK2_P016",
+    "name": "Hallowed Greatsword",
+    "rankup_material": "ITEM_UPGRADEMATERIAL_RANKUP_LEATHER"
+   },
+   {
+    "template": "BATTLE_WEAPON_RANK3_P016",
+    "name": "Exalted Greatsword",
+    "rankup_material": "ITEM_UPGRADEMATERIAL_RANKUP_STAR",
+    "weapon_skill": "BATTLE_ABILITY_SEL_FLAG_N005P"
+   }
+  ]
+ },
+ "tree_abilities": [
+  {
+   "id": "BATTLE_ABILITY_ABILITY_DAMAGE_UP_GIANT_SLALOM_SLASH_N005P",
+   "template": "BATTLE_ABILITY_ABILITY_DAMAGE_UP_INTIMIDATION_SWORD",
+   "targets": [
+    "BATTLE_ABILITY_GIANT_SLALOM_SLASH"
+   ],
+   "name": "Great Spinning Slash Damage Up",
+   "help": "Increases damage dealt by Great Spinning Slash."
+  },
+  {
+   "id": "BATTLE_ABILITY_TP_REDUCTION_GIANT_SLALOM_SLASH_N005P",
+   "template": "BATTLE_ABILITY_TP_REDUCTION_TWO_STAGE_THRUST",
+   "targets": [
+    "BATTLE_ABILITY_GIANT_SLALOM_SLASH"
+   ],
+   "name": "Great Spinning Slash TP -1",
+   "help": "Decreases TP cost of Great Spinning Slash by 1."
+  },
+  {
+   "id": "BATTLE_ABILITY_ABILITY_DAMAGE_UP_LOD_SLASH_N005P",
+   "template": "BATTLE_ABILITY_ABILITY_DAMAGE_UP_INTIMIDATION_SWORD",
+   "targets": [
+    "BATTLE_ABILITY_LOD_SLASH_P_N005P"
+   ],
+   "name": "Saltiron Valor Damage Up",
+   "help": "Increases damage dealt by Saltiron Valor."
+  },
+  {
+   "id": "BATTLE_ABILITY_TP_REDUCTION_COVER_N005P",
+   "template": "BATTLE_ABILITY_TP_REDUCTION_TWO_STAGE_THRUST",
+   "targets": [
+    "BATTLE_ABILITY_COVER_P001_N005P"
+   ],
+   "name": "Shielding Stance TP -1",
+   "help": "Decreases TP cost of Shielding Stance by 1."
+  }
+ ],
+ "tree": [
+  {
+   "template": "BATTLE_WEAPONABILITYTREE_P001_RANK1",
+   "nodes": [
+    "BATTLE_ABILITY_WEAPON_POWER_CORRECTION_DAMAGE_UP",
+    "BATTLE_ABILITY_WEAPON_BONUS_HP_UP",
+    "BATTLE_ABILITY_WEAPON_BONUS_STR_UP",
+    "BATTLE_ABILITY_WEAPON_BONUS_DEF_UP",
+    "BATTLE_ABILITY_ABILITY_DAMAGE_UP_GIANT_SLALOM_SLASH_N005P"
+   ]
+  },
+  {
+   "template": "BATTLE_WEAPONABILITYTREE_P001_RANK2",
+   "nodes": [
+    "BATTLE_ABILITY_WEAPON_POWER_CORRECTION_DAMAGE_UP_RANK2",
+    "BATTLE_ABILITY_WEAPON_BONUS_STR_UP_II",
+    "BATTLE_ABILITY_TP_REDUCTION_GIANT_SLALOM_SLASH_N005P",
+    "BATTLE_ABILITY_ABILITY_DAMAGE_UP_LOD_SLASH_N005P",
+    "BATTLE_ABILITY_WEAPON_BONUS_MDF_UP"
+   ]
+  },
+  {
+   "template": "BATTLE_WEAPONABILITYTREE_P001_RANK3",
+   "nodes": [
+    "BATTLE_ABILITY_WEAPON_POWER_CORRECTION_DAMAGE_UP_II",
+    "BATTLE_ABILITY_TP_REDUCTION_COVER_N005P",
+    "BATTLE_ABILITY_SEL_FLAG_N005P"
+   ]
+  }
+ ],
+ "param_set": {
+  "fJumpForceUp": 2.0,
+  "fJumpForceDown": 2.0
+ }
+}

@@ -1,0 +1,94 @@
+# Allow-list: everything is private unless listed below.
+/*
+!/.gitignore
+!/.gitattributes
+!/README.md
+!/LICENSE
+!/SAVE_FORMAT.md
+!/SYSTEMS.md
+!/CUT_CONTENT.md
+# The 256-byte XOR key of the game's Lua scripts (user, 2026-11-23: publish it; tools/lubcrypt.py needs it)
+!/lub_key.bin
+
+# Docs for players
+!/docs/
+/docs/*
+!/docs/CHARACTERS.md
+
+# Mod sources (data edits and Lua; the game's own files are never included)
+!/mods/
+/mods/*
+!/mods/recruit_*_full/
+!/mods/join_release/
+!/mods/ch17g_split/
+!/mods/dragan_trap/
+!/mods/landroi_heroic_end/
+!/mods/b2_hooks/
+!/mods/c_hooks/
+!/mods/d_hooks/
+!/mods/cut_battles/
+!/mods/npc_prohibit/
+!/mods/fast_ch1/
+!/mods/unlock_repair/
+!/mods/release_log/
+# old spec copies and the cut battles' intermediate levels (only maps/out is built)
+/mods/recruit_*_full/spec_*backup*.json
+/mods/cut_battles/maps/rt/
+/mods/cut_battles/maps/shipped/
+/mods/cut_battles/maps/src/
+/mods/cut_battles/maps/wba/
+/mods/*/build/
+/mods/*/stage/
+
+# Build and save tools (third-party programs are downloaded separately, see README)
+!/tools/
+/tools/*
+!/tools/paths.py
+!/tools/dump_tables.py
+!/tools/build_mod.py
+!/tools/uasset_edit.py
+!/tools/dtparse.py
+!/tools/lubcrypt.py
+!/tools/tspak.py
+!/tools/aes_py.py
+!/tools/gen_recruit.py
+!/tools/verify_stage.py
+!/tools/kit_audit.py
+!/tools/kit_gaps.py
+!/tools/char_sheet.py
+!/tools/tssave.py
+!/tools/tsunits.py
+!/tools/tsshop.py
+!/tools/wbmap.py
+!/tools/flipbook_static.py
+!/tools/bp_sprite.py
+!/tools/sprite_clone.py
+!/tools/anim_check.py
+!/tools/unit_actor.py
+!/tools/role_diff.py
+!/tools/make_release.py
+!/tools/npc_audit.py
+!/tools/make_trap_bomb.py
+!/tools/saveeditor/
+
+# Never: game files, builds, caches, local settings
+*.uasset
+*.uexp
+*.ubulk
+*.umap
+*.pak
+*.lub
+*.luac
+*.sav
+__pycache__/
+*.pyc
+tools/local_paths.json
+tools/saveeditor/editor_data/
+tools/saveeditor/cache/
+tools/saveeditor/backups/
+/mods/c_hooks/make_hooks_v6.py
+
+# Exception (user, 2026-11-23: game-derived files ship as is): the built assets two release mods pack,
+# so the repository can build the whole release pak.
+!/mods/dragan_trap/src/out/**
+!/mods/cut_battles/maps/out/**

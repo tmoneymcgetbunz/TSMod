@@ -1,0 +1,46 @@
+ms02_x02/ms02_x02_battle_02: Julio (only in QUEST_INFO_TSMOD_CUT_TOURNEY)
+ms14_x29/ms14_x29_battle_02: Avlora (only in QUEST_INFO_TSMOD_CUT_RIVER)
+ms17b_x35/ms17b_x35_battle_01: Roland (only in QUEST_INFO_TSMOD_CUT_ROLAND)
+ms17f_x37/ms17f_x37_battle_01: Benedict (only in QUEST_INFO_TSMOD_CUT_BENEDICT)
+ms17r_x36/ms17r_x36_battle_01: Frederica (only in QUEST_INFO_TSMOD_CUT_FREDERICA)
+ms02_x02/ms02_x02_battle_01: Sorsley, Exharme
+ms03_x03/ms03_x03_battle_01: Sycras
+ms03_x04/ms03_x04_battle_01: Plinius, Exharme
+ms04_x05/ms04_x05_battle_01: Dragan
+ms07_x09/ms07_x09_battle_01: Landroi
+ms08a_x10/ms08a_x10_battle_01: Rufus
+ms08a_x11/ms08a_x11_battle_01: Rufus
+ms08b_x12/ms08b_x12_battle_01: Booker
+ms08b_x13/ms08b_x13_battle_01: Booker
+ms09_x15/ms09_x15_battle_01: Booker
+ms10a_x16/ms10a_x16_battle_01: Svarog, Sycras
+ms10a_x17/ms10a_x17_battle_01: Rufus, Clarus (background figure only: Clarus)
+ms10b_x19/ms10b_x19_battle_01: Sorsley, Exharme, Kamsell, Idore, Lyla (background figure only: Exharme, Kamsell, Idore, Lyla)
+ms11_x20/ms11_x20_battle_01: Rufus, Jerrom
+ms11_x21/ms11_x21_battle_01: Silvio, Rufus, Jerrom
+ms12_x22/ms12_x22_battle_01: Silvio, Rufus, Jerrom
+ms12_x23/ms12_x23_battle_01: Rufus, Jerrom
+ms13_x24/ms13_x24_battle_01: Sycras
+ms13_x25/ms13_x25_battle_01: Thalas
+ms13_x26/ms13_x26_battle_01: Erika, Thalas
+ms14_x27/ms14_x27_battle_01: Erika, Thalas
+ms15_x30/ms15_x30_battle_01: Patriatte, Symon
+ms15_x31/ms15_x31_battle_01: Patriatte
+ms15_x31/ms15_x31_battle_02: Patriatte
+ms17s_x38/ms17s_x38_battle_01: Exharme
+ms18b_x39/ms18b_x39_battle_01: Clarus
+ms18f_x41/ms18f_x41_battle_01: Lyla
+ms18r_x40/ms18r_x40_battle_01: Sycras, Exharme
+ms18s_x42/ms18s_x42_battle_01: Gustadolph, Svarog
+ms19_x45/ms19_x45_battle_02_old: Idore
+ms19b_x43/ms19b_x43_battle_01: Exharme
+ms19f_x45/ms19f_x45_battle_01: Kamsell
+ms19f_x45/ms19f_x45_battle_02: Idore
+ms19r_x44/ms19r_x44_battle_01: Gustadolph, Exharme
+ms19r_x44/ms19r_x44_battle_02: Svarog
+ms19s_x46/ms19s_x46_battle_01: Kamsell
+ms20s_x47/ms20s_x47_battle_01: Exharme
+ms21_x48/ms21_x48_battle_01: Lyla
+ms21_x48/ms21_x48_battle_02: Idore
+ms21s_x48/ms21s_x48_battle_01: Lyla
+ms21s_x48/ms21s_x48_battle_02: Idore

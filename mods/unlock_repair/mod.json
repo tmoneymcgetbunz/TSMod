@@ -1,0 +1,8 @@
+{
+ "name": "TSMod_Unlock_Repair",
+ "note": "On load, switch on the shops (smithy, tavern, sundry shop, item shop, NG+ scout) whose story point the save has passed but whose unlock is off: saves moved forward by the save editor's story jump never ran those story events. No effect on saves from normal play. Release candidate.",
+ "lua_append": {
+  "src/progress_append.lua": "Newera_Handling/Progress/Progress",
+  "src/worldmap_append.lua": "Newera_Handling/WorldMap/WorldMapMain"
+ }
+}

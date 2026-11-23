@@ -1,0 +1,237 @@
+{
+ "name": "TSMod_Landroi_HeroicEnd",
+ "note": "Landroi's weapon skill Heroic End (user, 2026-11-19; mods/landroi_last_breath_proposal.md). The ability row (BATTLE_ABILITY_POWER_SHOOT_N008P, in recruit_landroi_full) does nothing itself. This mod adds 8 two-turn level-II buffs (copies of B_*_UP_II_M), two BuffEffectAtk sets and two AttackParams that carry them, and the BattleBase Lua that applies both sets to every living ally with AddBuffDebuffToUnit and then KOs Landroi through the game's own fall-on-own-turn path.",
+ "lua_append": {
+  "src/battlebase_append.lua": "Newera_Handling/Battle/BattleBase"
+ },
+ "dt_edits": [
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_BuffEffect",
+   "add_row": "BATTLE_BUFFEFFECT_B_STR_UP_II_M_HEROIC_N008P",
+   "copy_from": "BATTLE_BUFFEFFECT_B_STR_UP_II_M"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_BuffEffect",
+   "row": "BATTLE_BUFFEFFECT_B_STR_UP_II_M_HEROIC_N008P",
+   "field": "iDurationTurn",
+   "value": 2
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_BuffEffect",
+   "add_row": "BATTLE_BUFFEFFECT_B_INT_UP_II_M_HEROIC_N008P",
+   "copy_from": "BATTLE_BUFFEFFECT_B_INT_UP_II_M"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_BuffEffect",
+   "row": "BATTLE_BUFFEFFECT_B_INT_UP_II_M_HEROIC_N008P",
+   "field": "iDurationTurn",
+   "value": 2
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_BuffEffect",
+   "add_row": "BATTLE_BUFFEFFECT_B_DEF_UP_II_M_HEROIC_N008P",
+   "copy_from": "BATTLE_BUFFEFFECT_B_DEF_UP_II_M"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_BuffEffect",
+   "row": "BATTLE_BUFFEFFECT_B_DEF_UP_II_M_HEROIC_N008P",
+   "field": "iDurationTurn",
+   "value": 2
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_BuffEffect",
+   "add_row": "BATTLE_BUFFEFFECT_B_MDF_UP_II_M_HEROIC_N008P",
+   "copy_from": "BATTLE_BUFFEFFECT_B_MDF_UP_II_M"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_BuffEffect",
+   "row": "BATTLE_BUFFEFFECT_B_MDF_UP_II_M_HEROIC_N008P",
+   "field": "iDurationTurn",
+   "value": 2
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_BuffEffect",
+   "add_row": "BATTLE_BUFFEFFECT_B_DEX_UP_II_M_HEROIC_N008P",
+   "copy_from": "BATTLE_BUFFEFFECT_B_DEX_UP_II_M"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_BuffEffect",
+   "row": "BATTLE_BUFFEFFECT_B_DEX_UP_II_M_HEROIC_N008P",
+   "field": "iDurationTurn",
+   "value": 2
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_BuffEffect",
+   "add_row": "BATTLE_BUFFEFFECT_B_AGI_UP_II_M_HEROIC_N008P",
+   "copy_from": "BATTLE_BUFFEFFECT_B_AGI_UP_II_M"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_BuffEffect",
+   "row": "BATTLE_BUFFEFFECT_B_AGI_UP_II_M_HEROIC_N008P",
+   "field": "iDurationTurn",
+   "value": 2
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_BuffEffect",
+   "add_row": "BATTLE_BUFFEFFECT_B_LUK_UP_II_M_HEROIC_N008P",
+   "copy_from": "BATTLE_BUFFEFFECT_B_LUK_UP_II_M"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_BuffEffect",
+   "row": "BATTLE_BUFFEFFECT_B_LUK_UP_II_M_HEROIC_N008P",
+   "field": "iDurationTurn",
+   "value": 2
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_BuffEffect",
+   "add_row": "BATTLE_BUFFEFFECT_B_SPD_UP_II_M_HEROIC_N008P",
+   "copy_from": "BATTLE_BUFFEFFECT_B_SPD_UP_II_M"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_BuffEffect",
+   "row": "BATTLE_BUFFEFFECT_B_SPD_UP_II_M_HEROIC_N008P",
+   "field": "iDurationTurn",
+   "value": 2
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_BuffEffectAtk",
+   "add_row": "BATTLE_BUFFEFFECTATK_HEROIC_END_A_N008P",
+   "copy_from": "BATTLE_BUFFEFFECTATK_B_AROUND_STATUS_UP"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_BuffEffectAtk",
+   "row": "BATTLE_BUFFEFFECTATK_HEROIC_END_A_N008P",
+   "field": "BuffEffect1",
+   "value": "BATTLE_BUFFEFFECT_B_STR_UP_II_M_HEROIC_N008P"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_BuffEffectAtk",
+   "row": "BATTLE_BUFFEFFECTATK_HEROIC_END_A_N008P",
+   "field": "fApplyPer1",
+   "value": 1.0
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_BuffEffectAtk",
+   "row": "BATTLE_BUFFEFFECTATK_HEROIC_END_A_N008P",
+   "field": "BuffEffect2",
+   "value": "BATTLE_BUFFEFFECT_B_INT_UP_II_M_HEROIC_N008P"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_BuffEffectAtk",
+   "row": "BATTLE_BUFFEFFECTATK_HEROIC_END_A_N008P",
+   "field": "fApplyPer2",
+   "value": 1.0
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_BuffEffectAtk",
+   "row": "BATTLE_BUFFEFFECTATK_HEROIC_END_A_N008P",
+   "field": "BuffEffect3",
+   "value": "BATTLE_BUFFEFFECT_B_DEF_UP_II_M_HEROIC_N008P"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_BuffEffectAtk",
+   "row": "BATTLE_BUFFEFFECTATK_HEROIC_END_A_N008P",
+   "field": "fApplyPer3",
+   "value": 1.0
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_BuffEffectAtk",
+   "row": "BATTLE_BUFFEFFECTATK_HEROIC_END_A_N008P",
+   "field": "BuffEffect4",
+   "value": "BATTLE_BUFFEFFECT_B_MDF_UP_II_M_HEROIC_N008P"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_BuffEffectAtk",
+   "row": "BATTLE_BUFFEFFECTATK_HEROIC_END_A_N008P",
+   "field": "fApplyPer4",
+   "value": 1.0
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_AttackParam",
+   "add_row": "BATTLE_ATTACKPARAM_HEROIC_END_A_N008P",
+   "copy_from": "BATTLE_ATTACKPARAM_ABILITY_MOV_UP"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_AttackParam",
+   "row": "BATTLE_ATTACKPARAM_HEROIC_END_A_N008P",
+   "field": "BuffEffectId",
+   "value": "BATTLE_BUFFEFFECTATK_HEROIC_END_A_N008P"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_AttackParam",
+   "row": "BATTLE_ATTACKPARAM_HEROIC_END_A_N008P",
+   "field": "SourceId",
+   "value": "None"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_BuffEffectAtk",
+   "add_row": "BATTLE_BUFFEFFECTATK_HEROIC_END_B_N008P",
+   "copy_from": "BATTLE_BUFFEFFECTATK_B_AROUND_STATUS_UP"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_BuffEffectAtk",
+   "row": "BATTLE_BUFFEFFECTATK_HEROIC_END_B_N008P",
+   "field": "BuffEffect1",
+   "value": "BATTLE_BUFFEFFECT_B_DEX_UP_II_M_HEROIC_N008P"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_BuffEffectAtk",
+   "row": "BATTLE_BUFFEFFECTATK_HEROIC_END_B_N008P",
+   "field": "fApplyPer1",
+   "value": 1.0
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_BuffEffectAtk",
+   "row": "BATTLE_BUFFEFFECTATK_HEROIC_END_B_N008P",
+   "field": "BuffEffect2",
+   "value": "BATTLE_BUFFEFFECT_B_AGI_UP_II_M_HEROIC_N008P"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_BuffEffectAtk",
+   "row": "BATTLE_BUFFEFFECTATK_HEROIC_END_B_N008P",
+   "field": "fApplyPer2",
+   "value": 1.0
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_BuffEffectAtk",
+   "row": "BATTLE_BUFFEFFECTATK_HEROIC_END_B_N008P",
+   "field": "BuffEffect3",
+   "value": "BATTLE_BUFFEFFECT_B_LUK_UP_II_M_HEROIC_N008P"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_BuffEffectAtk",
+   "row": "BATTLE_BUFFEFFECTATK_HEROIC_END_B_N008P",
+   "field": "fApplyPer3",
+   "value": 1.0
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_BuffEffectAtk",
+   "row": "BATTLE_BUFFEFFECTATK_HEROIC_END_B_N008P",
+   "field": "BuffEffect4",
+   "value": "BATTLE_BUFFEFFECT_B_SPD_UP_II_M_HEROIC_N008P"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_BuffEffectAtk",
+   "row": "BATTLE_BUFFEFFECTATK_HEROIC_END_B_N008P",
+   "field": "fApplyPer4",
+   "value": 1.0
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_AttackParam",
+   "add_row": "BATTLE_ATTACKPARAM_HEROIC_END_B_N008P",
+   "copy_from": "BATTLE_ATTACKPARAM_ABILITY_MOV_UP"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_AttackParam",
+   "row": "BATTLE_ATTACKPARAM_HEROIC_END_B_N008P",
+   "field": "BuffEffectId",
+   "value": "BATTLE_BUFFEFFECTATK_HEROIC_END_B_N008P"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_AttackParam",
+   "row": "BATTLE_ATTACKPARAM_HEROIC_END_B_N008P",
+   "field": "SourceId",
+   "value": "None"
+  }
+ ]
+}

@@ -1,0 +1,281 @@
+{
+ "name": "TSMod_B2_Hooks",
+ "note": "Batch B2 Lua (mods/batchB2_final.md): Thalas's Gale of State carries fire and ice 2 squares downwind (StartFire / StartFreeze, terrain read with IsBurning / IsFreezing before the cast); Sorsley's Salt Tax (Test 34b probe) drops one gold purse on his own square: total = 10 x the battle's recommended level per enemy hit, rounded down to the purse ladder (ITEM_DROP_TSMOD_SALTTAX<n>G rows, copies of a treasure drop with only ITEM_MONEY). Puddles can't be carried: no Lua query reads wet squares [read].",
+ "lua_append": {
+  "src/battlebase_append.lua": "Newera_Handling/Battle/BattleBase"
+ },
+ "dt_edits": [
+  {
+   "table": "Newera/Data/DataTables/GOP_Item_Drop",
+   "add_row": "ITEM_DROP_TSMOD_SALTTAX50G",
+   "copy_from": "ITEM_DROP_TREASURE_sp01_02"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Item_Drop",
+   "row": "ITEM_DROP_TSMOD_SALTTAX50G",
+   "field": "DropItemA1",
+   "value": "ITEM_MONEY"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Item_Drop",
+   "row": "ITEM_DROP_TSMOD_SALTTAX50G",
+   "field": "iDropNumberA1",
+   "value": 50
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Item_Drop",
+   "add_row": "ITEM_DROP_TSMOD_SALTTAX100G",
+   "copy_from": "ITEM_DROP_TREASURE_sp01_02"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Item_Drop",
+   "row": "ITEM_DROP_TSMOD_SALTTAX100G",
+   "field": "DropItemA1",
+   "value": "ITEM_MONEY"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Item_Drop",
+   "row": "ITEM_DROP_TSMOD_SALTTAX100G",
+   "field": "iDropNumberA1",
+   "value": 100
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Item_Drop",
+   "add_row": "ITEM_DROP_TSMOD_SALTTAX150G",
+   "copy_from": "ITEM_DROP_TREASURE_sp01_02"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Item_Drop",
+   "row": "ITEM_DROP_TSMOD_SALTTAX150G",
+   "field": "DropItemA1",
+   "value": "ITEM_MONEY"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Item_Drop",
+   "row": "ITEM_DROP_TSMOD_SALTTAX150G",
+   "field": "iDropNumberA1",
+   "value": 150
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Item_Drop",
+   "add_row": "ITEM_DROP_TSMOD_SALTTAX200G",
+   "copy_from": "ITEM_DROP_TREASURE_sp01_02"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Item_Drop",
+   "row": "ITEM_DROP_TSMOD_SALTTAX200G",
+   "field": "DropItemA1",
+   "value": "ITEM_MONEY"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Item_Drop",
+   "row": "ITEM_DROP_TSMOD_SALTTAX200G",
+   "field": "iDropNumberA1",
+   "value": 200
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Item_Drop",
+   "add_row": "ITEM_DROP_TSMOD_SALTTAX300G",
+   "copy_from": "ITEM_DROP_TREASURE_sp01_02"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Item_Drop",
+   "row": "ITEM_DROP_TSMOD_SALTTAX300G",
+   "field": "DropItemA1",
+   "value": "ITEM_MONEY"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Item_Drop",
+   "row": "ITEM_DROP_TSMOD_SALTTAX300G",
+   "field": "iDropNumberA1",
+   "value": 300
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Item_Drop",
+   "add_row": "ITEM_DROP_TSMOD_SALTTAX400G",
+   "copy_from": "ITEM_DROP_TREASURE_sp01_02"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Item_Drop",
+   "row": "ITEM_DROP_TSMOD_SALTTAX400G",
+   "field": "DropItemA1",
+   "value": "ITEM_MONEY"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Item_Drop",
+   "row": "ITEM_DROP_TSMOD_SALTTAX400G",
+   "field": "iDropNumberA1",
+   "value": 400
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Item_Drop",
+   "add_row": "ITEM_DROP_TSMOD_SALTTAX500G",
+   "copy_from": "ITEM_DROP_TREASURE_sp01_02"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Item_Drop",
+   "row": "ITEM_DROP_TSMOD_SALTTAX500G",
+   "field": "DropItemA1",
+   "value": "ITEM_MONEY"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Item_Drop",
+   "row": "ITEM_DROP_TSMOD_SALTTAX500G",
+   "field": "iDropNumberA1",
+   "value": 500
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Item_Drop",
+   "add_row": "ITEM_DROP_TSMOD_SALTTAX750G",
+   "copy_from": "ITEM_DROP_TREASURE_sp01_02"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Item_Drop",
+   "row": "ITEM_DROP_TSMOD_SALTTAX750G",
+   "field": "DropItemA1",
+   "value": "ITEM_MONEY"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Item_Drop",
+   "row": "ITEM_DROP_TSMOD_SALTTAX750G",
+   "field": "iDropNumberA1",
+   "value": 750
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Item_Drop",
+   "add_row": "ITEM_DROP_TSMOD_SALTTAX1000G",
+   "copy_from": "ITEM_DROP_TREASURE_sp01_02"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Item_Drop",
+   "row": "ITEM_DROP_TSMOD_SALTTAX1000G",
+   "field": "DropItemA1",
+   "value": "ITEM_MONEY"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Item_Drop",
+   "row": "ITEM_DROP_TSMOD_SALTTAX1000G",
+   "field": "iDropNumberA1",
+   "value": 1000
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Item_Drop",
+   "add_row": "ITEM_DROP_TSMOD_SALTTAX1250G",
+   "copy_from": "ITEM_DROP_TREASURE_sp01_02"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Item_Drop",
+   "row": "ITEM_DROP_TSMOD_SALTTAX1250G",
+   "field": "DropItemA1",
+   "value": "ITEM_MONEY"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Item_Drop",
+   "row": "ITEM_DROP_TSMOD_SALTTAX1250G",
+   "field": "iDropNumberA1",
+   "value": 1250
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Item_Drop",
+   "add_row": "ITEM_DROP_TSMOD_SALTTAX1500G",
+   "copy_from": "ITEM_DROP_TREASURE_sp01_02"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Item_Drop",
+   "row": "ITEM_DROP_TSMOD_SALTTAX1500G",
+   "field": "DropItemA1",
+   "value": "ITEM_MONEY"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Item_Drop",
+   "row": "ITEM_DROP_TSMOD_SALTTAX1500G",
+   "field": "iDropNumberA1",
+   "value": 1500
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Item_Drop",
+   "add_row": "ITEM_DROP_TSMOD_SALTTAX2000G",
+   "copy_from": "ITEM_DROP_TREASURE_sp01_02"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Item_Drop",
+   "row": "ITEM_DROP_TSMOD_SALTTAX2000G",
+   "field": "DropItemA1",
+   "value": "ITEM_MONEY"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Item_Drop",
+   "row": "ITEM_DROP_TSMOD_SALTTAX2000G",
+   "field": "iDropNumberA1",
+   "value": 2000
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Item_Drop",
+   "add_row": "ITEM_DROP_TSMOD_SALTTAX2500G",
+   "copy_from": "ITEM_DROP_TREASURE_sp01_02"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Item_Drop",
+   "row": "ITEM_DROP_TSMOD_SALTTAX2500G",
+   "field": "DropItemA1",
+   "value": "ITEM_MONEY"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Item_Drop",
+   "row": "ITEM_DROP_TSMOD_SALTTAX2500G",
+   "field": "iDropNumberA1",
+   "value": 2500
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Item_Drop",
+   "add_row": "ITEM_DROP_TSMOD_SALTTAX3000G",
+   "copy_from": "ITEM_DROP_TREASURE_sp01_02"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Item_Drop",
+   "row": "ITEM_DROP_TSMOD_SALTTAX3000G",
+   "field": "DropItemA1",
+   "value": "ITEM_MONEY"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Item_Drop",
+   "row": "ITEM_DROP_TSMOD_SALTTAX3000G",
+   "field": "iDropNumberA1",
+   "value": 3000
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Item_Drop",
+   "add_row": "ITEM_DROP_TSMOD_SALTTAX4000G",
+   "copy_from": "ITEM_DROP_TREASURE_sp01_02"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Item_Drop",
+   "row": "ITEM_DROP_TSMOD_SALTTAX4000G",
+   "field": "DropItemA1",
+   "value": "ITEM_MONEY"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Item_Drop",
+   "row": "ITEM_DROP_TSMOD_SALTTAX4000G",
+   "field": "iDropNumberA1",
+   "value": 4000
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Item_Drop",
+   "add_row": "ITEM_DROP_TSMOD_SALTTAX5000G",
+   "copy_from": "ITEM_DROP_TREASURE_sp01_02"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Item_Drop",
+   "row": "ITEM_DROP_TSMOD_SALTTAX5000G",
+   "field": "DropItemA1",
+   "value": "ITEM_MONEY"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Item_Drop",
+   "row": "ITEM_DROP_TSMOD_SALTTAX5000G",
+   "field": "iDropNumberA1",
+   "value": 5000
+  }
+ ]
+}

@@ -1,0 +1,121 @@
+{
+ "name": "TSMod_D_Hooks",
+ "note": "Batch D Lua: logs the Puppet Master summon (units, team, AI type after the cast; every turn start). Writes only with mods/test_logging. Place after mods/c_hooks. Summon stats (user, 2026-11-21: flatten to match everyone else): Puppet Master summons UNIT_MASTER_CH_N201P, a copy of the Hierophant unit whose own stat row BATTLE_UNITPARAM_CH_N201P has Idore's base stats, rank-3 growth, movement and normal status resistance. The summon finds its stat row by unit name (N201_2 -> FName base N201 -> BATTLE_UNITPARAM_CH_N201, like P100/M071) [inferred]. The story boss keeps BATTLE_UNITPARAM_CH_N201.",
+ "lua_append": {
+  "src/battlebase_append.lua": "Newera_Handling/Battle/BattleBase"
+ },
+ "dt_edits": [
+  {
+   "table": "Newera/Data/DataTables/GOP_Unit_Master",
+   "add_row": "UNIT_MASTER_CH_N201P",
+   "copy_from": "UNIT_MASTER_CH_N201_2"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_UnitParam",
+   "add_row": "BATTLE_UNITPARAM_CH_N201P",
+   "copy_from": "BATTLE_UNITPARAM_CH_N201"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_UnitParam",
+   "row": "BATTLE_UNITPARAM_CH_N201P",
+   "field": "UnitGrowthTable",
+   "value": "BATTLE_UNITGROWTH_CH_N206P_R3"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_UnitParam",
+   "row": "BATTLE_UNITPARAM_CH_N201P",
+   "field": "UnitGrowthTable2",
+   "value": "BATTLE_UNITGROWTH_CH_N206P_R3"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_UnitParam",
+   "row": "BATTLE_UNITPARAM_CH_N201P",
+   "field": "UnitGrowthTable3",
+   "value": "BATTLE_UNITGROWTH_CH_N206P_R3"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_UnitParam",
+   "row": "BATTLE_UNITPARAM_CH_N201P",
+   "field": "fUnitResistStatus",
+   "value": 1.0
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_UnitParam",
+   "row": "BATTLE_UNITPARAM_CH_N201P",
+   "field": "fMoveForce",
+   "value": 300.0
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_UnitParam",
+   "row": "BATTLE_UNITPARAM_CH_N201P",
+   "field": "fJumpForceUp",
+   "value": 2.0
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_UnitParam",
+   "row": "BATTLE_UNITPARAM_CH_N201P",
+   "field": "fJumpForceDown",
+   "value": 2.0
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_UnitParam",
+   "row": "BATTLE_UNITPARAM_CH_N201P",
+   "field": "fUnitSpeed",
+   "value": 109.0
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_UnitParam",
+   "row": "BATTLE_UNITPARAM_CH_N201P",
+   "field": "fMaxHitPoint",
+   "value": 120.0
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_UnitParam",
+   "row": "BATTLE_UNITPARAM_CH_N201P",
+   "field": "fStrength",
+   "value": 6.0
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_UnitParam",
+   "row": "BATTLE_UNITPARAM_CH_N201P",
+   "field": "fIntelligence",
+   "value": 12.0
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_UnitParam",
+   "row": "BATTLE_UNITPARAM_CH_N201P",
+   "field": "fDefence",
+   "value": 7.0
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_UnitParam",
+   "row": "BATTLE_UNITPARAM_CH_N201P",
+   "field": "fMagicDefence",
+   "value": 14.0
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_UnitParam",
+   "row": "BATTLE_UNITPARAM_CH_N201P",
+   "field": "fDexterity",
+   "value": 10.0
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_UnitParam",
+   "row": "BATTLE_UNITPARAM_CH_N201P",
+   "field": "fAgility",
+   "value": 10.0
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Ability",
+   "row": "BATTLE_ABILITY_PUPPET_SUMMON_N206P",
+   "field": "FNameParam1",
+   "value": "UNIT_MASTER_CH_N201P"
+  }
+ ],
+ "unit_actor": [
+  {
+   "unit": "UNIT_MASTER_CH_N201P",
+   "like": "UNIT_MASTER_CH_N201_2"
+  }
+ ]
+}

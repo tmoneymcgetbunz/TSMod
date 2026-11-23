@@ -1,0 +1,196 @@
+{
+ "id": "N103",
+ "unit_master": "UNIT_MASTER_CH_N103",
+ "party_param": "BATTLE_UNITPARAM_CH_N103_PARTY",
+ "param_template": "BATTLE_UNITPARAM_CH_N103",
+ "stats": {
+  "elite_source": "BATTLE_UNITGROWTH_CH_N103",
+  "keep_from_source": [
+   "fMoveForce",
+   "fJumpForceUp",
+   "fJumpForceDown",
+   "fGainTacticalPoint"
+  ],
+  "scale": {
+   "fMaxHitPoint": 0.51,
+   "fStrength": 0.97,
+   "fIntelligence": 0.98,
+   "fDefence": 0.94,
+   "fMagicDefence": 0.93
+  },
+  "speed_at_50": 26
+ },
+ "own_abilities": [
+  {
+   "id": "BATTLE_ABILITY_CYCLONE_N103P",
+   "copy_from": "BATTLE_ABILITY_CYCLONE",
+   "name": "Gale of State",
+   "help": "Deal wind-type magic damage in a cone. Fire and ice in its path are blown 2 squares onward.",
+   "set": {
+    "eAbilityClassType": "EAbilityClassType::NONE"
+   },
+   "attack": {
+    "id": "BATTLE_ATTACKPARAM_ABILITY_CYCLONE_N103P",
+    "copy_from": "BATTLE_ATTACKPARAM_ABILITY_CYCLONE",
+    "set": {
+     "FlipbookId": "ABL_WIND_MAGIC",
+     "eBattleSequence": "EBattleSequence::LS_ABILITY_WIND_MAGIC",
+     "fUseTP": 4.0,
+     "fPower": 1.8,
+     "SourceId": "None"
+    }
+   }
+  }
+ ],
+ "classes": [
+  {
+   "rank": 1,
+   "template": "BATTLE_JOB_CH_P018_1",
+   "learn": [
+    [
+     1,
+     "BATTLE_ABILITY_TORNADO"
+    ],
+    [
+     1,
+     "BATTLE_ABILITY_SIS_FEELINGS"
+    ],
+    [
+     3,
+     "BATTLE_ABILITY_KB_WIND_N103"
+    ]
+   ],
+   "name_text": "TEXT_JOB_NAME_N103_M"
+  },
+  {
+   "rank": 2,
+   "template": "BATTLE_JOB_CH_P018_2",
+   "learn": [
+    [
+     14,
+     "BATTLE_ABILITY_FIRE_CUT"
+    ],
+    [
+     18,
+     "BATTLE_ABILITY_WIND_UNIT"
+    ]
+   ],
+   "name": "Gale Minister"
+  },
+  {
+   "rank": 3,
+   "template": "BATTLE_JOB_CH_P018_3",
+   "learn": [
+    [
+     22,
+     "BATTLE_ABILITY_RESIST_POISON_SILENSE_TAUNT"
+    ],
+    [
+     22,
+     "BATTLE_ABILITY_RESIST_CHARM_DEATH"
+    ]
+   ],
+   "name": "Prime Minister"
+  }
+ ],
+ "class_help": "Aesfrost's prime minister, the Archduke's younger brother. Where his sister lights the fires, he commands the wind.",
+ "job_type": "EJobType::WIZARD",
+ "weapon": {
+  "attack_template": "BATTLE_ATTACKPARAM_WEAPON_N_103",
+  "power": 5.0,
+  "icon": "EWeaponIconType::BOOK",
+  "ranks": [
+   {
+    "template": "BATTLE_WEAPON_P018",
+    "name_text": "TEXT_WEAPON_NAME_N103"
+   },
+   {
+    "template": "BATTLE_WEAPON_RANK2_P018",
+    "name": "Peafowl's Gale",
+    "rankup_material": "ITEM_UPGRADEMATERIAL_RANKUP_WING"
+   },
+   {
+    "template": "BATTLE_WEAPON_RANK3_P018",
+    "name": "Peafowl Ascendant",
+    "rankup_material": "ITEM_UPGRADEMATERIAL_RANKUP_FLOWER",
+    "weapon_skill": "BATTLE_ABILITY_CYCLONE_N103P"
+   }
+  ]
+ },
+ "tree_abilities": [
+  {
+   "id": "BATTLE_ABILITY_ABILITY_DAMAGE_UP_TORNADO_N103P",
+   "template": "BATTLE_ABILITY_ABILITY_DAMAGE_UP_FIRE_MAGIC",
+   "targets": [
+    "BATTLE_ABILITY_TORNADO"
+   ],
+   "name": "Windstorm Damage Up",
+   "help": "Increases damage dealt by Windstorm."
+  },
+  {
+   "id": "BATTLE_ABILITY_ABILITY_RANGE_UP_KB_WIND_N103P",
+   "template": "BATTLE_ABILITY_ABILITY_RANGE_UPASSAULT",
+   "targets": [
+    "BATTLE_ABILITY_KB_WIND_N103"
+   ],
+   "name": "Fierce Wind Range +1",
+   "help": "Increases the range of Fierce Wind by 1."
+  },
+  {
+   "id": "BATTLE_ABILITY_ABILITY_RANGE_UP_FIRE_CUT_N103P",
+   "template": "BATTLE_ABILITY_ABILITY_RANGE_UPASSAULT",
+   "targets": [
+    "BATTLE_ABILITY_FIRE_CUT"
+   ],
+   "name": "Flame Ward Range +1",
+   "help": "Increases the range of Flame Ward by 1."
+  },
+  {
+   "id": "BATTLE_ABILITY_TP_REDUCTION_CYCLONE_N103P",
+   "template": "BATTLE_ABILITY_TP_REDUCTION_TWO_STAGE_THRUST",
+   "targets": [
+    "BATTLE_ABILITY_CYCLONE_N103P"
+   ],
+   "name": "Gale of State TP -1",
+   "help": "Decreases TP cost of Gale of State by 1."
+  }
+ ],
+ "tree": [
+  {
+   "template": "BATTLE_WEAPONABILITYTREE_P001_RANK1",
+   "nodes": [
+    "BATTLE_ABILITY_WEAPON_POWER_CORRECTION_DAMAGE_UP",
+    "BATTLE_ABILITY_WEAPON_BONUS_HP_UP",
+    "BATTLE_ABILITY_WEAPON_BONUS_INT_UP",
+    "BATTLE_ABILITY_WEAPON_BONUS_MDF_UP",
+    "BATTLE_ABILITY_ABILITY_DAMAGE_UP_TORNADO_N103P"
+   ]
+  },
+  {
+   "template": "BATTLE_WEAPONABILITYTREE_P001_RANK2",
+   "nodes": [
+    "BATTLE_ABILITY_WEAPON_POWER_CORRECTION_DAMAGE_UP_RANK2",
+    "BATTLE_ABILITY_WEAPON_BONUS_INT_UP_II",
+    "BATTLE_ABILITY_ABILITY_RANGE_UP_KB_WIND_N103P",
+    "BATTLE_ABILITY_ABILITY_RANGE_UP_FIRE_CUT_N103P",
+    "BATTLE_ABILITY_WEAPON_BONUS_DEF_UP"
+   ]
+  },
+  {
+   "template": "BATTLE_WEAPONABILITYTREE_P001_RANK3",
+   "nodes": [
+    "BATTLE_ABILITY_WEAPON_POWER_CORRECTION_DAMAGE_UP_II",
+    "BATTLE_ABILITY_TP_REDUCTION_CYCLONE_N103P",
+    "BATTLE_ABILITY_CYCLONE_N103P"
+   ]
+  }
+ ],
+ "param_set": {
+  "eUnitCamp": "EUnitCamp::FRIEND",
+  "fUnitResistStatus": 1.0,
+  "DropItem": "None",
+  "EquippedAccessary1": "None",
+  "fJumpForceUp": 2.0,
+  "fJumpForceDown": 2.0
+ }
+}

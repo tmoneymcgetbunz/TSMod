@@ -1,0 +1,197 @@
+{
+ "id": "N104",
+ "unit_master": "UNIT_MASTER_CH_N104",
+ "party_param": "BATTLE_UNITPARAM_CH_N104_PARTY",
+ "param_template": "BATTLE_UNITPARAM_CH_P034",
+ "stats": {
+  "elite_source": "BATTLE_UNITGROWTH_CH_N104",
+  "keep_from_source": [
+   "fMoveForce",
+   "fJumpForceUp",
+   "fJumpForceDown",
+   "fUnitSpeed",
+   "fGainTacticalPoint"
+  ]
+ },
+ "own_abilities": [
+  {
+   "id": "BATTLE_ABILITY_FIRE_ATTACK_N104P",
+   "copy_from": "BATTLE_ABILITY_FIRE_ATTACK",
+   "name": "Forge Strike",
+   "help": "Deal fire-type physical damage to a single enemy and set the ground ablaze.",
+   "set": {
+    "iSortNumber": 1101
+   },
+   "attack": {
+    "id": "BATTLE_ATTACKPARAM_ABILITY_FIRE_ATTACK_N104P",
+    "copy_from": "BATTLE_ATTACKPARAM_ABILITY_FIRE_ATTACK",
+    "set": {
+     "FlipbookId": "ABL_FULL_SWING_3",
+     "eBattleSequence": "EBattleSequence::LS_ABILITY_FULL_SWING_2"
+    }
+   }
+  },
+  {
+   "id": "BATTLE_ABILITY_FORTRESS_N104P",
+   "copy_from": "BATTLE_ABILITY_FORTRESS",
+   "set": {
+    "iSortNumber": 1102
+   },
+   "attack": {
+    "id": "BATTLE_ATTACKPARAM_ABILITY_FORTRESS_N104P",
+    "copy_from": "BATTLE_ATTACKPARAM_ABILITY_FORTRESS",
+    "set": {
+     "FlipbookId": "ABL_MOTIVATION",
+     "eBattleSequence": "EBattleSequence::LS_ABILITY_MOTIVATION"
+    }
+   }
+  },
+  {
+   "id": "BATTLE_ABILITY_MOTIVATION_N104P",
+   "copy_from": "BATTLE_ABILITY_MOTIVATION",
+   "set": {
+    "iSortNumber": 1103
+   }
+  }
+ ],
+ "classes": [
+  {
+   "rank": 1,
+   "template": "BATTLE_JOB_CH_P016_1",
+   "learn": [
+    [
+     1,
+     "BATTLE_ABILITY_KB_N104"
+    ],
+    [
+     1,
+     "BATTLE_ABILITY_INVALID_FLAME"
+    ],
+    [
+     3,
+     "BATTLE_ABILITY_FIRE_ATTACK_N104P"
+    ]
+   ],
+   "name_text": "TEXT_JOB_NAME_N104_M"
+  },
+  {
+   "rank": 2,
+   "template": "BATTLE_JOB_CH_P016_2",
+   "learn": [
+    [
+     14,
+     "BATTLE_ABILITY_FORTRESS_N104P"
+    ],
+    [
+     18,
+     "BATTLE_ABILITY_MOTIVATION_N104P"
+    ]
+   ],
+   "name_text": "TEXT_JOB_NAME_N104_M_2"
+  },
+  {
+   "rank": 3,
+   "template": "BATTLE_JOB_CH_P016_3",
+   "learn": [
+    [
+     22,
+     "BATTLE_ABILITY_RESIST_CHARM_DEATH"
+    ]
+   ],
+   "name": "Iron Lord"
+  }
+ ],
+ "class_help": "Steward of Twinsgate and brother to the late archduke. His forge-hot hammer and iron will hold the line.",
+ "job_type": "EJobType::SWORDSMAN",
+ "weapon": {
+  "attack_template": "BATTLE_ATTACKPARAM_WEAPON_N_104",
+  "power": 5.0,
+  "icon": "EWeaponIconType::HAMMER",
+  "ranks": [
+   {
+    "template": "BATTLE_WEAPON_P016",
+    "name_text": "TEXT_WEAPON_NAME_N104"
+   },
+   {
+    "template": "BATTLE_WEAPON_RANK2_P016",
+    "name": "Forged Hammer",
+    "rankup_material": "ITEM_UPGRADEMATERIAL_RANKUP_STONE"
+   },
+   {
+    "template": "BATTLE_WEAPON_RANK3_P016",
+    "name": "Magma Hammer",
+    "rankup_material": "ITEM_UPGRADEMATERIAL_RANKUP_SHINING_STONE",
+    "weapon_skill": "BATTLE_ABILITY_ERUPTION"
+   }
+  ],
+  "weapon_skill_id": "BATTLE_ABILITY_ERUPTION_N104P"
+ },
+ "tree_abilities": [
+  {
+   "id": "BATTLE_ABILITY_ABILITY_DAMAGE_UP_FIRE_ATTACK_N104P",
+   "template": "BATTLE_ABILITY_ABILITY_DAMAGE_UP_INTIMIDATION_SWORD",
+   "targets": [
+    "BATTLE_ABILITY_FIRE_ATTACK_N104P"
+   ],
+   "name": "Forge Strike Damage Up",
+   "help": "Increases damage dealt by Forge Strike."
+  },
+  {
+   "id": "BATTLE_ABILITY_TP_REDUCTION_KB_N104P",
+   "template": "BATTLE_ABILITY_TP_REDUCTION_TWO_STAGE_THRUST",
+   "targets": [
+    "BATTLE_ABILITY_KB_N104"
+   ],
+   "name": "Knock Back TP -1",
+   "help": "Decreases TP cost of Knock Back by 1."
+  },
+  {
+   "id": "BATTLE_ABILITY_TP_REDUCTION_FIRE_ATTACK_N104P",
+   "template": "BATTLE_ABILITY_TP_REDUCTION_TWO_STAGE_THRUST",
+   "targets": [
+    "BATTLE_ABILITY_FIRE_ATTACK_N104P"
+   ],
+   "name": "Forge Strike TP -1",
+   "help": "Decreases TP cost of Forge Strike by 1."
+  },
+  {
+   "id": "BATTLE_ABILITY_ABILITY_DAMAGE_UP_KB_N104P",
+   "template": "BATTLE_ABILITY_ABILITY_DAMAGE_UP_INTIMIDATION_SWORD",
+   "targets": [
+    "BATTLE_ABILITY_KB_N104"
+   ],
+   "name": "Knock Back Damage Up",
+   "help": "Increases damage dealt by Knock Back."
+  }
+ ],
+ "tree": [
+  {
+   "template": "BATTLE_WEAPONABILITYTREE_P001_RANK1",
+   "nodes": [
+    "BATTLE_ABILITY_WEAPON_POWER_CORRECTION_DAMAGE_UP",
+    "BATTLE_ABILITY_WEAPON_BONUS_HP_UP",
+    "BATTLE_ABILITY_WEAPON_BONUS_STR_UP",
+    "BATTLE_ABILITY_WEAPON_BONUS_DEF_UP",
+    "BATTLE_ABILITY_ABILITY_DAMAGE_UP_FIRE_ATTACK_N104P"
+   ]
+  },
+  {
+   "template": "BATTLE_WEAPONABILITYTREE_P001_RANK2",
+   "nodes": [
+    "BATTLE_ABILITY_WEAPON_POWER_CORRECTION_DAMAGE_UP_RANK2",
+    "BATTLE_ABILITY_WEAPON_BONUS_STR_UP_II",
+    "BATTLE_ABILITY_TP_REDUCTION_KB_N104P",
+    "BATTLE_ABILITY_TP_REDUCTION_FIRE_ATTACK_N104P",
+    "BATTLE_ABILITY_WEAPON_BONUS_MDF_UP"
+   ]
+  },
+  {
+   "template": "BATTLE_WEAPONABILITYTREE_P001_RANK3",
+   "nodes": [
+    "BATTLE_ABILITY_WEAPON_POWER_CORRECTION_DAMAGE_UP_II",
+    "BATTLE_ABILITY_ABILITY_DAMAGE_UP_KB_N104P",
+    "BATTLE_ABILITY_ERUPTION"
+   ]
+  }
+ ]
+}

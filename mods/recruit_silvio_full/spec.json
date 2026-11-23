@@ -1,0 +1,207 @@
+{
+ "id": "N006",
+ "unit_master": "UNIT_MASTER_CH_N006",
+ "party_param": "BATTLE_UNITPARAM_CH_N006_PARTY",
+ "param_template": "BATTLE_UNITPARAM_CH_N006",
+ "stats": {
+  "elite_source": "BATTLE_UNITGROWTH_CH_N006",
+  "keep_from_source": [
+   "fMoveForce",
+   "fJumpForceUp",
+   "fJumpForceDown",
+   "fGainTacticalPoint"
+  ],
+  "scale": {
+   "fMaxHitPoint": 0.51,
+   "fStrength": 0.97,
+   "fIntelligence": 0.98,
+   "fDefence": 0.94,
+   "fMagicDefence": 0.93
+  },
+  "speed_at_50": 26
+ },
+ "own_abilities": [
+  {
+   "id": "BATTLE_ABILITY_SUREHIT_N006P",
+   "copy_from": "BATTLE_ABILITY_SUREHIT",
+   "name": "Seize the Moment",
+   "set": {
+    "iSortNumber": 1101
+   },
+   "attack": {
+    "id": "BATTLE_ATTACKPARAM_ABILITY_SUREHIT_N006P",
+    "copy_from": "BATTLE_ATTACKPARAM_ABILITY_SUREHIT",
+    "set": {
+     "FlipbookId": "ABL_CHARGE",
+     "eBattleSequence": "EBattleSequence::LS_ABILITY_CHARGE"
+    }
+   }
+  },
+  {
+   "id": "BATTLE_ABILITY_TP_BREAK_THROW_N006P",
+   "copy_from": "BATTLE_ABILITY_TP_BREAK_THROW",
+   "name": "Embezzle",
+   "help": "Deal physical damage to a single enemy and steal all of their TP.",
+   "set": {
+    "eAbilityClassType": "EAbilityClassType::DRAIN_TP",
+    "iParam1": 5
+   },
+   "attack": {
+    "id": "BATTLE_ATTACKPARAM_ABILITY_TP_BREAK_THROW_N006P",
+    "copy_from": "BATTLE_ATTACKPARAM_ABILITY_TP_BREAK_THROW",
+    "set": {
+     "fUseTP": 3.0,
+     "fPower": 1.0,
+     "SourceId": "None"
+    }
+   }
+  }
+ ],
+ "classes": [
+  {
+   "rank": 1,
+   "template": "BATTLE_JOB_CH_P006_1",
+   "learn": [
+    [
+     1,
+     "BATTLE_ABILITY_TP_BREAK_THROW"
+    ],
+    [
+     1,
+     "BATTLE_ABILITY_ATTACK_INSTRUCTIONS"
+    ],
+    [
+     3,
+     "BATTLE_ABILITY_SUREHIT_N006P"
+    ]
+   ],
+   "name_text": "TEXT_JOB_NAME_N006_M"
+  },
+  {
+   "rank": 2,
+   "template": "BATTLE_JOB_CH_P006_2",
+   "learn": [
+    [
+     14,
+     "BATTLE_ABILITY_HATE"
+    ],
+    [
+     18,
+     "BATTLE_ABILITY_RESIST_POISON_IMMOVABLE_BLIND"
+    ]
+   ],
+   "name": "Master Artificer"
+  },
+  {
+   "rank": 3,
+   "template": "BATTLE_JOB_CH_P006_3",
+   "learn": [
+    [
+     22,
+     "BATTLE_ABILITY_RESIST_CHARM_DEATH"
+    ]
+   ],
+   "name": "Lord of Telliore"
+  }
+ ],
+ "class_help": "Lord of House Telliore and keeper of the reservoir. A famed opportunist who takes whatever is not nailed down.",
+ "job_type": "EJobType::SWORDSMAN",
+ "weapon": {
+  "attack_template": "BATTLE_ATTACKPARAM_WEAPON_N_006",
+  "power": 5.0,
+  "icon": "EWeaponIconType::DAGGER",
+  "ranks": [
+   {
+    "template": "BATTLE_WEAPON_P006",
+    "name_text": "TEXT_WEAPON_NAME_N006"
+   },
+   {
+    "template": "BATTLE_WEAPON_RANK2_P006",
+    "name": "Edge of Ambition",
+    "rankup_material": "ITEM_UPGRADEMATERIAL_RANKUP_LEATHER"
+   },
+   {
+    "template": "BATTLE_WEAPON_RANK3_P006",
+    "name": "Edge of Restoration",
+    "rankup_material": "ITEM_UPGRADEMATERIAL_RANKUP_TREE",
+    "weapon_skill": "BATTLE_ABILITY_TP_BREAK_THROW_N006P"
+   }
+  ]
+ },
+ "tree_abilities": [
+  {
+   "id": "BATTLE_ABILITY_ABILITY_DAMAGE_UP_TP_BREAK_THROW_N006P",
+   "template": "BATTLE_ABILITY_ABILITY_DAMAGE_UP_INTIMIDATION_SWORD",
+   "targets": [
+    "BATTLE_ABILITY_TP_BREAK_THROW"
+   ],
+   "name": "TP Break Damage Up",
+   "help": "Increases damage dealt by TP Break."
+  },
+  {
+   "id": "BATTLE_ABILITY_TP_REDUCTION_TP_BREAK_THROW_N006P",
+   "template": "BATTLE_ABILITY_TP_REDUCTION_TWO_STAGE_THRUST",
+   "targets": [
+    "BATTLE_ABILITY_TP_BREAK_THROW"
+   ],
+   "name": "TP Break TP -1",
+   "help": "Decreases TP cost of TP Break by 1."
+  },
+  {
+   "id": "BATTLE_ABILITY_ABILITY_EXTENSION_HATE_N006P",
+   "template": "BATTLE_ABILITY_ABILITY_EXTENSION_CHARM",
+   "targets": [
+    "BATTLE_ABILITY_HATE"
+   ],
+   "name": "Enrage Success Rate Up",
+   "help": "Increases the success rate of Enrage."
+  },
+  {
+   "id": "BATTLE_ABILITY_ABILITY_RANGE_UP_ATTACK_INSTRUCTIONS_N006P",
+   "template": "BATTLE_ABILITY_ABILITY_RANGE_UPASSAULT",
+   "targets": [
+    "BATTLE_ABILITY_ATTACK_INSTRUCTIONS"
+   ],
+   "name": "Marching Orders Range +1",
+   "help": "Increases the range of Marching Orders by 1."
+  }
+ ],
+ "tree": [
+  {
+   "template": "BATTLE_WEAPONABILITYTREE_P001_RANK1",
+   "nodes": [
+    "BATTLE_ABILITY_WEAPON_POWER_CORRECTION_DAMAGE_UP",
+    "BATTLE_ABILITY_WEAPON_BONUS_HP_UP",
+    "BATTLE_ABILITY_WEAPON_BONUS_STR_UP",
+    "BATTLE_ABILITY_WEAPON_BONUS_DEF_UP",
+    "BATTLE_ABILITY_ABILITY_DAMAGE_UP_TP_BREAK_THROW_N006P"
+   ]
+  },
+  {
+   "template": "BATTLE_WEAPONABILITYTREE_P001_RANK2",
+   "nodes": [
+    "BATTLE_ABILITY_WEAPON_POWER_CORRECTION_DAMAGE_UP_RANK2",
+    "BATTLE_ABILITY_WEAPON_BONUS_STR_UP_II",
+    "BATTLE_ABILITY_TP_REDUCTION_TP_BREAK_THROW_N006P",
+    "BATTLE_ABILITY_ABILITY_EXTENSION_HATE_N006P",
+    "BATTLE_ABILITY_WEAPON_BONUS_MDF_UP"
+   ]
+  },
+  {
+   "template": "BATTLE_WEAPONABILITYTREE_P001_RANK3",
+   "nodes": [
+    "BATTLE_ABILITY_WEAPON_POWER_CORRECTION_DAMAGE_UP_II",
+    "BATTLE_ABILITY_ABILITY_RANGE_UP_ATTACK_INSTRUCTIONS_N006P",
+    "BATTLE_ABILITY_TP_BREAK_THROW_N006P"
+   ]
+  }
+ ],
+ "param_set": {
+  "eUnitCamp": "EUnitCamp::FRIEND",
+  "fUnitResistStatus": 1.0,
+  "DropItem": "None",
+  "EquippedAccessary1": "None",
+  "fJumpForceUp": 2.0,
+  "fJumpForceDown": 2.0
+ }
+}

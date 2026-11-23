@@ -1,0 +1,4262 @@
+{
+ "name": "TSMod_Recruit_N205_Full",
+ "dt_edits": [
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_UnitGrowth",
+   "add_rows": [
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R1_01",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_01",
+     "set": {
+      "fMaxTacticalPoint": 3.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 99.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R1_02",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_02",
+     "set": {
+      "fMaxTacticalPoint": 3.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 109.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R1_03",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_03",
+     "set": {
+      "fMaxTacticalPoint": 3.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 119.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R1_04",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_04",
+     "set": {
+      "fMaxTacticalPoint": 3.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 128.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R1_05",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_05",
+     "set": {
+      "fMaxTacticalPoint": 3.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 138.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R1_06",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_06",
+     "set": {
+      "fMaxTacticalPoint": 3.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 148.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R1_07",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_07",
+     "set": {
+      "fMaxTacticalPoint": 3.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 158.0,
+      "fStrength": 11.0,
+      "fMagicDefence": 8.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R1_08",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_08",
+     "set": {
+      "fMaxTacticalPoint": 3.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 167.0,
+      "fStrength": 12.0,
+      "fDefence": 8.0,
+      "fMagicDefence": 9.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R1_09",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_09",
+     "set": {
+      "fMaxTacticalPoint": 3.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 177.0,
+      "fStrength": 13.0,
+      "fDefence": 9.0,
+      "fMagicDefence": 10.0,
+      "fLuck": 13.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R1_10",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_10",
+     "set": {
+      "fMaxTacticalPoint": 3.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 187.0,
+      "fStrength": 14.0,
+      "fDefence": 11.0,
+      "fMagicDefence": 11.0,
+      "fDexterity": 13.0,
+      "fLuck": 14.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R1_11",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_11",
+     "set": {
+      "fMaxTacticalPoint": 3.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 207.0,
+      "fStrength": 15.0,
+      "fDefence": 12.0,
+      "fMagicDefence": 12.0,
+      "fDexterity": 15.0,
+      "fLuck": 16.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R1_12",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_12",
+     "set": {
+      "fMaxTacticalPoint": 3.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 216.0,
+      "fStrength": 16.0,
+      "fDefence": 13.0,
+      "fMagicDefence": 13.0,
+      "fDexterity": 16.0,
+      "fAgility": 17.0,
+      "fLuck": 17.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R1_13",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_13",
+     "set": {
+      "fMaxTacticalPoint": 3.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 226.0,
+      "fStrength": 17.0,
+      "fIntelligence": 13.0,
+      "fDefence": 14.0,
+      "fMagicDefence": 14.0,
+      "fDexterity": 17.0,
+      "fLuck": 18.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R1_14",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_14",
+     "set": {
+      "fMaxTacticalPoint": 3.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 236.0,
+      "fStrength": 18.0,
+      "fIntelligence": 14.0,
+      "fDefence": 16.0,
+      "fMagicDefence": 16.0,
+      "fDexterity": 18.0,
+      "fLuck": 19.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R1_15",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_15",
+     "set": {
+      "fMaxTacticalPoint": 3.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 246.0,
+      "fStrength": 19.0,
+      "fIntelligence": 15.0,
+      "fDefence": 17.0,
+      "fMagicDefence": 16.0,
+      "fLuck": 20.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R1_16",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_16",
+     "set": {
+      "fMaxTacticalPoint": 3.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 256.0,
+      "fStrength": 20.0,
+      "fDefence": 18.0,
+      "fMagicDefence": 17.0,
+      "fDexterity": 20.0,
+      "fAgility": 21.0,
+      "fLuck": 21.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R1_17",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_17",
+     "set": {
+      "fMaxTacticalPoint": 3.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 266.0,
+      "fStrength": 21.0,
+      "fIntelligence": 16.0,
+      "fDefence": 19.0,
+      "fMagicDefence": 18.0,
+      "fDexterity": 21.0,
+      "fAgility": 22.0,
+      "fLuck": 22.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R1_18",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_18",
+     "set": {
+      "fMaxTacticalPoint": 3.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 275.0,
+      "fStrength": 22.0,
+      "fIntelligence": 17.0,
+      "fDefence": 20.0,
+      "fMagicDefence": 19.0,
+      "fDexterity": 22.0,
+      "fLuck": 24.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R1_19",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_19",
+     "set": {
+      "fMaxTacticalPoint": 3.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 285.0,
+      "fStrength": 23.0,
+      "fIntelligence": 18.0,
+      "fDefence": 21.0,
+      "fMagicDefence": 20.0,
+      "fDexterity": 23.0,
+      "fAgility": 24.0,
+      "fLuck": 25.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R1_20",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_20",
+     "set": {
+      "fMaxTacticalPoint": 3.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 291.0,
+      "fStrength": 24.0,
+      "fIntelligence": 19.0,
+      "fDefence": 22.0,
+      "fMagicDefence": 21.0,
+      "fDexterity": 24.0,
+      "fAgility": 25.0,
+      "fLuck": 26.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R1_21",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_21",
+     "set": {
+      "fMaxTacticalPoint": 3.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 307.0,
+      "fStrength": 26.0,
+      "fIntelligence": 20.0,
+      "fDefence": 23.0,
+      "fMagicDefence": 22.0,
+      "fDexterity": 26.0,
+      "fAgility": 27.0,
+      "fLuck": 27.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R1_22",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_22",
+     "set": {
+      "fMaxTacticalPoint": 3.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 313.0,
+      "fStrength": 27.0,
+      "fIntelligence": 21.0,
+      "fDefence": 24.0,
+      "fMagicDefence": 23.0,
+      "fDexterity": 26.0,
+      "fAgility": 27.0,
+      "fLuck": 27.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R1_23",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_23",
+     "set": {
+      "fMaxTacticalPoint": 3.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 319.0,
+      "fStrength": 28.0,
+      "fIntelligence": 21.0,
+      "fDefence": 24.0,
+      "fMagicDefence": 23.0,
+      "fDexterity": 27.0,
+      "fAgility": 29.0,
+      "fLuck": 29.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R1_24",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_24",
+     "set": {
+      "fMaxTacticalPoint": 3.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 325.0,
+      "fStrength": 28.0,
+      "fIntelligence": 21.0,
+      "fDefence": 26.0,
+      "fMagicDefence": 24.0,
+      "fDexterity": 28.0,
+      "fAgility": 30.0,
+      "fLuck": 29.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R1_25",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_25",
+     "set": {
+      "fMaxTacticalPoint": 3.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 331.0,
+      "fStrength": 29.0,
+      "fIntelligence": 22.0,
+      "fDefence": 26.0,
+      "fMagicDefence": 25.0,
+      "fDexterity": 28.0,
+      "fAgility": 30.0,
+      "fLuck": 29.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R1_26",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_26",
+     "set": {
+      "fMaxTacticalPoint": 3.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 338.0,
+      "fStrength": 30.0,
+      "fIntelligence": 22.0,
+      "fDefence": 27.0,
+      "fMagicDefence": 26.0,
+      "fDexterity": 29.0,
+      "fAgility": 31.0,
+      "fLuck": 30.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R1_27",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_27",
+     "set": {
+      "fMaxTacticalPoint": 3.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 343.0,
+      "fStrength": 30.0,
+      "fIntelligence": 22.0,
+      "fDefence": 28.0,
+      "fMagicDefence": 26.0,
+      "fDexterity": 29.0,
+      "fAgility": 31.0,
+      "fLuck": 31.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R1_28",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_28",
+     "set": {
+      "fMaxTacticalPoint": 3.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 350.0,
+      "fStrength": 31.0,
+      "fIntelligence": 23.0,
+      "fDefence": 29.0,
+      "fMagicDefence": 27.0,
+      "fDexterity": 30.0,
+      "fAgility": 32.0,
+      "fLuck": 32.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R1_29",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_29",
+     "set": {
+      "fMaxTacticalPoint": 3.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 356.0,
+      "fStrength": 31.0,
+      "fIntelligence": 23.0,
+      "fDefence": 29.0,
+      "fMagicDefence": 27.0,
+      "fDexterity": 31.0,
+      "fAgility": 32.0,
+      "fLuck": 32.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R1_30",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_30",
+     "set": {
+      "fMaxTacticalPoint": 3.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 360.0,
+      "fStrength": 33.0,
+      "fIntelligence": 24.0,
+      "fDefence": 31.0,
+      "fMagicDefence": 28.0,
+      "fDexterity": 31.0,
+      "fAgility": 33.0,
+      "fLuck": 33.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R1_31",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_31",
+     "set": {
+      "fMaxTacticalPoint": 3.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 373.0,
+      "fStrength": 34.0,
+      "fIntelligence": 24.0,
+      "fDefence": 32.0,
+      "fMagicDefence": 29.0,
+      "fDexterity": 33.0,
+      "fAgility": 34.0,
+      "fLuck": 35.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R1_32",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_32",
+     "set": {
+      "fMaxTacticalPoint": 3.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 378.0,
+      "fStrength": 35.0,
+      "fIntelligence": 25.0,
+      "fDefence": 32.0,
+      "fMagicDefence": 30.0,
+      "fDexterity": 33.0,
+      "fAgility": 35.0,
+      "fLuck": 35.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R1_33",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_33",
+     "set": {
+      "fMaxTacticalPoint": 3.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 382.0,
+      "fStrength": 35.0,
+      "fIntelligence": 26.0,
+      "fDefence": 32.0,
+      "fMagicDefence": 30.0,
+      "fDexterity": 33.0,
+      "fAgility": 35.0,
+      "fLuck": 35.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R1_34",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_34",
+     "set": {
+      "fMaxTacticalPoint": 3.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 386.0,
+      "fStrength": 35.0,
+      "fIntelligence": 25.0,
+      "fDefence": 32.0,
+      "fMagicDefence": 31.0,
+      "fDexterity": 34.0,
+      "fAgility": 36.0,
+      "fLuck": 36.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R1_35",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_35",
+     "set": {
+      "fMaxTacticalPoint": 3.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 391.0,
+      "fStrength": 36.0,
+      "fIntelligence": 26.0,
+      "fDefence": 34.0,
+      "fMagicDefence": 31.0,
+      "fDexterity": 34.0,
+      "fAgility": 36.0,
+      "fLuck": 36.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R1_36",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_36",
+     "set": {
+      "fMaxTacticalPoint": 3.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 395.0,
+      "fStrength": 36.0,
+      "fIntelligence": 27.0,
+      "fDefence": 34.0,
+      "fMagicDefence": 32.0,
+      "fDexterity": 35.0,
+      "fAgility": 36.0,
+      "fLuck": 37.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R1_37",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_37",
+     "set": {
+      "fMaxTacticalPoint": 3.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 400.0,
+      "fStrength": 37.0,
+      "fIntelligence": 27.0,
+      "fDefence": 35.0,
+      "fMagicDefence": 32.0,
+      "fDexterity": 35.0,
+      "fAgility": 37.0,
+      "fLuck": 38.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R1_38",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_38",
+     "set": {
+      "fMaxTacticalPoint": 3.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 404.0,
+      "fStrength": 37.0,
+      "fIntelligence": 27.0,
+      "fDefence": 35.0,
+      "fMagicDefence": 33.0,
+      "fDexterity": 36.0,
+      "fAgility": 38.0,
+      "fLuck": 38.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R1_39",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_39",
+     "set": {
+      "fMaxTacticalPoint": 3.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 409.0,
+      "fStrength": 38.0,
+      "fIntelligence": 27.0,
+      "fDefence": 35.0,
+      "fMagicDefence": 33.0,
+      "fDexterity": 36.0,
+      "fAgility": 39.0,
+      "fLuck": 38.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R1_40",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_40",
+     "set": {
+      "fMaxTacticalPoint": 3.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 413.0,
+      "fStrength": 37.0,
+      "fIntelligence": 28.0,
+      "fDefence": 37.0,
+      "fMagicDefence": 34.0,
+      "fDexterity": 37.0,
+      "fAgility": 39.0,
+      "fLuck": 39.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R1_41",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_41",
+     "set": {
+      "fMaxTacticalPoint": 3.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 417.0,
+      "fStrength": 39.0,
+      "fIntelligence": 29.0,
+      "fDefence": 37.0,
+      "fMagicDefence": 35.0,
+      "fDexterity": 37.0,
+      "fAgility": 39.0,
+      "fLuck": 40.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R1_42",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_42",
+     "set": {
+      "fMaxTacticalPoint": 3.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 422.0,
+      "fStrength": 39.0,
+      "fIntelligence": 28.0,
+      "fDefence": 38.0,
+      "fMagicDefence": 34.0,
+      "fDexterity": 37.0,
+      "fAgility": 40.0,
+      "fLuck": 40.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R1_43",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_43",
+     "set": {
+      "fMaxTacticalPoint": 3.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 427.0,
+      "fStrength": 40.0,
+      "fIntelligence": 29.0,
+      "fDefence": 38.0,
+      "fMagicDefence": 35.0,
+      "fDexterity": 38.0,
+      "fAgility": 40.0,
+      "fLuck": 41.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R1_44",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_44",
+     "set": {
+      "fMaxTacticalPoint": 3.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 431.0,
+      "fStrength": 40.0,
+      "fIntelligence": 29.0,
+      "fDefence": 39.0,
+      "fMagicDefence": 36.0,
+      "fDexterity": 39.0,
+      "fAgility": 41.0,
+      "fLuck": 41.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R1_45",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_45",
+     "set": {
+      "fMaxTacticalPoint": 3.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 436.0,
+      "fStrength": 40.0,
+      "fIntelligence": 30.0,
+      "fDefence": 39.0,
+      "fMagicDefence": 36.0,
+      "fDexterity": 39.0,
+      "fAgility": 41.0,
+      "fLuck": 41.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R1_46",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_46",
+     "set": {
+      "fMaxTacticalPoint": 3.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 440.0,
+      "fStrength": 41.0,
+      "fIntelligence": 30.0,
+      "fDefence": 40.0,
+      "fMagicDefence": 36.0,
+      "fDexterity": 40.0,
+      "fAgility": 42.0,
+      "fLuck": 42.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R1_47",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_47",
+     "set": {
+      "fMaxTacticalPoint": 3.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 445.0,
+      "fStrength": 41.0,
+      "fIntelligence": 31.0,
+      "fDefence": 41.0,
+      "fMagicDefence": 37.0,
+      "fDexterity": 40.0,
+      "fAgility": 42.0,
+      "fLuck": 42.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R1_48",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_48",
+     "set": {
+      "fMaxTacticalPoint": 3.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 450.0,
+      "fStrength": 42.0,
+      "fIntelligence": 31.0,
+      "fDefence": 42.0,
+      "fMagicDefence": 37.0,
+      "fDexterity": 41.0,
+      "fAgility": 43.0,
+      "fLuck": 44.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R1_49",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_49",
+     "set": {
+      "fMaxTacticalPoint": 3.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 454.0,
+      "fStrength": 42.0,
+      "fIntelligence": 31.0,
+      "fDefence": 42.0,
+      "fMagicDefence": 38.0,
+      "fDexterity": 41.0,
+      "fAgility": 43.0,
+      "fLuck": 44.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R1_50",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_50",
+     "set": {
+      "fMaxTacticalPoint": 3.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 459.0,
+      "fStrength": 43.0,
+      "fIntelligence": 31.0,
+      "fDefence": 43.0,
+      "fMagicDefence": 38.0,
+      "fDexterity": 41.0,
+      "fAgility": 43.0,
+      "fLuck": 44.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R1_51",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_51",
+     "set": {
+      "fMaxTacticalPoint": 3.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 447.0,
+      "fStrength": 41.0,
+      "fIntelligence": 31.0,
+      "fDefence": 41.0,
+      "fMagicDefence": 37.0,
+      "fDexterity": 40.0,
+      "fAgility": 42.0,
+      "fLuck": 43.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R1_52",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_52",
+     "set": {
+      "fMaxTacticalPoint": 3.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 453.0,
+      "fStrength": 42.0,
+      "fIntelligence": 31.0,
+      "fDefence": 42.0,
+      "fMagicDefence": 38.0,
+      "fDexterity": 41.0,
+      "fAgility": 43.0,
+      "fLuck": 43.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R1_53",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_53",
+     "set": {
+      "fMaxTacticalPoint": 3.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 461.0,
+      "fStrength": 43.0,
+      "fIntelligence": 31.0,
+      "fDefence": 43.0,
+      "fMagicDefence": 39.0,
+      "fDexterity": 42.0,
+      "fAgility": 44.0,
+      "fLuck": 44.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R1_54",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_54",
+     "set": {
+      "fMaxTacticalPoint": 3.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 467.0,
+      "fStrength": 43.0,
+      "fIntelligence": 32.0,
+      "fDefence": 44.0,
+      "fMagicDefence": 39.0,
+      "fDexterity": 42.0,
+      "fAgility": 44.0,
+      "fLuck": 45.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R1_55",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_55",
+     "set": {
+      "fMaxTacticalPoint": 3.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 475.0,
+      "fStrength": 44.0,
+      "fIntelligence": 33.0,
+      "fDefence": 44.0,
+      "fMagicDefence": 40.0,
+      "fDexterity": 43.0,
+      "fAgility": 45.0,
+      "fLuck": 45.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R1_56",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_56",
+     "set": {
+      "fMaxTacticalPoint": 3.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 482.0,
+      "fStrength": 45.0,
+      "fIntelligence": 33.0,
+      "fDefence": 45.0,
+      "fMagicDefence": 41.0,
+      "fDexterity": 44.0,
+      "fAgility": 46.0,
+      "fLuck": 46.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R1_57",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_57",
+     "set": {
+      "fMaxTacticalPoint": 3.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 488.0,
+      "fStrength": 46.0,
+      "fIntelligence": 34.0,
+      "fDefence": 46.0,
+      "fMagicDefence": 42.0,
+      "fDexterity": 45.0,
+      "fAgility": 47.0,
+      "fLuck": 47.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R1_58",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_58",
+     "set": {
+      "fMaxTacticalPoint": 3.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 496.0,
+      "fStrength": 47.0,
+      "fIntelligence": 34.0,
+      "fDefence": 47.0,
+      "fMagicDefence": 43.0,
+      "fDexterity": 45.0,
+      "fAgility": 47.0,
+      "fLuck": 49.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R1_59",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_59",
+     "set": {
+      "fMaxTacticalPoint": 3.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 502.0,
+      "fStrength": 48.0,
+      "fIntelligence": 35.0,
+      "fDefence": 48.0,
+      "fMagicDefence": 43.0,
+      "fDexterity": 46.0,
+      "fAgility": 49.0,
+      "fLuck": 49.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R1_60",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_60",
+     "set": {
+      "fMaxTacticalPoint": 3.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 510.0,
+      "fStrength": 48.0,
+      "fIntelligence": 35.0,
+      "fDefence": 49.0,
+      "fMagicDefence": 43.0,
+      "fDexterity": 46.0,
+      "fAgility": 49.0,
+      "fLuck": 49.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R2_01",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_01",
+     "set": {
+      "fMaxTacticalPoint": 4.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 101.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R2_02",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_02",
+     "set": {
+      "fMaxTacticalPoint": 4.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 111.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R2_03",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_03",
+     "set": {
+      "fMaxTacticalPoint": 4.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 121.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R2_04",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_04",
+     "set": {
+      "fMaxTacticalPoint": 4.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 130.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R2_05",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_05",
+     "set": {
+      "fMaxTacticalPoint": 4.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 140.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R2_06",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_06",
+     "set": {
+      "fMaxTacticalPoint": 4.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 150.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R2_07",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_07",
+     "set": {
+      "fMaxTacticalPoint": 4.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 160.0,
+      "fMagicDefence": 8.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R2_08",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_08",
+     "set": {
+      "fMaxTacticalPoint": 4.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 170.0,
+      "fDefence": 8.0,
+      "fMagicDefence": 9.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R2_09",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_09",
+     "set": {
+      "fMaxTacticalPoint": 4.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 180.0,
+      "fDefence": 9.0,
+      "fMagicDefence": 10.0,
+      "fLuck": 13.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R2_10",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_10",
+     "set": {
+      "fMaxTacticalPoint": 4.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 190.0,
+      "fDefence": 11.0,
+      "fMagicDefence": 11.0,
+      "fLuck": 14.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R2_11",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_11",
+     "set": {
+      "fMaxTacticalPoint": 4.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 209.0,
+      "fStrength": 16.0,
+      "fDefence": 13.0,
+      "fMagicDefence": 13.0,
+      "fLuck": 16.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R2_12",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_12",
+     "set": {
+      "fMaxTacticalPoint": 4.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 219.0,
+      "fStrength": 17.0,
+      "fDefence": 14.0,
+      "fMagicDefence": 14.0,
+      "fLuck": 17.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R2_13",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_13",
+     "set": {
+      "fMaxTacticalPoint": 4.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 229.0,
+      "fStrength": 17.0,
+      "fDefence": 15.0,
+      "fMagicDefence": 15.0,
+      "fLuck": 18.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R2_14",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_14",
+     "set": {
+      "fMaxTacticalPoint": 4.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 239.0,
+      "fStrength": 19.0,
+      "fDefence": 16.0,
+      "fMagicDefence": 16.0,
+      "fLuck": 19.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R2_15",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_15",
+     "set": {
+      "fMaxTacticalPoint": 4.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 249.0,
+      "fStrength": 20.0,
+      "fDefence": 18.0,
+      "fMagicDefence": 17.0,
+      "fLuck": 20.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R2_16",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_16",
+     "set": {
+      "fMaxTacticalPoint": 4.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 259.0,
+      "fStrength": 21.0,
+      "fDefence": 19.0,
+      "fMagicDefence": 18.0,
+      "fLuck": 21.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R2_17",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_17",
+     "set": {
+      "fMaxTacticalPoint": 4.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 269.0,
+      "fStrength": 21.0,
+      "fDefence": 19.0,
+      "fMagicDefence": 19.0,
+      "fLuck": 22.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R2_18",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_18",
+     "set": {
+      "fMaxTacticalPoint": 4.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 279.0,
+      "fStrength": 23.0,
+      "fDefence": 20.0,
+      "fMagicDefence": 20.0,
+      "fLuck": 24.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R2_19",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_19",
+     "set": {
+      "fMaxTacticalPoint": 4.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 289.0,
+      "fStrength": 24.0,
+      "fDefence": 21.0,
+      "fMagicDefence": 21.0,
+      "fLuck": 25.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R2_20",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_20",
+     "set": {
+      "fMaxTacticalPoint": 4.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 298.0,
+      "fStrength": 25.0,
+      "fDefence": 23.0,
+      "fMagicDefence": 22.0,
+      "fLuck": 26.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R2_21",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_21",
+     "set": {
+      "fMaxTacticalPoint": 4.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 318.0,
+      "fStrength": 27.0,
+      "fDefence": 24.0,
+      "fMagicDefence": 23.0,
+      "fLuck": 28.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R2_22",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_22",
+     "set": {
+      "fMaxTacticalPoint": 4.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 328.0,
+      "fStrength": 28.0,
+      "fDefence": 25.0,
+      "fMagicDefence": 24.0,
+      "fLuck": 29.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R2_23",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_23",
+     "set": {
+      "fMaxTacticalPoint": 4.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 338.0,
+      "fStrength": 29.0,
+      "fDefence": 26.0,
+      "fMagicDefence": 26.0,
+      "fLuck": 30.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R2_24",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_24",
+     "set": {
+      "fMaxTacticalPoint": 4.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 348.0,
+      "fStrength": 30.0,
+      "fDefence": 28.0,
+      "fMagicDefence": 26.0,
+      "fLuck": 31.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R2_25",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_25",
+     "set": {
+      "fMaxTacticalPoint": 4.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 358.0,
+      "fStrength": 31.0,
+      "fDefence": 29.0,
+      "fMagicDefence": 27.0,
+      "fLuck": 32.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R2_26",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_26",
+     "set": {
+      "fMaxTacticalPoint": 4.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 368.0,
+      "fStrength": 32.0,
+      "fIntelligence": 24.0,
+      "fDefence": 30.0,
+      "fMagicDefence": 28.0,
+      "fLuck": 33.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R2_27",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_27",
+     "set": {
+      "fMaxTacticalPoint": 4.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 377.0,
+      "fStrength": 33.0,
+      "fIntelligence": 24.0,
+      "fDefence": 31.0,
+      "fMagicDefence": 29.0,
+      "fLuck": 34.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R2_28",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_28",
+     "set": {
+      "fMaxTacticalPoint": 4.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 387.0,
+      "fStrength": 34.0,
+      "fIntelligence": 25.0,
+      "fDefence": 32.0,
+      "fMagicDefence": 30.0,
+      "fLuck": 35.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R2_29",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_29",
+     "set": {
+      "fMaxTacticalPoint": 4.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 397.0,
+      "fStrength": 35.0,
+      "fIntelligence": 26.0,
+      "fDefence": 33.0,
+      "fMagicDefence": 31.0,
+      "fDexterity": 34.0,
+      "fLuck": 36.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R2_30",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_30",
+     "set": {
+      "fMaxTacticalPoint": 4.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 404.0,
+      "fStrength": 37.0,
+      "fIntelligence": 27.0,
+      "fDefence": 35.0,
+      "fMagicDefence": 32.0,
+      "fDexterity": 35.0,
+      "fAgility": 37.0,
+      "fLuck": 37.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R2_31",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_31",
+     "set": {
+      "fMaxTacticalPoint": 4.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 419.0,
+      "fStrength": 39.0,
+      "fIntelligence": 27.0,
+      "fDefence": 36.0,
+      "fMagicDefence": 33.0,
+      "fDexterity": 37.0,
+      "fAgility": 39.0,
+      "fLuck": 39.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R2_32",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_32",
+     "set": {
+      "fMaxTacticalPoint": 4.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 426.0,
+      "fStrength": 39.0,
+      "fIntelligence": 28.0,
+      "fDefence": 37.0,
+      "fMagicDefence": 34.0,
+      "fDexterity": 37.0,
+      "fAgility": 39.0,
+      "fLuck": 39.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R2_33",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_33",
+     "set": {
+      "fMaxTacticalPoint": 4.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 432.0,
+      "fStrength": 40.0,
+      "fIntelligence": 29.0,
+      "fDefence": 37.0,
+      "fMagicDefence": 35.0,
+      "fDexterity": 38.0,
+      "fAgility": 40.0,
+      "fLuck": 40.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R2_34",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_34",
+     "set": {
+      "fMaxTacticalPoint": 4.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 438.0,
+      "fStrength": 41.0,
+      "fIntelligence": 29.0,
+      "fDefence": 37.0,
+      "fMagicDefence": 35.0,
+      "fDexterity": 39.0,
+      "fAgility": 41.0,
+      "fLuck": 41.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R2_35",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_35",
+     "set": {
+      "fMaxTacticalPoint": 4.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 444.0,
+      "fStrength": 41.0,
+      "fIntelligence": 29.0,
+      "fDefence": 39.0,
+      "fMagicDefence": 36.0,
+      "fDexterity": 39.0,
+      "fAgility": 41.0,
+      "fLuck": 41.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R2_36",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_36",
+     "set": {
+      "fMaxTacticalPoint": 4.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 450.0,
+      "fStrength": 42.0,
+      "fIntelligence": 30.0,
+      "fDefence": 39.0,
+      "fMagicDefence": 37.0,
+      "fDexterity": 40.0,
+      "fAgility": 42.0,
+      "fLuck": 42.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R2_37",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_37",
+     "set": {
+      "fMaxTacticalPoint": 4.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 457.0,
+      "fStrength": 42.0,
+      "fIntelligence": 31.0,
+      "fDefence": 40.0,
+      "fMagicDefence": 37.0,
+      "fDexterity": 40.0,
+      "fAgility": 42.0,
+      "fLuck": 42.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R2_38",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_38",
+     "set": {
+      "fMaxTacticalPoint": 4.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 463.0,
+      "fStrength": 43.0,
+      "fIntelligence": 31.0,
+      "fDefence": 41.0,
+      "fMagicDefence": 38.0,
+      "fDexterity": 42.0,
+      "fAgility": 43.0,
+      "fLuck": 44.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R2_39",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_39",
+     "set": {
+      "fMaxTacticalPoint": 4.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 469.0,
+      "fStrength": 44.0,
+      "fIntelligence": 31.0,
+      "fDefence": 41.0,
+      "fMagicDefence": 39.0,
+      "fDexterity": 42.0,
+      "fAgility": 45.0,
+      "fLuck": 44.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R2_40",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_40",
+     "set": {
+      "fMaxTacticalPoint": 4.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 476.0,
+      "fStrength": 44.0,
+      "fIntelligence": 32.0,
+      "fDefence": 43.0,
+      "fMagicDefence": 39.0,
+      "fDexterity": 43.0,
+      "fAgility": 45.0,
+      "fLuck": 44.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R2_41",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_41",
+     "set": {
+      "fMaxTacticalPoint": 4.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 481.0,
+      "fStrength": 45.0,
+      "fIntelligence": 33.0,
+      "fDefence": 44.0,
+      "fMagicDefence": 41.0,
+      "fDexterity": 43.0,
+      "fAgility": 46.0,
+      "fLuck": 46.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R2_42",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_42",
+     "set": {
+      "fMaxTacticalPoint": 4.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 488.0,
+      "fStrength": 46.0,
+      "fIntelligence": 33.0,
+      "fDefence": 44.0,
+      "fMagicDefence": 41.0,
+      "fDexterity": 43.0,
+      "fAgility": 46.0,
+      "fLuck": 46.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R2_43",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_43",
+     "set": {
+      "fMaxTacticalPoint": 4.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 494.0,
+      "fStrength": 46.0,
+      "fIntelligence": 33.0,
+      "fDefence": 45.0,
+      "fMagicDefence": 41.0,
+      "fDexterity": 44.0,
+      "fAgility": 47.0,
+      "fLuck": 48.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R2_44",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_44",
+     "set": {
+      "fMaxTacticalPoint": 4.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 501.0,
+      "fStrength": 47.0,
+      "fIntelligence": 34.0,
+      "fDefence": 46.0,
+      "fMagicDefence": 42.0,
+      "fDexterity": 45.0,
+      "fAgility": 48.0,
+      "fLuck": 48.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R2_45",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_45",
+     "set": {
+      "fMaxTacticalPoint": 4.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 507.0,
+      "fStrength": 47.0,
+      "fIntelligence": 35.0,
+      "fDefence": 46.0,
+      "fMagicDefence": 42.0,
+      "fDexterity": 46.0,
+      "fAgility": 49.0,
+      "fLuck": 48.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R2_46",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_46",
+     "set": {
+      "fMaxTacticalPoint": 4.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 513.0,
+      "fStrength": 48.0,
+      "fIntelligence": 35.0,
+      "fDefence": 48.0,
+      "fMagicDefence": 43.0,
+      "fDexterity": 46.0,
+      "fAgility": 49.0,
+      "fLuck": 49.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R2_47",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_47",
+     "set": {
+      "fMaxTacticalPoint": 4.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 520.0,
+      "fStrength": 49.0,
+      "fIntelligence": 35.0,
+      "fDefence": 49.0,
+      "fMagicDefence": 44.0,
+      "fDexterity": 47.0,
+      "fAgility": 50.0,
+      "fLuck": 49.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R2_48",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_48",
+     "set": {
+      "fMaxTacticalPoint": 4.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 526.0,
+      "fStrength": 49.0,
+      "fIntelligence": 36.0,
+      "fDefence": 49.0,
+      "fMagicDefence": 45.0,
+      "fDexterity": 48.0,
+      "fAgility": 50.0,
+      "fLuck": 51.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R2_49",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_49",
+     "set": {
+      "fMaxTacticalPoint": 4.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 532.0,
+      "fStrength": 50.0,
+      "fIntelligence": 36.0,
+      "fDefence": 50.0,
+      "fMagicDefence": 45.0,
+      "fDexterity": 48.0,
+      "fAgility": 51.0,
+      "fLuck": 51.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R2_50",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_50",
+     "set": {
+      "fMaxTacticalPoint": 4.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 541.0,
+      "fStrength": 50.0,
+      "fIntelligence": 37.0,
+      "fDefence": 52.0,
+      "fMagicDefence": 46.0,
+      "fDexterity": 49.0,
+      "fAgility": 52.0,
+      "fLuck": 51.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R2_51",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_51",
+     "set": {
+      "fMaxTacticalPoint": 4.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 525.0,
+      "fStrength": 49.0,
+      "fIntelligence": 36.0,
+      "fDefence": 49.0,
+      "fMagicDefence": 44.0,
+      "fDexterity": 47.0,
+      "fAgility": 50.0,
+      "fLuck": 50.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R2_52",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_52",
+     "set": {
+      "fMaxTacticalPoint": 4.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 534.0,
+      "fStrength": 50.0,
+      "fIntelligence": 37.0,
+      "fDefence": 50.0,
+      "fMagicDefence": 45.0,
+      "fDexterity": 48.0,
+      "fAgility": 51.0,
+      "fLuck": 51.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R2_53",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_53",
+     "set": {
+      "fMaxTacticalPoint": 4.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 545.0,
+      "fStrength": 51.0,
+      "fIntelligence": 37.0,
+      "fDefence": 52.0,
+      "fMagicDefence": 46.0,
+      "fDexterity": 49.0,
+      "fAgility": 52.0,
+      "fLuck": 52.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R2_54",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_54",
+     "set": {
+      "fMaxTacticalPoint": 4.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 554.0,
+      "fStrength": 52.0,
+      "fIntelligence": 38.0,
+      "fDefence": 53.0,
+      "fMagicDefence": 47.0,
+      "fDexterity": 50.0,
+      "fAgility": 53.0,
+      "fLuck": 52.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R2_55",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_55",
+     "set": {
+      "fMaxTacticalPoint": 4.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 565.0,
+      "fStrength": 53.0,
+      "fIntelligence": 39.0,
+      "fDefence": 54.0,
+      "fMagicDefence": 48.0,
+      "fDexterity": 51.0,
+      "fAgility": 54.0,
+      "fLuck": 53.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R2_56",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_56",
+     "set": {
+      "fMaxTacticalPoint": 4.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 575.0,
+      "fStrength": 54.0,
+      "fIntelligence": 39.0,
+      "fDefence": 55.0,
+      "fMagicDefence": 49.0,
+      "fDexterity": 52.0,
+      "fAgility": 55.0,
+      "fLuck": 55.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R2_57",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_57",
+     "set": {
+      "fMaxTacticalPoint": 4.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 584.0,
+      "fStrength": 56.0,
+      "fIntelligence": 40.0,
+      "fDefence": 56.0,
+      "fMagicDefence": 51.0,
+      "fDexterity": 53.0,
+      "fAgility": 56.0,
+      "fLuck": 56.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R2_58",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_58",
+     "set": {
+      "fMaxTacticalPoint": 4.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 595.0,
+      "fStrength": 57.0,
+      "fIntelligence": 41.0,
+      "fDefence": 57.0,
+      "fMagicDefence": 52.0,
+      "fDexterity": 55.0,
+      "fAgility": 57.0,
+      "fLuck": 57.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R2_59",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_59",
+     "set": {
+      "fMaxTacticalPoint": 4.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 604.0,
+      "fStrength": 58.0,
+      "fIntelligence": 41.0,
+      "fDefence": 59.0,
+      "fMagicDefence": 52.0,
+      "fDexterity": 55.0,
+      "fAgility": 59.0,
+      "fLuck": 59.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R2_60",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_60",
+     "set": {
+      "fMaxTacticalPoint": 4.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 615.0,
+      "fStrength": 59.0,
+      "fIntelligence": 42.0,
+      "fDefence": 60.0,
+      "fMagicDefence": 53.0,
+      "fDexterity": 56.0,
+      "fAgility": 60.0,
+      "fLuck": 59.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R3_01",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_01",
+     "set": {
+      "fMaxTacticalPoint": 5.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 102.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R3_02",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_02",
+     "set": {
+      "fMaxTacticalPoint": 5.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 112.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R3_03",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_03",
+     "set": {
+      "fMaxTacticalPoint": 5.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 122.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R3_04",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_04",
+     "set": {
+      "fMaxTacticalPoint": 5.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 132.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R3_05",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_05",
+     "set": {
+      "fMaxTacticalPoint": 5.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 142.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R3_06",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_06",
+     "set": {
+      "fMaxTacticalPoint": 5.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 152.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R3_07",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_07",
+     "set": {
+      "fMaxTacticalPoint": 5.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 162.0,
+      "fMagicDefence": 8.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R3_08",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_08",
+     "set": {
+      "fMaxTacticalPoint": 5.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 172.0,
+      "fDefence": 8.0,
+      "fMagicDefence": 9.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R3_09",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_09",
+     "set": {
+      "fMaxTacticalPoint": 5.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 182.0,
+      "fDefence": 9.0,
+      "fMagicDefence": 10.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R3_10",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_10",
+     "set": {
+      "fMaxTacticalPoint": 5.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 192.0,
+      "fDefence": 11.0,
+      "fMagicDefence": 11.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R3_11",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_11",
+     "set": {
+      "fMaxTacticalPoint": 5.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 212.0,
+      "fStrength": 16.0,
+      "fDefence": 13.0,
+      "fMagicDefence": 13.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R3_12",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_12",
+     "set": {
+      "fMaxTacticalPoint": 5.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 222.0,
+      "fStrength": 17.0,
+      "fDefence": 14.0,
+      "fMagicDefence": 14.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R3_13",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_13",
+     "set": {
+      "fMaxTacticalPoint": 5.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 232.0,
+      "fStrength": 18.0,
+      "fDefence": 15.0,
+      "fMagicDefence": 15.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R3_14",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_14",
+     "set": {
+      "fMaxTacticalPoint": 5.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 242.0,
+      "fStrength": 19.0,
+      "fDefence": 17.0,
+      "fMagicDefence": 16.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R3_15",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_15",
+     "set": {
+      "fMaxTacticalPoint": 5.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 252.0,
+      "fStrength": 20.0,
+      "fDefence": 18.0,
+      "fMagicDefence": 17.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R3_16",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_16",
+     "set": {
+      "fMaxTacticalPoint": 5.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 262.0,
+      "fStrength": 21.0,
+      "fDefence": 19.0,
+      "fMagicDefence": 18.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R3_17",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_17",
+     "set": {
+      "fMaxTacticalPoint": 5.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 272.0,
+      "fStrength": 22.0,
+      "fDefence": 20.0,
+      "fMagicDefence": 19.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R3_18",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_18",
+     "set": {
+      "fMaxTacticalPoint": 5.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 282.0,
+      "fStrength": 24.0,
+      "fDefence": 21.0,
+      "fMagicDefence": 20.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R3_19",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_19",
+     "set": {
+      "fMaxTacticalPoint": 5.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 292.0,
+      "fStrength": 25.0,
+      "fDefence": 22.0,
+      "fMagicDefence": 21.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R3_20",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_20",
+     "set": {
+      "fMaxTacticalPoint": 5.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 302.0,
+      "fStrength": 26.0,
+      "fDefence": 24.0,
+      "fMagicDefence": 22.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R3_21",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_21",
+     "set": {
+      "fMaxTacticalPoint": 5.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 322.0,
+      "fStrength": 28.0,
+      "fDefence": 25.0,
+      "fMagicDefence": 24.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R3_22",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_22",
+     "set": {
+      "fMaxTacticalPoint": 5.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 332.0,
+      "fStrength": 29.0,
+      "fDefence": 26.0,
+      "fMagicDefence": 25.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R3_23",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_23",
+     "set": {
+      "fMaxTacticalPoint": 5.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 342.0,
+      "fStrength": 30.0,
+      "fDefence": 27.0,
+      "fMagicDefence": 26.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R3_24",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_24",
+     "set": {
+      "fMaxTacticalPoint": 5.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 352.0,
+      "fStrength": 31.0,
+      "fDefence": 29.0,
+      "fMagicDefence": 27.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R3_25",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_25",
+     "set": {
+      "fMaxTacticalPoint": 5.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 362.0,
+      "fStrength": 32.0,
+      "fDefence": 30.0,
+      "fMagicDefence": 28.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R3_26",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_26",
+     "set": {
+      "fMaxTacticalPoint": 5.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 372.0,
+      "fStrength": 33.0,
+      "fIntelligence": 24.0,
+      "fDefence": 31.0,
+      "fMagicDefence": 29.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R3_27",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_27",
+     "set": {
+      "fMaxTacticalPoint": 5.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 381.0,
+      "fStrength": 34.0,
+      "fIntelligence": 24.0,
+      "fDefence": 32.0,
+      "fMagicDefence": 30.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R3_28",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_28",
+     "set": {
+      "fMaxTacticalPoint": 5.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 392.0,
+      "fStrength": 35.0,
+      "fIntelligence": 25.0,
+      "fDefence": 33.0,
+      "fMagicDefence": 31.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R3_29",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_29",
+     "set": {
+      "fMaxTacticalPoint": 5.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 402.0,
+      "fStrength": 36.0,
+      "fIntelligence": 26.0,
+      "fDefence": 34.0,
+      "fMagicDefence": 32.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R3_30",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_30",
+     "set": {
+      "fMaxTacticalPoint": 5.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 412.0,
+      "fStrength": 38.0,
+      "fIntelligence": 27.0,
+      "fDefence": 36.0,
+      "fMagicDefence": 33.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R3_31",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_31",
+     "set": {
+      "fMaxTacticalPoint": 5.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 431.0,
+      "fStrength": 40.0,
+      "fIntelligence": 28.0,
+      "fDefence": 38.0,
+      "fMagicDefence": 35.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R3_32",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_32",
+     "set": {
+      "fMaxTacticalPoint": 5.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 442.0,
+      "fStrength": 41.0,
+      "fIntelligence": 29.0,
+      "fDefence": 39.0,
+      "fMagicDefence": 36.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R3_33",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_33",
+     "set": {
+      "fMaxTacticalPoint": 5.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 452.0,
+      "fStrength": 42.0,
+      "fIntelligence": 30.0,
+      "fDefence": 39.0,
+      "fMagicDefence": 37.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R3_34",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_34",
+     "set": {
+      "fMaxTacticalPoint": 5.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 462.0,
+      "fStrength": 43.0,
+      "fIntelligence": 30.0,
+      "fDefence": 40.0,
+      "fMagicDefence": 38.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R3_35",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_35",
+     "set": {
+      "fMaxTacticalPoint": 5.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 472.0,
+      "fStrength": 44.0,
+      "fIntelligence": 31.0,
+      "fDefence": 42.0,
+      "fMagicDefence": 39.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R3_36",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_36",
+     "set": {
+      "fMaxTacticalPoint": 5.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 481.0,
+      "fStrength": 45.0,
+      "fIntelligence": 32.0,
+      "fDefence": 43.0,
+      "fMagicDefence": 40.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R3_37",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_37",
+     "set": {
+      "fMaxTacticalPoint": 5.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 492.0,
+      "fStrength": 46.0,
+      "fIntelligence": 33.0,
+      "fDefence": 44.0,
+      "fMagicDefence": 41.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R3_38",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_38",
+     "set": {
+      "fMaxTacticalPoint": 5.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 502.0,
+      "fStrength": 47.0,
+      "fIntelligence": 33.0,
+      "fDefence": 45.0,
+      "fMagicDefence": 42.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R3_39",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_39",
+     "set": {
+      "fMaxTacticalPoint": 5.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 512.0,
+      "fStrength": 48.0,
+      "fIntelligence": 34.0,
+      "fDefence": 46.0,
+      "fMagicDefence": 43.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R3_40",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_40",
+     "set": {
+      "fMaxTacticalPoint": 5.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 522.0,
+      "fStrength": 48.0,
+      "fIntelligence": 35.0,
+      "fDefence": 48.0,
+      "fMagicDefence": 44.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R3_41",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_41",
+     "set": {
+      "fMaxTacticalPoint": 5.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 531.0,
+      "fStrength": 50.0,
+      "fIntelligence": 36.0,
+      "fDefence": 49.0,
+      "fMagicDefence": 46.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R3_42",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_42",
+     "set": {
+      "fMaxTacticalPoint": 5.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 542.0,
+      "fStrength": 51.0,
+      "fIntelligence": 36.0,
+      "fDefence": 50.0,
+      "fMagicDefence": 46.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R3_43",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_43",
+     "set": {
+      "fMaxTacticalPoint": 5.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 552.0,
+      "fStrength": 52.0,
+      "fIntelligence": 37.0,
+      "fDefence": 51.0,
+      "fMagicDefence": 47.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R3_44",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_44",
+     "set": {
+      "fMaxTacticalPoint": 5.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 562.0,
+      "fStrength": 53.0,
+      "fIntelligence": 38.0,
+      "fDefence": 52.0,
+      "fMagicDefence": 48.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R3_45",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_45",
+     "set": {
+      "fMaxTacticalPoint": 5.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 572.0,
+      "fStrength": 54.0,
+      "fIntelligence": 39.0,
+      "fDefence": 53.0,
+      "fMagicDefence": 49.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R3_46",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_46",
+     "set": {
+      "fMaxTacticalPoint": 5.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 581.0,
+      "fStrength": 55.0,
+      "fIntelligence": 39.0,
+      "fDefence": 55.0,
+      "fMagicDefence": 50.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R3_47",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_47",
+     "set": {
+      "fMaxTacticalPoint": 5.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 592.0,
+      "fStrength": 56.0,
+      "fIntelligence": 40.0,
+      "fDefence": 56.0,
+      "fMagicDefence": 51.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R3_48",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_48",
+     "set": {
+      "fMaxTacticalPoint": 5.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 602.0,
+      "fStrength": 57.0,
+      "fIntelligence": 41.0,
+      "fDefence": 57.0,
+      "fMagicDefence": 52.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R3_49",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_49",
+     "set": {
+      "fMaxTacticalPoint": 5.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 611.0,
+      "fStrength": 58.0,
+      "fIntelligence": 41.0,
+      "fDefence": 58.0,
+      "fMagicDefence": 53.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R3_50",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_50",
+     "set": {
+      "fMaxTacticalPoint": 5.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 622.0,
+      "fStrength": 59.0,
+      "fIntelligence": 42.0,
+      "fDefence": 60.0,
+      "fMagicDefence": 54.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R3_51",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_51",
+     "set": {
+      "fMaxTacticalPoint": 5.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 602.0,
+      "fStrength": 57.0,
+      "fIntelligence": 41.0,
+      "fDefence": 57.0,
+      "fMagicDefence": 52.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R3_52",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_52",
+     "set": {
+      "fMaxTacticalPoint": 5.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 611.0,
+      "fStrength": 58.0,
+      "fIntelligence": 41.0,
+      "fDefence": 58.0,
+      "fMagicDefence": 53.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R3_53",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_53",
+     "set": {
+      "fMaxTacticalPoint": 5.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 622.0,
+      "fStrength": 59.0,
+      "fIntelligence": 42.0,
+      "fDefence": 60.0,
+      "fMagicDefence": 54.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R3_54",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_54",
+     "set": {
+      "fMaxTacticalPoint": 5.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 631.0,
+      "fStrength": 60.0,
+      "fIntelligence": 43.0,
+      "fDefence": 61.0,
+      "fMagicDefence": 55.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R3_55",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_55",
+     "set": {
+      "fMaxTacticalPoint": 5.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 642.0,
+      "fStrength": 61.0,
+      "fIntelligence": 44.0,
+      "fDefence": 62.0,
+      "fMagicDefence": 56.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R3_56",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_56",
+     "set": {
+      "fMaxTacticalPoint": 5.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 652.0,
+      "fStrength": 62.0,
+      "fIntelligence": 44.0,
+      "fDefence": 63.0,
+      "fMagicDefence": 57.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R3_57",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_57",
+     "set": {
+      "fMaxTacticalPoint": 5.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 661.0,
+      "fStrength": 64.0,
+      "fIntelligence": 45.0,
+      "fDefence": 64.0,
+      "fMagicDefence": 59.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R3_58",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_58",
+     "set": {
+      "fMaxTacticalPoint": 5.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 672.0,
+      "fStrength": 65.0,
+      "fIntelligence": 46.0,
+      "fDefence": 65.0,
+      "fMagicDefence": 60.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R3_59",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_59",
+     "set": {
+      "fMaxTacticalPoint": 5.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 681.0,
+      "fStrength": 66.0,
+      "fIntelligence": 47.0,
+      "fDefence": 67.0,
+      "fMagicDefence": 60.0
+     }
+    },
+    {
+     "row": "BATTLE_UNITGROWTH_CH_N205P_R3_60",
+     "copy_from": "BATTLE_UNITGROWTH_CH_N205_60",
+     "set": {
+      "fMaxTacticalPoint": 5.0,
+      "fUnitSpeed": 25.0,
+      "fMaxHitPoint": 692.0,
+      "fStrength": 67.0,
+      "fIntelligence": 47.0,
+      "fDefence": 68.0,
+      "fMagicDefence": 61.0
+     }
+    }
+   ]
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_AttackParam",
+   "add_row": "BATTLE_ATTACKPARAM_WEAPON_N205P",
+   "copy_from": "BATTLE_ATTACKPARAM_WEAPON_N_205"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_AttackParam",
+   "row": "BATTLE_ATTACKPARAM_WEAPON_N205P",
+   "field": "fPower",
+   "value": 5.0
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_AttackParam",
+   "row": "BATTLE_ATTACKPARAM_WEAPON_N205P",
+   "field": "fPowerMax",
+   "value": 5.0
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Ability",
+   "add_row": "BATTLE_ABILITY_SECRET_CURSE_N205P",
+   "copy_from": "BATTLE_ABILITY_SECRET_CURSE"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_AttackParam",
+   "add_row": "BATTLE_ATTACKPARAM_ABILITY_SECRET_CURSE_N205P",
+   "copy_from": "BATTLE_ATTACKPARAM_ABILITY_SECRET_CURSE"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_AttackParam",
+   "row": "BATTLE_ATTACKPARAM_ABILITY_SECRET_CURSE_N205P",
+   "field": "FlipbookId",
+   "value": "ABL_READY_TO_RUN"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_AttackParam",
+   "row": "BATTLE_ATTACKPARAM_ABILITY_SECRET_CURSE_N205P",
+   "field": "eBattleSequence",
+   "value": "EBattleSequence::LS_ABILITY_READY_TO_RUN"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_AttackParam",
+   "row": "BATTLE_ATTACKPARAM_ABILITY_SECRET_CURSE_N205P",
+   "field": "SourceId",
+   "value": "None"
+  },
+  {
+   "table": "Newera/Data/DataTables/Text/en/GOP_Text_Ability",
+   "add_row": "TEXT_ABILITY_NAME_SECRET_CURSE_N205P",
+   "copy_from": "TEXT_ABILITY_NAME_SECRET_CURSE"
+  },
+  {
+   "table": "Newera/Data/DataTables/Text/en/GOP_Text_Ability",
+   "row": "TEXT_ABILITY_NAME_SECRET_CURSE_N205P",
+   "field": "Text",
+   "value": "Curfew"
+  },
+  {
+   "table": "Newera/Data/DataTables/Text/en/GOP_Text_Ability",
+   "add_row": "TEXT_ABILITY_HELP_SECRET_CURSE_N205P",
+   "copy_from": "TEXT_ABILITY_HELP_SECRET_CURSE"
+  },
+  {
+   "table": "Newera/Data/DataTables/Text/en/GOP_Text_Ability",
+   "row": "TEXT_ABILITY_HELP_SECRET_CURSE_N205P",
+   "field": "Text",
+   "value": "Lower the speed and movement of all enemies within range for %_BUFF_EFFECT_TURN_% turn(s)."
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Ability",
+   "row": "BATTLE_ABILITY_SECRET_CURSE_N205P",
+   "field": "iSortNumber",
+   "value": 1101
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Ability",
+   "row": "BATTLE_ABILITY_SECRET_CURSE_N205P",
+   "field": "AttackParam",
+   "value": "BATTLE_ATTACKPARAM_ABILITY_SECRET_CURSE_N205P"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Ability",
+   "row": "BATTLE_ABILITY_SECRET_CURSE_N205P",
+   "field": "bEnableCopy",
+   "value": false
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Ability",
+   "row": "BATTLE_ABILITY_SECRET_CURSE_N205P",
+   "field": "AbilityName",
+   "value": "TEXT_ABILITY_NAME_SECRET_CURSE_N205P"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Ability",
+   "row": "BATTLE_ABILITY_SECRET_CURSE_N205P",
+   "field": "AbilityHelp",
+   "value": "TEXT_ABILITY_HELP_SECRET_CURSE_N205P"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Ability",
+   "add_row": "BATTLE_ABILITY_PENETRATE_SPEAR_N205P",
+   "copy_from": "BATTLE_ABILITY_PENETRATE_SPEAR"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_AttackParam",
+   "add_row": "BATTLE_ATTACKPARAM_ABILITY_PENETRATE_SPEAR_N205P",
+   "copy_from": "BATTLE_ATTACKPARAM_ABILITY_PENETRATE_SPEAR"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_AttackParam",
+   "row": "BATTLE_ATTACKPARAM_ABILITY_PENETRATE_SPEAR_N205P",
+   "field": "FlipbookId",
+   "value": "ABL_PIERCING_LANCE"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_AttackParam",
+   "row": "BATTLE_ATTACKPARAM_ABILITY_PENETRATE_SPEAR_N205P",
+   "field": "eBattleSequence",
+   "value": "EBattleSequence::LS_ABILITY_PIERCING_LANCE"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_AttackParam",
+   "row": "BATTLE_ATTACKPARAM_ABILITY_PENETRATE_SPEAR_N205P",
+   "field": "eElementalType",
+   "value": "EElementalType::THUNDER"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_AttackParam",
+   "row": "BATTLE_ATTACKPARAM_ABILITY_PENETRATE_SPEAR_N205P",
+   "field": "fPower",
+   "value": 2.0
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_AttackParam",
+   "row": "BATTLE_ATTACKPARAM_ABILITY_PENETRATE_SPEAR_N205P",
+   "field": "fUseTP",
+   "value": 4.0
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_AttackParam",
+   "row": "BATTLE_ATTACKPARAM_ABILITY_PENETRATE_SPEAR_N205P",
+   "field": "eEffectableRangeType",
+   "value": "EEffectableRangeType::POINT"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_AttackParam",
+   "row": "BATTLE_ATTACKPARAM_ABILITY_PENETRATE_SPEAR_N205P",
+   "field": "fEffectiveRangeLevel",
+   "value": 0.0
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_AttackParam",
+   "row": "BATTLE_ATTACKPARAM_ABILITY_PENETRATE_SPEAR_N205P",
+   "field": "StatusEffectId",
+   "value": "BATTLE_STATUSEFFECTATK_APLLY_PARALYSIS_N205P"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_AttackParam",
+   "row": "BATTLE_ATTACKPARAM_ABILITY_PENETRATE_SPEAR_N205P",
+   "field": "eAutoFocusType",
+   "value": "EAutoFocusType::NONE"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_AttackParam",
+   "row": "BATTLE_ATTACKPARAM_ABILITY_PENETRATE_SPEAR_N205P",
+   "field": "SourceId",
+   "value": "None"
+  },
+  {
+   "table": "Newera/Data/DataTables/Text/en/GOP_Text_Ability",
+   "add_row": "TEXT_ABILITY_NAME_PENETRATE_SPEAR_N205P",
+   "copy_from": "TEXT_ABILITY_NAME_PENETRATE_SPEAR"
+  },
+  {
+   "table": "Newera/Data/DataTables/Text/en/GOP_Text_Ability",
+   "row": "TEXT_ABILITY_NAME_PENETRATE_SPEAR_N205P",
+   "field": "Text",
+   "value": "Summary Judgment"
+  },
+  {
+   "table": "Newera/Data/DataTables/Text/en/GOP_Text_Ability",
+   "add_row": "TEXT_ABILITY_HELP_PENETRATE_SPEAR_N205P",
+   "copy_from": "TEXT_ABILITY_HELP_PENETRATE_SPEAR"
+  },
+  {
+   "table": "Newera/Data/DataTables/Text/en/GOP_Text_Ability",
+   "row": "TEXT_ABILITY_HELP_PENETRATE_SPEAR_N205P",
+   "field": "Text",
+   "value": "Deal heavy lightning-type physical damage to a single enemy, with a chance to paralyze them for %_STATUS_EFFECT_TURN_% turn(s). Effect spreads on water."
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Ability",
+   "row": "BATTLE_ABILITY_PENETRATE_SPEAR_N205P",
+   "field": "eAbilityClassType",
+   "value": "EAbilityClassType::PUDDLE_PROPAGATION"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Ability",
+   "row": "BATTLE_ABILITY_PENETRATE_SPEAR_N205P",
+   "field": "eFunctionIconType",
+   "value": "EFunctionIconType::THUNDER"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Ability",
+   "row": "BATTLE_ABILITY_PENETRATE_SPEAR_N205P",
+   "field": "AttackParam",
+   "value": "BATTLE_ATTACKPARAM_ABILITY_PENETRATE_SPEAR_N205P"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Ability",
+   "row": "BATTLE_ABILITY_PENETRATE_SPEAR_N205P",
+   "field": "bEnableCopy",
+   "value": false
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Ability",
+   "row": "BATTLE_ABILITY_PENETRATE_SPEAR_N205P",
+   "field": "AbilityName",
+   "value": "TEXT_ABILITY_NAME_PENETRATE_SPEAR_N205P"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Ability",
+   "row": "BATTLE_ABILITY_PENETRATE_SPEAR_N205P",
+   "field": "AbilityHelp",
+   "value": "TEXT_ABILITY_HELP_PENETRATE_SPEAR_N205P"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Ability",
+   "add_row": "BATTLE_ABILITY_ABILITY_DAMAGE_UP_PANZERSTECHER_N205P",
+   "copy_from": "BATTLE_ABILITY_ABILITY_DAMAGE_UP_INTIMIDATION_SWORD"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Ability",
+   "row": "BATTLE_ABILITY_ABILITY_DAMAGE_UP_PANZERSTECHER_N205P",
+   "field": "AbilityName",
+   "value": "TEXT_ABILITY_NAME_ABILITY_DAMAGE_UP_PANZERSTECHER_N205P"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Ability",
+   "row": "BATTLE_ABILITY_ABILITY_DAMAGE_UP_PANZERSTECHER_N205P",
+   "field": "AbilityHelp",
+   "value": "TEXT_ABILITY_HELP_ABILITY_DAMAGE_UP_PANZERSTECHER_N205P"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Ability",
+   "row": "BATTLE_ABILITY_ABILITY_DAMAGE_UP_PANZERSTECHER_N205P",
+   "field": "FNameParam1",
+   "value": "BATTLE_ABILITY_PANZERSTECHER"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Ability",
+   "row": "BATTLE_ABILITY_ABILITY_DAMAGE_UP_PANZERSTECHER_N205P",
+   "field": "eFunctionIconTypeAbilityTree",
+   "value": "EFunctionIconTypeAbilityTree::NOATTRIBUTE"
+  },
+  {
+   "table": "Newera/Data/DataTables/Text/en/GOP_Text_Ability",
+   "add_row": "TEXT_ABILITY_NAME_ABILITY_DAMAGE_UP_PANZERSTECHER_N205P",
+   "copy_from": "TEXT_ABILITY_WEAPON_DAMAGE_UP_NAME_INTIMIDATION_SWORD"
+  },
+  {
+   "table": "Newera/Data/DataTables/Text/en/GOP_Text_Ability",
+   "row": "TEXT_ABILITY_NAME_ABILITY_DAMAGE_UP_PANZERSTECHER_N205P",
+   "field": "Text",
+   "value": "Unstoppable Spear Damage Up"
+  },
+  {
+   "table": "Newera/Data/DataTables/Text/en/GOP_Text_Ability",
+   "add_row": "TEXT_ABILITY_HELP_ABILITY_DAMAGE_UP_PANZERSTECHER_N205P",
+   "copy_from": "TEXT_ABILITY_WEAPON_DAMAGE_UP_HELP_INTIMIDATION_SWORD"
+  },
+  {
+   "table": "Newera/Data/DataTables/Text/en/GOP_Text_Ability",
+   "row": "TEXT_ABILITY_HELP_ABILITY_DAMAGE_UP_PANZERSTECHER_N205P",
+   "field": "Text",
+   "value": "Increases damage dealt by Unstoppable Spear."
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Ability",
+   "add_row": "BATTLE_ABILITY_TP_REDUCTION_PANZERSTECHER_N205P",
+   "copy_from": "BATTLE_ABILITY_TP_REDUCTION_TWO_STAGE_THRUST"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Ability",
+   "row": "BATTLE_ABILITY_TP_REDUCTION_PANZERSTECHER_N205P",
+   "field": "AbilityName",
+   "value": "TEXT_ABILITY_NAME_TP_REDUCTION_PANZERSTECHER_N205P"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Ability",
+   "row": "BATTLE_ABILITY_TP_REDUCTION_PANZERSTECHER_N205P",
+   "field": "AbilityHelp",
+   "value": "TEXT_ABILITY_HELP_TP_REDUCTION_PANZERSTECHER_N205P"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Ability",
+   "row": "BATTLE_ABILITY_TP_REDUCTION_PANZERSTECHER_N205P",
+   "field": "FNameParam1",
+   "value": "BATTLE_ABILITY_PANZERSTECHER"
+  },
+  {
+   "table": "Newera/Data/DataTables/Text/en/GOP_Text_Ability",
+   "add_row": "TEXT_ABILITY_NAME_TP_REDUCTION_PANZERSTECHER_N205P",
+   "copy_from": "TEXT_ABILITY_WEAPON_TP_CUT_NAME_TWO_STAGE_THRUST"
+  },
+  {
+   "table": "Newera/Data/DataTables/Text/en/GOP_Text_Ability",
+   "row": "TEXT_ABILITY_NAME_TP_REDUCTION_PANZERSTECHER_N205P",
+   "field": "Text",
+   "value": "Unstoppable Spear TP -1"
+  },
+  {
+   "table": "Newera/Data/DataTables/Text/en/GOP_Text_Ability",
+   "add_row": "TEXT_ABILITY_HELP_TP_REDUCTION_PANZERSTECHER_N205P",
+   "copy_from": "TEXT_ABILITY_WEAPON_TP_CUT_HELP_TWO_STAGE_THRUST"
+  },
+  {
+   "table": "Newera/Data/DataTables/Text/en/GOP_Text_Ability",
+   "row": "TEXT_ABILITY_HELP_TP_REDUCTION_PANZERSTECHER_N205P",
+   "field": "Text",
+   "value": "Decreases TP cost of Unstoppable Spear by 1."
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Ability",
+   "add_row": "BATTLE_ABILITY_ABILITY_RANGE_UP_CURFEW_N205P",
+   "copy_from": "BATTLE_ABILITY_ABILITY_RANGE_UPASSAULT"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Ability",
+   "row": "BATTLE_ABILITY_ABILITY_RANGE_UP_CURFEW_N205P",
+   "field": "AbilityName",
+   "value": "TEXT_ABILITY_NAME_ABILITY_RANGE_UP_CURFEW_N205P"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Ability",
+   "row": "BATTLE_ABILITY_ABILITY_RANGE_UP_CURFEW_N205P",
+   "field": "AbilityHelp",
+   "value": "TEXT_ABILITY_HELP_ABILITY_RANGE_UP_CURFEW_N205P"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Ability",
+   "row": "BATTLE_ABILITY_ABILITY_RANGE_UP_CURFEW_N205P",
+   "field": "FNameParam1",
+   "value": "BATTLE_ABILITY_SECRET_CURSE_N205P"
+  },
+  {
+   "table": "Newera/Data/DataTables/Text/en/GOP_Text_Ability",
+   "add_row": "TEXT_ABILITY_NAME_ABILITY_RANGE_UP_CURFEW_N205P",
+   "copy_from": "TEXT_ABILITY_WEAPON_RANGE_UP_NAME_ASSAULT"
+  },
+  {
+   "table": "Newera/Data/DataTables/Text/en/GOP_Text_Ability",
+   "row": "TEXT_ABILITY_NAME_ABILITY_RANGE_UP_CURFEW_N205P",
+   "field": "Text",
+   "value": "Curfew Range +1"
+  },
+  {
+   "table": "Newera/Data/DataTables/Text/en/GOP_Text_Ability",
+   "add_row": "TEXT_ABILITY_HELP_ABILITY_RANGE_UP_CURFEW_N205P",
+   "copy_from": "TEXT_ABILITY_WEAPON_RANGE_UP_HELP_ASSAULT"
+  },
+  {
+   "table": "Newera/Data/DataTables/Text/en/GOP_Text_Ability",
+   "row": "TEXT_ABILITY_HELP_ABILITY_RANGE_UP_CURFEW_N205P",
+   "field": "Text",
+   "value": "Increases the range of Curfew by 1."
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Ability",
+   "add_row": "BATTLE_ABILITY_TP_REDUCTION_JUMP_IMPACT_N205P",
+   "copy_from": "BATTLE_ABILITY_TP_REDUCTION_TWO_STAGE_THRUST"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Ability",
+   "row": "BATTLE_ABILITY_TP_REDUCTION_JUMP_IMPACT_N205P",
+   "field": "AbilityName",
+   "value": "TEXT_ABILITY_NAME_TP_REDUCTION_JUMP_IMPACT_N205P"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Ability",
+   "row": "BATTLE_ABILITY_TP_REDUCTION_JUMP_IMPACT_N205P",
+   "field": "AbilityHelp",
+   "value": "TEXT_ABILITY_HELP_TP_REDUCTION_JUMP_IMPACT_N205P"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Ability",
+   "row": "BATTLE_ABILITY_TP_REDUCTION_JUMP_IMPACT_N205P",
+   "field": "FNameParam1",
+   "value": "BATTLE_ABILITY_JUMP_IMPACT"
+  },
+  {
+   "table": "Newera/Data/DataTables/Text/en/GOP_Text_Ability",
+   "add_row": "TEXT_ABILITY_NAME_TP_REDUCTION_JUMP_IMPACT_N205P",
+   "copy_from": "TEXT_ABILITY_WEAPON_TP_CUT_NAME_TWO_STAGE_THRUST"
+  },
+  {
+   "table": "Newera/Data/DataTables/Text/en/GOP_Text_Ability",
+   "row": "TEXT_ABILITY_NAME_TP_REDUCTION_JUMP_IMPACT_N205P",
+   "field": "Text",
+   "value": "Landing Impact TP -1"
+  },
+  {
+   "table": "Newera/Data/DataTables/Text/en/GOP_Text_Ability",
+   "add_row": "TEXT_ABILITY_HELP_TP_REDUCTION_JUMP_IMPACT_N205P",
+   "copy_from": "TEXT_ABILITY_WEAPON_TP_CUT_HELP_TWO_STAGE_THRUST"
+  },
+  {
+   "table": "Newera/Data/DataTables/Text/en/GOP_Text_Ability",
+   "row": "TEXT_ABILITY_HELP_TP_REDUCTION_JUMP_IMPACT_N205P",
+   "field": "Text",
+   "value": "Decreases TP cost of Landing Impact by 1."
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_WeaponAbilityTree",
+   "add_row": "BATTLE_WEAPONABILITYTREE_N205P_RANK1",
+   "copy_from": "BATTLE_WEAPONABILITYTREE_P001_RANK1"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_WeaponAbilityTree",
+   "row": "BATTLE_WEAPONABILITYTREE_N205P_RANK1",
+   "field": "AbilityId1",
+   "value": "BATTLE_ABILITY_WEAPON_POWER_CORRECTION_DAMAGE_UP"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_WeaponAbilityTree",
+   "row": "BATTLE_WEAPONABILITYTREE_N205P_RANK1",
+   "field": "AbilityId2",
+   "value": "BATTLE_ABILITY_WEAPON_BONUS_HP_UP"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_WeaponAbilityTree",
+   "row": "BATTLE_WEAPONABILITYTREE_N205P_RANK1",
+   "field": "AbilityId3",
+   "value": "BATTLE_ABILITY_WEAPON_BONUS_STR_UP"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_WeaponAbilityTree",
+   "row": "BATTLE_WEAPONABILITYTREE_N205P_RANK1",
+   "field": "AbilityId4",
+   "value": "BATTLE_ABILITY_WEAPON_BONUS_DEF_UP"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_WeaponAbilityTree",
+   "row": "BATTLE_WEAPONABILITYTREE_N205P_RANK1",
+   "field": "AbilityId5",
+   "value": "BATTLE_ABILITY_ABILITY_DAMAGE_UP_PANZERSTECHER_N205P"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_WeaponAbilityTree",
+   "add_row": "BATTLE_WEAPONABILITYTREE_N205P_RANK2",
+   "copy_from": "BATTLE_WEAPONABILITYTREE_P001_RANK2"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_WeaponAbilityTree",
+   "row": "BATTLE_WEAPONABILITYTREE_N205P_RANK2",
+   "field": "AbilityId1",
+   "value": "BATTLE_ABILITY_WEAPON_POWER_CORRECTION_DAMAGE_UP_RANK2"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_WeaponAbilityTree",
+   "row": "BATTLE_WEAPONABILITYTREE_N205P_RANK2",
+   "field": "AbilityId2",
+   "value": "BATTLE_ABILITY_WEAPON_BONUS_STR_UP_II"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_WeaponAbilityTree",
+   "row": "BATTLE_WEAPONABILITYTREE_N205P_RANK2",
+   "field": "AbilityId3",
+   "value": "BATTLE_ABILITY_TP_REDUCTION_PANZERSTECHER_N205P"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_WeaponAbilityTree",
+   "row": "BATTLE_WEAPONABILITYTREE_N205P_RANK2",
+   "field": "AbilityId4",
+   "value": "BATTLE_ABILITY_ABILITY_RANGE_UP_CURFEW_N205P"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_WeaponAbilityTree",
+   "row": "BATTLE_WEAPONABILITYTREE_N205P_RANK2",
+   "field": "AbilityId5",
+   "value": "BATTLE_ABILITY_WEAPON_BONUS_MDF_UP"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_WeaponAbilityTree",
+   "add_row": "BATTLE_WEAPONABILITYTREE_N205P_RANK3",
+   "copy_from": "BATTLE_WEAPONABILITYTREE_P001_RANK3"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_WeaponAbilityTree",
+   "row": "BATTLE_WEAPONABILITYTREE_N205P_RANK3",
+   "field": "AbilityId1",
+   "value": "BATTLE_ABILITY_WEAPON_POWER_CORRECTION_DAMAGE_UP_II"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_WeaponAbilityTree",
+   "row": "BATTLE_WEAPONABILITYTREE_N205P_RANK3",
+   "field": "AbilityId2",
+   "value": "BATTLE_ABILITY_TP_REDUCTION_JUMP_IMPACT_N205P"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_WeaponAbilityTree",
+   "row": "BATTLE_WEAPONABILITYTREE_N205P_RANK3",
+   "field": "AbilityId3",
+   "value": "BATTLE_ABILITY_PENETRATE_SPEAR_N205P"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_WeaponAbilityTree",
+   "row": "BATTLE_WEAPONABILITYTREE_N205P_RANK3",
+   "field": "AbilityId4",
+   "value": "None"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_WeaponAbilityTree",
+   "row": "BATTLE_WEAPONABILITYTREE_N205P_RANK3",
+   "field": "AbilityId5",
+   "value": "None"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Weapon",
+   "add_row": "BATTLE_WEAPON_N205P",
+   "copy_from": "BATTLE_WEAPON_P021"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_WeaponAbilityMaterial",
+   "add_row": "BATTLE_WEAPONABILITYMATERIAL_N205P_RANK1",
+   "copy_from": "BATTLE_WEAPONABILITYMATERIAL_WEAPON_ABILITY_SPEAR_RANK1"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_WeaponAbilityMaterial",
+   "row": "BATTLE_WEAPONABILITYMATERIAL_N205P_RANK1",
+   "field": "MaterialId1_1",
+   "value": "None"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_WeaponAbilityMaterial",
+   "row": "BATTLE_WEAPONABILITYMATERIAL_N205P_RANK1",
+   "field": "iMaterialNum1_1",
+   "value": 0
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_WeaponAbilityMaterial",
+   "row": "BATTLE_WEAPONABILITYMATERIAL_N205P_RANK1",
+   "field": "MaterialId2_1",
+   "value": "None"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_WeaponAbilityMaterial",
+   "row": "BATTLE_WEAPONABILITYMATERIAL_N205P_RANK1",
+   "field": "iMaterialNum2_1",
+   "value": 0
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_WeaponAbilityMaterial",
+   "row": "BATTLE_WEAPONABILITYMATERIAL_N205P_RANK1",
+   "field": "MaterialId1_2",
+   "value": "None"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_WeaponAbilityMaterial",
+   "row": "BATTLE_WEAPONABILITYMATERIAL_N205P_RANK1",
+   "field": "iMaterialNum1_2",
+   "value": 0
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_WeaponAbilityMaterial",
+   "row": "BATTLE_WEAPONABILITYMATERIAL_N205P_RANK1",
+   "field": "MaterialId2_2",
+   "value": "None"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_WeaponAbilityMaterial",
+   "row": "BATTLE_WEAPONABILITYMATERIAL_N205P_RANK1",
+   "field": "iMaterialNum2_2",
+   "value": 0
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_WeaponAbilityMaterial",
+   "row": "BATTLE_WEAPONABILITYMATERIAL_N205P_RANK1",
+   "field": "MaterialId1_3",
+   "value": "None"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_WeaponAbilityMaterial",
+   "row": "BATTLE_WEAPONABILITYMATERIAL_N205P_RANK1",
+   "field": "iMaterialNum1_3",
+   "value": 0
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_WeaponAbilityMaterial",
+   "row": "BATTLE_WEAPONABILITYMATERIAL_N205P_RANK1",
+   "field": "MaterialId2_3",
+   "value": "None"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_WeaponAbilityMaterial",
+   "row": "BATTLE_WEAPONABILITYMATERIAL_N205P_RANK1",
+   "field": "iMaterialNum2_3",
+   "value": 0
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_WeaponAbilityMaterial",
+   "row": "BATTLE_WEAPONABILITYMATERIAL_N205P_RANK1",
+   "field": "MaterialId1_4",
+   "value": "None"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_WeaponAbilityMaterial",
+   "row": "BATTLE_WEAPONABILITYMATERIAL_N205P_RANK1",
+   "field": "iMaterialNum1_4",
+   "value": 0
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_WeaponAbilityMaterial",
+   "row": "BATTLE_WEAPONABILITYMATERIAL_N205P_RANK1",
+   "field": "MaterialId2_4",
+   "value": "None"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_WeaponAbilityMaterial",
+   "row": "BATTLE_WEAPONABILITYMATERIAL_N205P_RANK1",
+   "field": "iMaterialNum2_4",
+   "value": 0
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_WeaponAbilityMaterial",
+   "row": "BATTLE_WEAPONABILITYMATERIAL_N205P_RANK1",
+   "field": "MaterialId1_5",
+   "value": "None"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_WeaponAbilityMaterial",
+   "row": "BATTLE_WEAPONABILITYMATERIAL_N205P_RANK1",
+   "field": "iMaterialNum1_5",
+   "value": 0
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_WeaponAbilityMaterial",
+   "row": "BATTLE_WEAPONABILITYMATERIAL_N205P_RANK1",
+   "field": "MaterialId2_5",
+   "value": "None"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_WeaponAbilityMaterial",
+   "row": "BATTLE_WEAPONABILITYMATERIAL_N205P_RANK1",
+   "field": "iMaterialNum2_5",
+   "value": 0
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Weapon",
+   "row": "BATTLE_WEAPON_N205P",
+   "field": "WeaponName",
+   "value": "TEXT_WEAPON_NAME_N205"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Weapon",
+   "row": "BATTLE_WEAPON_N205P",
+   "field": "WeaponIconType",
+   "value": "EWeaponIconType::SPEAR"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Weapon",
+   "row": "BATTLE_WEAPON_N205P",
+   "field": "AttackParam",
+   "value": "BATTLE_ATTACKPARAM_WEAPON_N205P"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Weapon",
+   "row": "BATTLE_WEAPON_N205P",
+   "field": "WeaponAbilityTree",
+   "value": "BATTLE_WEAPONABILITYTREE_N205P_RANK1"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Weapon",
+   "row": "BATTLE_WEAPON_N205P",
+   "field": "RankUpWeapon",
+   "value": "BATTLE_WEAPON_RANK2_N205P"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Weapon",
+   "row": "BATTLE_WEAPON_N205P",
+   "field": "RankDownWeapon",
+   "value": "None"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Weapon",
+   "row": "BATTLE_WEAPON_N205P",
+   "field": "WeaponAbilityMaterial",
+   "value": "BATTLE_WEAPONABILITYMATERIAL_N205P_RANK1"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Weapon",
+   "add_row": "BATTLE_WEAPON_RANK2_N205P",
+   "copy_from": "BATTLE_WEAPON_RANK2_P021"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_WeaponAbilityMaterial",
+   "add_row": "BATTLE_WEAPONABILITYMATERIAL_N205P_RANK2",
+   "copy_from": "BATTLE_WEAPONABILITYMATERIAL_WEAPON_ABILITY_SPEAR_RANK2"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_WeaponAbilityMaterial",
+   "row": "BATTLE_WEAPONABILITYMATERIAL_N205P_RANK2",
+   "field": "MaterialId1_1",
+   "value": "None"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_WeaponAbilityMaterial",
+   "row": "BATTLE_WEAPONABILITYMATERIAL_N205P_RANK2",
+   "field": "iMaterialNum1_1",
+   "value": 0
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_WeaponAbilityMaterial",
+   "row": "BATTLE_WEAPONABILITYMATERIAL_N205P_RANK2",
+   "field": "MaterialId2_1",
+   "value": "None"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_WeaponAbilityMaterial",
+   "row": "BATTLE_WEAPONABILITYMATERIAL_N205P_RANK2",
+   "field": "iMaterialNum2_1",
+   "value": 0
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_WeaponAbilityMaterial",
+   "row": "BATTLE_WEAPONABILITYMATERIAL_N205P_RANK2",
+   "field": "MaterialId1_2",
+   "value": "None"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_WeaponAbilityMaterial",
+   "row": "BATTLE_WEAPONABILITYMATERIAL_N205P_RANK2",
+   "field": "iMaterialNum1_2",
+   "value": 0
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_WeaponAbilityMaterial",
+   "row": "BATTLE_WEAPONABILITYMATERIAL_N205P_RANK2",
+   "field": "MaterialId2_2",
+   "value": "None"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_WeaponAbilityMaterial",
+   "row": "BATTLE_WEAPONABILITYMATERIAL_N205P_RANK2",
+   "field": "iMaterialNum2_2",
+   "value": 0
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_WeaponAbilityMaterial",
+   "row": "BATTLE_WEAPONABILITYMATERIAL_N205P_RANK2",
+   "field": "MaterialId1_3",
+   "value": "None"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_WeaponAbilityMaterial",
+   "row": "BATTLE_WEAPONABILITYMATERIAL_N205P_RANK2",
+   "field": "iMaterialNum1_3",
+   "value": 0
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_WeaponAbilityMaterial",
+   "row": "BATTLE_WEAPONABILITYMATERIAL_N205P_RANK2",
+   "field": "MaterialId2_3",
+   "value": "None"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_WeaponAbilityMaterial",
+   "row": "BATTLE_WEAPONABILITYMATERIAL_N205P_RANK2",
+   "field": "iMaterialNum2_3",
+   "value": 0
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_WeaponAbilityMaterial",
+   "row": "BATTLE_WEAPONABILITYMATERIAL_N205P_RANK2",
+   "field": "MaterialId1_4",
+   "value": "None"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_WeaponAbilityMaterial",
+   "row": "BATTLE_WEAPONABILITYMATERIAL_N205P_RANK2",
+   "field": "iMaterialNum1_4",
+   "value": 0
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_WeaponAbilityMaterial",
+   "row": "BATTLE_WEAPONABILITYMATERIAL_N205P_RANK2",
+   "field": "MaterialId2_4",
+   "value": "None"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_WeaponAbilityMaterial",
+   "row": "BATTLE_WEAPONABILITYMATERIAL_N205P_RANK2",
+   "field": "iMaterialNum2_4",
+   "value": 0
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_WeaponAbilityMaterial",
+   "row": "BATTLE_WEAPONABILITYMATERIAL_N205P_RANK2",
+   "field": "MaterialId1_5",
+   "value": "None"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_WeaponAbilityMaterial",
+   "row": "BATTLE_WEAPONABILITYMATERIAL_N205P_RANK2",
+   "field": "iMaterialNum1_5",
+   "value": 0
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_WeaponAbilityMaterial",
+   "row": "BATTLE_WEAPONABILITYMATERIAL_N205P_RANK2",
+   "field": "MaterialId2_5",
+   "value": "None"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_WeaponAbilityMaterial",
+   "row": "BATTLE_WEAPONABILITYMATERIAL_N205P_RANK2",
+   "field": "iMaterialNum2_5",
+   "value": 0
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Weapon",
+   "row": "BATTLE_WEAPON_RANK2_N205P",
+   "field": "WeaponName",
+   "value": "TEXT_WEAPON_NAME_RANK2_N205P"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Weapon",
+   "row": "BATTLE_WEAPON_RANK2_N205P",
+   "field": "WeaponIconType",
+   "value": "EWeaponIconType::SPEAR"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Weapon",
+   "row": "BATTLE_WEAPON_RANK2_N205P",
+   "field": "AttackParam",
+   "value": "BATTLE_ATTACKPARAM_WEAPON_N205P"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Weapon",
+   "row": "BATTLE_WEAPON_RANK2_N205P",
+   "field": "WeaponAbilityTree",
+   "value": "BATTLE_WEAPONABILITYTREE_N205P_RANK2"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Weapon",
+   "row": "BATTLE_WEAPON_RANK2_N205P",
+   "field": "RankUpWeapon",
+   "value": "BATTLE_WEAPON_RANK3_N205P"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Weapon",
+   "row": "BATTLE_WEAPON_RANK2_N205P",
+   "field": "RankDownWeapon",
+   "value": "BATTLE_WEAPON_N205P"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Weapon",
+   "row": "BATTLE_WEAPON_RANK2_N205P",
+   "field": "RankUpMaterial1",
+   "value": "ITEM_UPGRADEMATERIAL_RANKUP_STEEL"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Weapon",
+   "row": "BATTLE_WEAPON_RANK2_N205P",
+   "field": "WeaponAbilityMaterial",
+   "value": "BATTLE_WEAPONABILITYMATERIAL_N205P_RANK2"
+  },
+  {
+   "table": "Newera/Data/DataTables/Text/en/GOP_Text_Weapon",
+   "add_row": "TEXT_WEAPON_NAME_RANK2_N205P",
+   "copy_from": "TEXT_WEAPON_NAME_RANK2_P021"
+  },
+  {
+   "table": "Newera/Data/DataTables/Text/en/GOP_Text_Weapon",
+   "row": "TEXT_WEAPON_NAME_RANK2_N205P",
+   "field": "Text",
+   "value": "Lance of Order"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Weapon",
+   "add_row": "BATTLE_WEAPON_RANK3_N205P",
+   "copy_from": "BATTLE_WEAPON_RANK3_P021"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_WeaponAbilityMaterial",
+   "add_row": "BATTLE_WEAPONABILITYMATERIAL_N205P_RANK3",
+   "copy_from": "BATTLE_WEAPONABILITYMATERIAL_WEAPON_ABILITY_SPEAR_RANK3"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_WeaponAbilityMaterial",
+   "row": "BATTLE_WEAPONABILITYMATERIAL_N205P_RANK3",
+   "field": "MaterialId1_1",
+   "value": "None"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_WeaponAbilityMaterial",
+   "row": "BATTLE_WEAPONABILITYMATERIAL_N205P_RANK3",
+   "field": "iMaterialNum1_1",
+   "value": 0
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_WeaponAbilityMaterial",
+   "row": "BATTLE_WEAPONABILITYMATERIAL_N205P_RANK3",
+   "field": "MaterialId2_1",
+   "value": "None"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_WeaponAbilityMaterial",
+   "row": "BATTLE_WEAPONABILITYMATERIAL_N205P_RANK3",
+   "field": "iMaterialNum2_1",
+   "value": 0
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_WeaponAbilityMaterial",
+   "row": "BATTLE_WEAPONABILITYMATERIAL_N205P_RANK3",
+   "field": "MaterialId1_2",
+   "value": "None"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_WeaponAbilityMaterial",
+   "row": "BATTLE_WEAPONABILITYMATERIAL_N205P_RANK3",
+   "field": "iMaterialNum1_2",
+   "value": 0
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_WeaponAbilityMaterial",
+   "row": "BATTLE_WEAPONABILITYMATERIAL_N205P_RANK3",
+   "field": "MaterialId2_2",
+   "value": "None"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_WeaponAbilityMaterial",
+   "row": "BATTLE_WEAPONABILITYMATERIAL_N205P_RANK3",
+   "field": "iMaterialNum2_2",
+   "value": 0
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_WeaponAbilityMaterial",
+   "row": "BATTLE_WEAPONABILITYMATERIAL_N205P_RANK3",
+   "field": "MaterialId1_3",
+   "value": "None"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_WeaponAbilityMaterial",
+   "row": "BATTLE_WEAPONABILITYMATERIAL_N205P_RANK3",
+   "field": "iMaterialNum1_3",
+   "value": 0
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_WeaponAbilityMaterial",
+   "row": "BATTLE_WEAPONABILITYMATERIAL_N205P_RANK3",
+   "field": "MaterialId2_3",
+   "value": "None"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_WeaponAbilityMaterial",
+   "row": "BATTLE_WEAPONABILITYMATERIAL_N205P_RANK3",
+   "field": "iMaterialNum2_3",
+   "value": 0
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_WeaponAbilityMaterial",
+   "row": "BATTLE_WEAPONABILITYMATERIAL_N205P_RANK3",
+   "field": "MaterialId1_4",
+   "value": "None"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_WeaponAbilityMaterial",
+   "row": "BATTLE_WEAPONABILITYMATERIAL_N205P_RANK3",
+   "field": "iMaterialNum1_4",
+   "value": 0
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_WeaponAbilityMaterial",
+   "row": "BATTLE_WEAPONABILITYMATERIAL_N205P_RANK3",
+   "field": "MaterialId2_4",
+   "value": "None"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_WeaponAbilityMaterial",
+   "row": "BATTLE_WEAPONABILITYMATERIAL_N205P_RANK3",
+   "field": "iMaterialNum2_4",
+   "value": 0
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_WeaponAbilityMaterial",
+   "row": "BATTLE_WEAPONABILITYMATERIAL_N205P_RANK3",
+   "field": "MaterialId1_5",
+   "value": "None"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_WeaponAbilityMaterial",
+   "row": "BATTLE_WEAPONABILITYMATERIAL_N205P_RANK3",
+   "field": "iMaterialNum1_5",
+   "value": 0
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_WeaponAbilityMaterial",
+   "row": "BATTLE_WEAPONABILITYMATERIAL_N205P_RANK3",
+   "field": "MaterialId2_5",
+   "value": "None"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_WeaponAbilityMaterial",
+   "row": "BATTLE_WEAPONABILITYMATERIAL_N205P_RANK3",
+   "field": "iMaterialNum2_5",
+   "value": 0
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Ability",
+   "row": "BATTLE_ABILITY_PENETRATE_SPEAR_N205P",
+   "field": "bIsWeaponAbility",
+   "value": true
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Ability",
+   "row": "BATTLE_ABILITY_PENETRATE_SPEAR_N205P",
+   "field": "bEnableCopy",
+   "value": false
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Ability",
+   "row": "BATTLE_ABILITY_PENETRATE_SPEAR_N205P",
+   "field": "iSortNumber",
+   "value": 1102
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Ability",
+   "row": "BATTLE_ABILITY_PENETRATE_SPEAR_N205P",
+   "field": "eFunctionIconTypeAbilityTree",
+   "value": "EFunctionIconTypeAbilityTree::UNIT_WEAPON"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Weapon",
+   "row": "BATTLE_WEAPON_RANK3_N205P",
+   "field": "WeaponName",
+   "value": "TEXT_WEAPON_NAME_RANK3_N205P"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Weapon",
+   "row": "BATTLE_WEAPON_RANK3_N205P",
+   "field": "WeaponIconType",
+   "value": "EWeaponIconType::SPEAR"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Weapon",
+   "row": "BATTLE_WEAPON_RANK3_N205P",
+   "field": "AttackParam",
+   "value": "BATTLE_ATTACKPARAM_WEAPON_N205P"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Weapon",
+   "row": "BATTLE_WEAPON_RANK3_N205P",
+   "field": "WeaponAbilityTree",
+   "value": "BATTLE_WEAPONABILITYTREE_N205P_RANK3"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Weapon",
+   "row": "BATTLE_WEAPON_RANK3_N205P",
+   "field": "RankUpWeapon",
+   "value": "None"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Weapon",
+   "row": "BATTLE_WEAPON_RANK3_N205P",
+   "field": "RankDownWeapon",
+   "value": "BATTLE_WEAPON_RANK2_N205P"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Weapon",
+   "row": "BATTLE_WEAPON_RANK3_N205P",
+   "field": "RankUpMaterial1",
+   "value": "ITEM_UPGRADEMATERIAL_RANKUP_OBSIDIAN"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Weapon",
+   "row": "BATTLE_WEAPON_RANK3_N205P",
+   "field": "WeaponAbilityMaterial",
+   "value": "BATTLE_WEAPONABILITYMATERIAL_N205P_RANK3"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Weapon",
+   "row": "BATTLE_WEAPON_RANK3_N205P",
+   "field": "Ability",
+   "value": "BATTLE_ABILITY_PENETRATE_SPEAR_N205P"
+  },
+  {
+   "table": "Newera/Data/DataTables/Text/en/GOP_Text_Weapon",
+   "add_row": "TEXT_WEAPON_NAME_RANK3_N205P",
+   "copy_from": "TEXT_WEAPON_NAME_RANK3_P021"
+  },
+  {
+   "table": "Newera/Data/DataTables/Text/en/GOP_Text_Weapon",
+   "row": "TEXT_WEAPON_NAME_RANK3_N205P",
+   "field": "Text",
+   "value": "Lance of the Saintly Seven"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "add_row": "BATTLE_JOB_CH_N205P_1",
+   "copy_from": "BATTLE_JOB_CH_P021_1"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "row": "BATTLE_JOB_CH_N205P_1",
+   "field": "eJobType",
+   "value": "EJobType::LANCER"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "row": "BATTLE_JOB_CH_N205P_1",
+   "field": "JobName",
+   "value": "TEXT_JOB_NAME_N205_M"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "row": "BATTLE_JOB_CH_N205P_1",
+   "field": "JobHelp",
+   "value": "TEXT_JOB_HELP_N205P"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "row": "BATTLE_JOB_CH_N205P_1",
+   "field": "JobTypeBefore",
+   "value": "None"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "row": "BATTLE_JOB_CH_N205P_1",
+   "field": "JobTypeAfter1",
+   "value": "BATTLE_JOB_CH_N205P_2"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "row": "BATTLE_JOB_CH_N205P_1",
+   "field": "JobTypeAfter2",
+   "value": "None"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "row": "BATTLE_JOB_CH_N205P_1",
+   "field": "JobTypeAfter3",
+   "value": "None"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "row": "BATTLE_JOB_CH_N205P_1",
+   "field": "JobTypeParallel1",
+   "value": "None"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "row": "BATTLE_JOB_CH_N205P_1",
+   "field": "JobTypeParallel2",
+   "value": "None"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "row": "BATTLE_JOB_CH_N205P_1",
+   "field": "iLearnableLevel1",
+   "value": 1
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "row": "BATTLE_JOB_CH_N205P_1",
+   "field": "LearnableAbility1",
+   "value": "BATTLE_ABILITY_PANZERSTECHER"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "row": "BATTLE_JOB_CH_N205P_1",
+   "field": "iLearnableLevel2",
+   "value": 1
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "row": "BATTLE_JOB_CH_N205P_1",
+   "field": "LearnableAbility2",
+   "value": "BATTLE_ABILITY_CAUSAL_RETRIBUTION"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "row": "BATTLE_JOB_CH_N205P_1",
+   "field": "iLearnableLevel3",
+   "value": 3
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "row": "BATTLE_JOB_CH_N205P_1",
+   "field": "LearnableAbility3",
+   "value": "BATTLE_ABILITY_SECRET_CURSE_N205P"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "row": "BATTLE_JOB_CH_N205P_1",
+   "field": "iLearnableLevel4",
+   "value": 0
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "row": "BATTLE_JOB_CH_N205P_1",
+   "field": "LearnableAbility4",
+   "value": "None"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "row": "BATTLE_JOB_CH_N205P_1",
+   "field": "iLearnableLevel5",
+   "value": 0
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "row": "BATTLE_JOB_CH_N205P_1",
+   "field": "LearnableAbility5",
+   "value": "None"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "row": "BATTLE_JOB_CH_N205P_1",
+   "field": "iLearnableLevel6",
+   "value": 0
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "row": "BATTLE_JOB_CH_N205P_1",
+   "field": "LearnableAbility6",
+   "value": "None"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "row": "BATTLE_JOB_CH_N205P_1",
+   "field": "iLearnableLevel7",
+   "value": 0
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "row": "BATTLE_JOB_CH_N205P_1",
+   "field": "LearnableAbility7",
+   "value": "None"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "row": "BATTLE_JOB_CH_N205P_1",
+   "field": "iLearnableLevel8",
+   "value": 0
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "row": "BATTLE_JOB_CH_N205P_1",
+   "field": "LearnableAbility8",
+   "value": "None"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "row": "BATTLE_JOB_CH_N205P_1",
+   "field": "iLearnableLevel9",
+   "value": 0
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "row": "BATTLE_JOB_CH_N205P_1",
+   "field": "LearnableAbility9",
+   "value": "None"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "row": "BATTLE_JOB_CH_N205P_1",
+   "field": "iLearnableLevel10",
+   "value": 0
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "row": "BATTLE_JOB_CH_N205P_1",
+   "field": "LearnableAbility10",
+   "value": "None"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "add_row": "BATTLE_JOB_CH_N205P_2",
+   "copy_from": "BATTLE_JOB_CH_P021_2"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "row": "BATTLE_JOB_CH_N205P_2",
+   "field": "eJobType",
+   "value": "EJobType::LANCER"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "row": "BATTLE_JOB_CH_N205P_2",
+   "field": "JobName",
+   "value": "TEXT_JOB_NAME_N205P_2"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "row": "BATTLE_JOB_CH_N205P_2",
+   "field": "JobHelp",
+   "value": "TEXT_JOB_HELP_N205P"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "row": "BATTLE_JOB_CH_N205P_2",
+   "field": "JobTypeBefore",
+   "value": "BATTLE_JOB_CH_N205P_1"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "row": "BATTLE_JOB_CH_N205P_2",
+   "field": "JobTypeAfter1",
+   "value": "BATTLE_JOB_CH_N205P_3"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "row": "BATTLE_JOB_CH_N205P_2",
+   "field": "JobTypeAfter2",
+   "value": "None"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "row": "BATTLE_JOB_CH_N205P_2",
+   "field": "JobTypeAfter3",
+   "value": "None"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "row": "BATTLE_JOB_CH_N205P_2",
+   "field": "JobTypeParallel1",
+   "value": "None"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "row": "BATTLE_JOB_CH_N205P_2",
+   "field": "JobTypeParallel2",
+   "value": "None"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "row": "BATTLE_JOB_CH_N205P_2",
+   "field": "iLearnableLevel1",
+   "value": 14
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "row": "BATTLE_JOB_CH_N205P_2",
+   "field": "LearnableAbility1",
+   "value": "BATTLE_ABILITY_JUMP_IMPACT"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "row": "BATTLE_JOB_CH_N205P_2",
+   "field": "iLearnableLevel2",
+   "value": 18
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "row": "BATTLE_JOB_CH_N205P_2",
+   "field": "LearnableAbility2",
+   "value": "BATTLE_ABILITY_RAIJIN"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "row": "BATTLE_JOB_CH_N205P_2",
+   "field": "iLearnableLevel3",
+   "value": 0
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "row": "BATTLE_JOB_CH_N205P_2",
+   "field": "LearnableAbility3",
+   "value": "None"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "row": "BATTLE_JOB_CH_N205P_2",
+   "field": "iLearnableLevel4",
+   "value": 0
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "row": "BATTLE_JOB_CH_N205P_2",
+   "field": "LearnableAbility4",
+   "value": "None"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "row": "BATTLE_JOB_CH_N205P_2",
+   "field": "iLearnableLevel5",
+   "value": 0
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "row": "BATTLE_JOB_CH_N205P_2",
+   "field": "LearnableAbility5",
+   "value": "None"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "row": "BATTLE_JOB_CH_N205P_2",
+   "field": "iLearnableLevel6",
+   "value": 0
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "row": "BATTLE_JOB_CH_N205P_2",
+   "field": "LearnableAbility6",
+   "value": "None"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "row": "BATTLE_JOB_CH_N205P_2",
+   "field": "iLearnableLevel7",
+   "value": 0
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "row": "BATTLE_JOB_CH_N205P_2",
+   "field": "LearnableAbility7",
+   "value": "None"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "row": "BATTLE_JOB_CH_N205P_2",
+   "field": "iLearnableLevel8",
+   "value": 0
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "row": "BATTLE_JOB_CH_N205P_2",
+   "field": "LearnableAbility8",
+   "value": "None"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "row": "BATTLE_JOB_CH_N205P_2",
+   "field": "iLearnableLevel9",
+   "value": 0
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "row": "BATTLE_JOB_CH_N205P_2",
+   "field": "LearnableAbility9",
+   "value": "None"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "row": "BATTLE_JOB_CH_N205P_2",
+   "field": "iLearnableLevel10",
+   "value": 0
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "row": "BATTLE_JOB_CH_N205P_2",
+   "field": "LearnableAbility10",
+   "value": "None"
+  },
+  {
+   "table": "Newera/Data/DataTables/Text/en/GOP_Text_Job",
+   "add_row": "TEXT_JOB_NAME_N205P_2",
+   "copy_from": "TEXT_JOB_NAME_P021_M_2"
+  },
+  {
+   "table": "Newera/Data/DataTables/Text/en/GOP_Text_Job",
+   "row": "TEXT_JOB_NAME_N205P_2",
+   "field": "Text",
+   "value": "Lord Lancer"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "add_row": "BATTLE_JOB_CH_N205P_3",
+   "copy_from": "BATTLE_JOB_CH_P021_3"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "row": "BATTLE_JOB_CH_N205P_3",
+   "field": "eJobType",
+   "value": "EJobType::LANCER"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "row": "BATTLE_JOB_CH_N205P_3",
+   "field": "JobName",
+   "value": "TEXT_JOB_NAME_N205P_3"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "row": "BATTLE_JOB_CH_N205P_3",
+   "field": "JobHelp",
+   "value": "TEXT_JOB_HELP_N205P"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "row": "BATTLE_JOB_CH_N205P_3",
+   "field": "JobTypeBefore",
+   "value": "BATTLE_JOB_CH_N205P_2"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "row": "BATTLE_JOB_CH_N205P_3",
+   "field": "JobTypeAfter1",
+   "value": "None"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "row": "BATTLE_JOB_CH_N205P_3",
+   "field": "JobTypeAfter2",
+   "value": "None"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "row": "BATTLE_JOB_CH_N205P_3",
+   "field": "JobTypeAfter3",
+   "value": "None"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "row": "BATTLE_JOB_CH_N205P_3",
+   "field": "JobTypeParallel1",
+   "value": "None"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "row": "BATTLE_JOB_CH_N205P_3",
+   "field": "JobTypeParallel2",
+   "value": "None"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "row": "BATTLE_JOB_CH_N205P_3",
+   "field": "iLearnableLevel1",
+   "value": 22
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "row": "BATTLE_JOB_CH_N205P_3",
+   "field": "LearnableAbility1",
+   "value": "BATTLE_ABILITY_RESIST_PARALYSIS_SILENSE_BLIND"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "row": "BATTLE_JOB_CH_N205P_3",
+   "field": "iLearnableLevel2",
+   "value": 22
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "row": "BATTLE_JOB_CH_N205P_3",
+   "field": "LearnableAbility2",
+   "value": "BATTLE_ABILITY_RESIST_CHARM_DEATH"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "row": "BATTLE_JOB_CH_N205P_3",
+   "field": "iLearnableLevel3",
+   "value": 0
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "row": "BATTLE_JOB_CH_N205P_3",
+   "field": "LearnableAbility3",
+   "value": "None"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "row": "BATTLE_JOB_CH_N205P_3",
+   "field": "iLearnableLevel4",
+   "value": 0
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "row": "BATTLE_JOB_CH_N205P_3",
+   "field": "LearnableAbility4",
+   "value": "None"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "row": "BATTLE_JOB_CH_N205P_3",
+   "field": "iLearnableLevel5",
+   "value": 0
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "row": "BATTLE_JOB_CH_N205P_3",
+   "field": "LearnableAbility5",
+   "value": "None"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "row": "BATTLE_JOB_CH_N205P_3",
+   "field": "iLearnableLevel6",
+   "value": 0
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "row": "BATTLE_JOB_CH_N205P_3",
+   "field": "LearnableAbility6",
+   "value": "None"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "row": "BATTLE_JOB_CH_N205P_3",
+   "field": "iLearnableLevel7",
+   "value": 0
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "row": "BATTLE_JOB_CH_N205P_3",
+   "field": "LearnableAbility7",
+   "value": "None"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "row": "BATTLE_JOB_CH_N205P_3",
+   "field": "iLearnableLevel8",
+   "value": 0
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "row": "BATTLE_JOB_CH_N205P_3",
+   "field": "LearnableAbility8",
+   "value": "None"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "row": "BATTLE_JOB_CH_N205P_3",
+   "field": "iLearnableLevel9",
+   "value": 0
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "row": "BATTLE_JOB_CH_N205P_3",
+   "field": "LearnableAbility9",
+   "value": "None"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "row": "BATTLE_JOB_CH_N205P_3",
+   "field": "iLearnableLevel10",
+   "value": 0
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_Job",
+   "row": "BATTLE_JOB_CH_N205P_3",
+   "field": "LearnableAbility10",
+   "value": "None"
+  },
+  {
+   "table": "Newera/Data/DataTables/Text/en/GOP_Text_Job",
+   "add_row": "TEXT_JOB_NAME_N205P_3",
+   "copy_from": "TEXT_JOB_NAME_P021_M_3"
+  },
+  {
+   "table": "Newera/Data/DataTables/Text/en/GOP_Text_Job",
+   "row": "TEXT_JOB_NAME_N205P_3",
+   "field": "Text",
+   "value": "Minister of Order"
+  },
+  {
+   "table": "Newera/Data/DataTables/Text/en/GOP_Text_Job",
+   "add_row": "TEXT_JOB_HELP_N205P",
+   "copy_from": "TEXT_JOB_NAME_P021_M_2"
+  },
+  {
+   "table": "Newera/Data/DataTables/Text/en/GOP_Text_Job",
+   "row": "TEXT_JOB_HELP_N205P",
+   "field": "Text",
+   "value": "The Saintly Seven's Minister of Domestic Affairs. Public order, enforced at the point of a lance."
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_UnitParam",
+   "add_row": "BATTLE_UNITPARAM_CH_N205_PARTY",
+   "copy_from": "BATTLE_UNITPARAM_CH_N205"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_UnitParam",
+   "row": "BATTLE_UNITPARAM_CH_N205_PARTY",
+   "field": "eUnitAIType",
+   "value": "EUnitAIType::NONE"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_UnitParam",
+   "row": "BATTLE_UNITPARAM_CH_N205_PARTY",
+   "field": "bIsGuest",
+   "value": false
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_UnitParam",
+   "row": "BATTLE_UNITPARAM_CH_N205_PARTY",
+   "field": "bIsIgnoreExperience",
+   "value": false
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_UnitParam",
+   "row": "BATTLE_UNITPARAM_CH_N205_PARTY",
+   "field": "UnitClass",
+   "value": "BATTLE_JOB_CH_N205P_1"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_UnitParam",
+   "row": "BATTLE_UNITPARAM_CH_N205_PARTY",
+   "field": "EquippedWeapon",
+   "value": "BATTLE_WEAPON_N205P"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_UnitParam",
+   "row": "BATTLE_UNITPARAM_CH_N205_PARTY",
+   "field": "UnitGrowthTable",
+   "value": "BATTLE_UNITGROWTH_CH_N205P_R1"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_UnitParam",
+   "row": "BATTLE_UNITPARAM_CH_N205_PARTY",
+   "field": "UnitGrowthTable2",
+   "value": "BATTLE_UNITGROWTH_CH_N205P_R2"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_UnitParam",
+   "row": "BATTLE_UNITPARAM_CH_N205_PARTY",
+   "field": "UnitGrowthTable3",
+   "value": "BATTLE_UNITGROWTH_CH_N205P_R3"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_UnitParam",
+   "row": "BATTLE_UNITPARAM_CH_N205_PARTY",
+   "field": "eUnitCamp",
+   "value": "EUnitCamp::FRIEND"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_UnitParam",
+   "row": "BATTLE_UNITPARAM_CH_N205_PARTY",
+   "field": "fUnitResistStatus",
+   "value": 1.0
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_UnitParam",
+   "row": "BATTLE_UNITPARAM_CH_N205_PARTY",
+   "field": "DropItem",
+   "value": "None"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_UnitParam",
+   "row": "BATTLE_UNITPARAM_CH_N205_PARTY",
+   "field": "EquippedAccessary1",
+   "value": "None"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_UnitParam",
+   "row": "BATTLE_UNITPARAM_CH_N205_PARTY",
+   "field": "fJumpForceUp",
+   "value": 2.0
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_UnitParam",
+   "row": "BATTLE_UNITPARAM_CH_N205_PARTY",
+   "field": "fJumpForceDown",
+   "value": 2.0
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Unit_Master",
+   "row": "UNIT_MASTER_CH_N205",
+   "field": "bGrowthUnit",
+   "value": true
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Unit_Master",
+   "row": "UNIT_MASTER_CH_N205",
+   "field": "GrowthUnitBattleParamId",
+   "value": "BATTLE_UNITPARAM_CH_N205_PARTY"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_StatusEffectAtk",
+   "add_row": "BATTLE_STATUSEFFECTATK_APLLY_PARALYSIS_N205P",
+   "copy_from": "BATTLE_STATUSEFFECTATK_APLLY_PARALYSIS"
+  },
+  {
+   "table": "Newera/Data/DataTables/GOP_Battle_StatusEffectAtk",
+   "row": "BATTLE_STATUSEFFECTATK_APLLY_PARALYSIS_N205P",
+   "field": "fApplyPer1",
+   "value": 0.5
+  }
+ ]
+}

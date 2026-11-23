@@ -1,0 +1,185 @@
+{
+ "id": "N009",
+ "unit_master": "UNIT_MASTER_CH_N009",
+ "party_param": "BATTLE_UNITPARAM_CH_N009_PARTY",
+ "param_template": "BATTLE_UNITPARAM_CH_P032",
+ "stats": {
+  "elite_source": "BATTLE_UNITGROWTH_CH_N009",
+  "keep_from_source": [
+   "fMoveForce",
+   "fJumpForceUp",
+   "fJumpForceDown",
+   "fUnitSpeed",
+   "fGainTacticalPoint"
+  ]
+ },
+ "own_abilities": [
+  {
+   "id": "BATTLE_ABILITY_POWER_RISE_N009P",
+   "copy_from": "BATTLE_ABILITY_POWER_RISE",
+   "set": {
+    "iSortNumber": 1101
+   },
+   "attack": {
+    "id": "BATTLE_ATTACKPARAM_ABILITY_POWER_RISE_N009P",
+    "copy_from": "BATTLE_ATTACKPARAM_ABILITY_POWER_RISE",
+    "set": {
+     "FlipbookId": "ABL_CHARGE_SPR",
+     "eBattleSequence": "EBattleSequence::LS_ABILITY_CHARGE"
+    }
+   }
+  },
+  {
+   "id": "BATTLE_ABILITY_TRIPPED_N009P",
+   "copy_from": "BATTLE_ABILITY_TRIPPED",
+   "name": "Uprising",
+   "help": "Deal physical damage to enemies across 3 horizontal squares, and delay their turns.",
+   "attack": {
+    "id": "BATTLE_ATTACKPARAM_ABILITY_TRIPPED_N009P",
+    "copy_from": "BATTLE_ATTACKPARAM_ABILITY_TRIPPED",
+    "set": {
+     "fBasePowerRate": 1.25
+    }
+   }
+  }
+ ],
+ "classes": [
+  {
+   "rank": 1,
+   "template": "BATTLE_JOB_CH_P021_1",
+   "learn": [
+    [
+     1,
+     "BATTLE_ABILITY_PUSH_UP"
+    ],
+    [
+     1,
+     "BATTLE_ABILITY_HORIZONTAL_JUMP"
+    ],
+    [
+     3,
+     "BATTLE_ABILITY_POWER_RISE_N009P"
+    ]
+   ],
+   "name_text": "TEXT_JOB_NAME_N009_M"
+  },
+  {
+   "rank": 2,
+   "template": "BATTLE_JOB_CH_P021_2",
+   "learn": [
+    [
+     14,
+     "BATTLE_ABILITY_HEART_CATCH"
+    ],
+    [
+     18,
+     "BATTLE_ABILITY_RESIST_BLIND_ANGRY"
+    ]
+   ],
+   "name": "Rosellan Lancer"
+  },
+  {
+   "rank": 3,
+   "template": "BATTLE_JOB_CH_P021_3",
+   "learn": [
+    [
+     22,
+     "BATTLE_ABILITY_RESIST_CHARM_DEATH"
+    ]
+   ],
+   "name": "Lance Master"
+  }
+ ],
+ "class_help": "Chief of the Rosellan village, respected by his people and ready to rise against Hyzante.",
+ "job_type": "EJobType::LANCER",
+ "weapon": {
+  "attack_template": "BATTLE_ATTACKPARAM_WEAPON_N_009",
+  "power": 5.0,
+  "icon": "EWeaponIconType::SPEAR",
+  "ranks": [
+   {
+    "template": "BATTLE_WEAPON_P021",
+    "name_text": "TEXT_WEAPON_NAME_N009"
+   },
+   {
+    "template": "BATTLE_WEAPON_RANK2_P021",
+    "name": "Rosellan Lance III",
+    "rankup_material": "ITEM_UPGRADEMATERIAL_RANKUP_FIBER"
+   },
+   {
+    "template": "BATTLE_WEAPON_RANK3_P021",
+    "name": "Heartpiercer",
+    "rankup_material": "ITEM_UPGRADEMATERIAL_RANKUP_HEART",
+    "weapon_skill": "BATTLE_ABILITY_TRIPPED_N009P"
+   }
+  ]
+ },
+ "tree_abilities": [
+  {
+   "id": "BATTLE_ABILITY_ABILITY_DAMAGE_UP_PUSH_UP_N009P",
+   "template": "BATTLE_ABILITY_ABILITY_DAMAGE_UP_INTIMIDATION_SWORD",
+   "targets": [
+    "BATTLE_ABILITY_PUSH_UP"
+   ],
+   "name": "Skyward Spear Damage Up",
+   "help": "Increases damage dealt by Skyward Spear."
+  },
+  {
+   "id": "BATTLE_ABILITY_TP_REDUCTION_PUSH_UP_N009P",
+   "template": "BATTLE_ABILITY_TP_REDUCTION_TWO_STAGE_THRUST",
+   "targets": [
+    "BATTLE_ABILITY_PUSH_UP"
+   ],
+   "name": "Skyward Spear TP -1",
+   "help": "Decreases TP cost of Skyward Spear by 1."
+  },
+  {
+   "id": "BATTLE_ABILITY_ABILITY_RANGE_UP_POWER_RISE_N009P",
+   "template": "BATTLE_ABILITY_ABILITY_RANGE_UPASSAULT",
+   "targets": [
+    "BATTLE_ABILITY_POWER_RISE_N009P"
+   ],
+   "name": "Rise Up Range +1",
+   "help": "Increases the range of Rise Up by 1."
+  },
+  {
+   "id": "BATTLE_ABILITY_ABILITY_EXTENSION_HEART_CATCH_N009P",
+   "template": "BATTLE_ABILITY_ABILITY_EXTENSION_CHARM",
+   "targets": [
+    "BATTLE_ABILITY_HEART_CATCH"
+   ],
+   "name": "Allure Success Rate Up",
+   "help": "Increases the success rate of Allure."
+  }
+ ],
+ "tree": [
+  {
+   "template": "BATTLE_WEAPONABILITYTREE_P001_RANK1",
+   "nodes": [
+    "BATTLE_ABILITY_WEAPON_POWER_CORRECTION_DAMAGE_UP",
+    "BATTLE_ABILITY_WEAPON_BONUS_HP_UP",
+    "BATTLE_ABILITY_WEAPON_BONUS_STR_UP",
+    "BATTLE_ABILITY_WEAPON_BONUS_DEF_UP",
+    "BATTLE_ABILITY_ABILITY_DAMAGE_UP_PUSH_UP_N009P"
+   ]
+  },
+  {
+   "template": "BATTLE_WEAPONABILITYTREE_P001_RANK2",
+   "nodes": [
+    "BATTLE_ABILITY_WEAPON_POWER_CORRECTION_DAMAGE_UP_RANK2",
+    "BATTLE_ABILITY_WEAPON_BONUS_STR_UP_II",
+    "BATTLE_ABILITY_TP_REDUCTION_PUSH_UP_N009P",
+    "BATTLE_ABILITY_ABILITY_RANGE_UP_POWER_RISE_N009P",
+    "BATTLE_ABILITY_WEAPON_BONUS_SPD_UP"
+   ]
+  },
+  {
+   "template": "BATTLE_WEAPONABILITYTREE_P001_RANK3",
+   "nodes": [
+    "BATTLE_ABILITY_WEAPON_POWER_CORRECTION_DAMAGE_UP_II",
+    "BATTLE_ABILITY_ABILITY_EXTENSION_HEART_CATCH_N009P",
+    "BATTLE_ABILITY_TRIPPED_N009P"
+   ]
+  }
+ ]
+}

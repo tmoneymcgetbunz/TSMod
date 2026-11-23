@@ -1,0 +1,243 @@
+{
+ "id": "N101",
+ "unit_master": "UNIT_MASTER_CH_N101",
+ "party_param": "BATTLE_UNITPARAM_CH_N101_PARTY",
+ "param_template": "BATTLE_UNITPARAM_CH_N101",
+ "stats": {
+  "elite_source": "BATTLE_UNITGROWTH_CH_N101",
+  "keep_from_source": [
+   "fMoveForce",
+   "fJumpForceUp",
+   "fJumpForceDown",
+   "fGainTacticalPoint"
+  ],
+  "scale": {
+   "fMaxHitPoint": 0.51,
+   "fStrength": 0.97,
+   "fIntelligence": 0.98,
+   "fDefence": 0.94,
+   "fMagicDefence": 0.93
+  },
+  "speed_at_50": 27
+ },
+ "own_abilities": [
+  {
+   "id": "BATTLE_ABILITY_FREEZING_SWORD_N101P",
+   "copy_from": "BATTLE_ABILITY_FREEZING_SWORD",
+   "set": {
+    "iSortNumber": 1101
+   }
+  },
+  {
+   "id": "BATTLE_ABILITY_FREEZING_MAGIC_N101P",
+   "copy_from": "BATTLE_ABILITY_FREEZING_MAGIC",
+   "set": {
+    "iSortNumber": 1102
+   }
+  },
+  {
+   "id": "BATTLE_ABILITY_STARDUST2_N101P",
+   "copy_from": "BATTLE_ABILITY_STARDUST2",
+   "set": {
+    "iSortNumber": 1103
+   },
+   "attack": {
+    "id": "BATTLE_ATTACKPARAM_ABILITY_STARDUST2_N101P",
+    "copy_from": "BATTLE_ATTACKPARAM_ABILITY_STARDUST2",
+    "set": {
+     "iMaxTargetRange": 5,
+     "SourceId": "None"
+    }
+   }
+  },
+  {
+   "id": "BATTLE_ABILITY_ERUPTION_N101P",
+   "copy_from": "BATTLE_ABILITY_ERUPTION",
+   "name": "Fire the Deathsknell",
+   "help": "Deal heavy fire-type physical damage to all units within range, allies included, and set every square there ablaze.",
+   "set": {
+    "iSortNumber": 1104
+   },
+   "attack": {
+    "id": "BATTLE_ATTACKPARAM_ABILITY_ERUPTION_N101P",
+    "copy_from": "BATTLE_ATTACKPARAM_ABILITY_ERUPTION",
+    "set": {
+     "FlipbookId": "ABL_POWER_CHARGE",
+     "eBattleSequence": "EBattleSequence::LS_ABILITY_POWER_CHARGE",
+     "iMinTargetRange": 3,
+     "iMaxTargetRange": 8,
+     "eEffectableRangeType": "EEffectableRangeType::CIRCLE",
+     "fEffectiveRangeLevel": 2.0,
+     "eDamageType": "EDamageType::PHYSICS_BASE",
+     "fPower": 1.6,
+     "fUseTP": 5.0,
+     "fMaxReachHeight": 10.0,
+     "fMinReachHeight": 10.0,
+     "fAllowHeightDifference": 10.0,
+     "HitEffect": "Bomb000",
+     "HitSE": "SE_GIM_BOMB_EXPLODE",
+     "SourceId": "None"
+    }
+   }
+  }
+ ],
+ "classes": [
+  {
+   "rank": 1,
+   "template": "BATTLE_JOB_CH_P011_1",
+   "learn": [
+    [
+     1,
+     "BATTLE_ABILITY_FREEZING_SWORD_N101P"
+    ],
+    [
+     1,
+     "BATTLE_ABILITY_FREEZING_MAGIC_N101P"
+    ],
+    [
+     3,
+     "BATTLE_ABILITY_ICE_UNIT"
+    ]
+   ],
+   "name_text": "TEXT_JOB_NAME_N101_M"
+  },
+  {
+   "rank": 2,
+   "template": "BATTLE_JOB_CH_P011_2",
+   "learn": [
+    [
+     14,
+     "BATTLE_ABILITY_STARDUST2_N101P"
+    ],
+    [
+     18,
+     "BATTLE_ABILITY_RESIST_SLEEP_SILENSE_TAUNT"
+    ]
+   ],
+   "name": "Frost Archduke"
+  },
+  {
+   "rank": 3,
+   "template": "BATTLE_JOB_CH_P011_3",
+   "learn": [
+    [
+     22,
+     "BATTLE_ABILITY_RESIST_CHARM_DEATH"
+    ]
+   ],
+   "name": "Sovereign of Winter"
+  }
+ ],
+ "class_help": "Archduke of Aesfrost, who raised his nation by promoting talent over birth. His blade carries killing cold.",
+ "job_type": "EJobType::SWORDSMAN",
+ "weapon": {
+  "attack_template": "BATTLE_ATTACKPARAM_WEAPON_N_101",
+  "power": 5.0,
+  "icon": "EWeaponIconType::SWORD",
+  "ranks": [
+   {
+    "template": "BATTLE_WEAPON_P011",
+    "name_text": "TEXT_WEAPON_NAME_N101"
+   },
+   {
+    "template": "BATTLE_WEAPON_RANK2_P011",
+    "name": "Aesfrosti Warblade",
+    "rankup_material": "ITEM_UPGRADEMATERIAL_RANKUP_STEEL"
+   },
+   {
+    "template": "BATTLE_WEAPON_RANK3_P011",
+    "name": "Frostruler's Edge",
+    "rankup_material": "ITEM_UPGRADEMATERIAL_RANKUP_OBSIDIAN",
+    "weapon_skill": "BATTLE_ABILITY_ERUPTION_N101P"
+   }
+  ]
+ },
+ "tree_abilities": [
+  {
+   "id": "BATTLE_ABILITY_ABILITY_DAMAGE_UP_FREEZING_SWORD_N101P",
+   "template": "BATTLE_ABILITY_ABILITY_DAMAGE_UP_INTIMIDATION_SWORD",
+   "targets": [
+    "BATTLE_ABILITY_FREEZING_SWORD_N101P"
+   ],
+   "name": "Icy Edge Damage Up",
+   "help": "Increases damage dealt by Icy Edge."
+  },
+  {
+   "id": "BATTLE_ABILITY_TP_REDUCTION_FREEZING_MAGIC_N101P",
+   "template": "BATTLE_ABILITY_TP_REDUCTION_TWO_STAGE_THRUST",
+   "targets": [
+    "BATTLE_ABILITY_FREEZING_MAGIC_N101P"
+   ],
+   "name": "Blizzard TP -1",
+   "help": "Decreases TP cost of Blizzard by 1."
+  },
+  {
+   "id": "BATTLE_ABILITY_ABILITY_RANGE_UP_STARDUST2_N101P",
+   "template": "BATTLE_ABILITY_ABILITY_RANGE_UPASSAULT",
+   "targets": [
+    "BATTLE_ABILITY_STARDUST2_N101P"
+   ],
+   "name": "Absolute Zero Range Up",
+   "help": "Increases the range of Absolute Zero by 5.",
+   "set": {
+    "iParam1": 5
+   }
+  },
+  {
+   "id": "BATTLE_ABILITY_ABILITY_RANGE_UP_ERUPTION_N101P",
+   "template": "BATTLE_ABILITY_ABILITY_RANGE_UPASSAULT",
+   "targets": [
+    "BATTLE_ABILITY_ERUPTION_N101P"
+   ],
+   "name": "Fire the Deathsknell Range +1",
+   "help": "Increases the range of Fire the Deathsknell by 1."
+  },
+  {
+   "id": "BATTLE_ABILITY_TP_REDUCTION_STARDUST2_N101P",
+   "template": "BATTLE_ABILITY_TP_REDUCTION_TWO_STAGE_THRUST",
+   "targets": [
+    "BATTLE_ABILITY_STARDUST2_N101P"
+   ],
+   "name": "Absolute Zero TP -1",
+   "help": "Decreases TP cost of Absolute Zero by 1."
+  }
+ ],
+ "tree": [
+  {
+   "template": "BATTLE_WEAPONABILITYTREE_P001_RANK1",
+   "nodes": [
+    "BATTLE_ABILITY_WEAPON_POWER_CORRECTION_DAMAGE_UP",
+    "BATTLE_ABILITY_WEAPON_BONUS_HP_UP",
+    "BATTLE_ABILITY_WEAPON_BONUS_STR_UP",
+    "BATTLE_ABILITY_WEAPON_BONUS_INT_UP",
+    "BATTLE_ABILITY_ABILITY_DAMAGE_UP_FREEZING_SWORD_N101P"
+   ]
+  },
+  {
+   "template": "BATTLE_WEAPONABILITYTREE_P001_RANK2",
+   "nodes": [
+    "BATTLE_ABILITY_WEAPON_POWER_CORRECTION_DAMAGE_UP_RANK2",
+    "BATTLE_ABILITY_WEAPON_BONUS_STR_UP_II",
+    "BATTLE_ABILITY_TP_REDUCTION_FREEZING_MAGIC_N101P",
+    "BATTLE_ABILITY_TP_REDUCTION_STARDUST2_N101P",
+    "BATTLE_ABILITY_WEAPON_BONUS_DEF_UP"
+   ]
+  },
+  {
+   "template": "BATTLE_WEAPONABILITYTREE_P001_RANK3",
+   "nodes": [
+    "BATTLE_ABILITY_WEAPON_POWER_CORRECTION_DAMAGE_UP_II",
+    "BATTLE_ABILITY_ABILITY_RANGE_UP_STARDUST2_N101P",
+    "BATTLE_ABILITY_ERUPTION_N101P"
+   ]
+  }
+ ],
+ "param_set": {
+  "eUnitCamp": "EUnitCamp::FRIEND",
+  "fUnitResistStatus": 1.0,
+  "DropItem": "None",
+  "EquippedAccessary1": "None",
+  "fJumpForceUp": 2.0,
+  "fJumpForceDown": 2.0
+ }
+}

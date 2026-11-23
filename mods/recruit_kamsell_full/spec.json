@@ -1,0 +1,233 @@
+{
+ "id": "N205",
+ "unit_master": "UNIT_MASTER_CH_N205",
+ "party_param": "BATTLE_UNITPARAM_CH_N205_PARTY",
+ "param_template": "BATTLE_UNITPARAM_CH_N205",
+ "stats": {
+  "elite_source": "BATTLE_UNITGROWTH_CH_N205",
+  "keep_from_source": [
+   "fMoveForce",
+   "fJumpForceUp",
+   "fJumpForceDown",
+   "fGainTacticalPoint"
+  ],
+  "scale": {
+   "fMaxHitPoint": 0.51,
+   "fStrength": 0.97,
+   "fIntelligence": 0.98,
+   "fDefence": 0.94,
+   "fMagicDefence": 0.93
+  },
+  "speed_at_50": 25
+ },
+ "own_abilities": [
+  {
+   "id": "BATTLE_ABILITY_SECRET_CURSE_N205P",
+   "copy_from": "BATTLE_ABILITY_SECRET_CURSE",
+   "name": "Curfew",
+   "help": "Lower the speed and movement of all enemies within range for %_BUFF_EFFECT_TURN_% turn(s).",
+   "set": {
+    "iSortNumber": 1101
+   },
+   "attack": {
+    "id": "BATTLE_ATTACKPARAM_ABILITY_SECRET_CURSE_N205P",
+    "copy_from": "BATTLE_ATTACKPARAM_ABILITY_SECRET_CURSE",
+    "set": {
+     "FlipbookId": "ABL_READY_TO_RUN",
+     "eBattleSequence": "EBattleSequence::LS_ABILITY_READY_TO_RUN",
+     "SourceId": "None"
+    }
+   }
+  },
+  {
+   "id": "BATTLE_ABILITY_PENETRATE_SPEAR_N205P",
+   "copy_from": "BATTLE_ABILITY_PENETRATE_SPEAR",
+   "name": "Summary Judgment",
+   "help": "Deal heavy lightning-type physical damage to a single enemy, with a chance to paralyze them for %_STATUS_EFFECT_TURN_% turn(s). Effect spreads on water.",
+   "set": {
+    "eAbilityClassType": "EAbilityClassType::PUDDLE_PROPAGATION",
+    "eFunctionIconType": "EFunctionIconType::THUNDER"
+   },
+   "attack": {
+    "id": "BATTLE_ATTACKPARAM_ABILITY_PENETRATE_SPEAR_N205P",
+    "copy_from": "BATTLE_ATTACKPARAM_ABILITY_PENETRATE_SPEAR",
+    "set": {
+     "FlipbookId": "ABL_PIERCING_LANCE",
+     "eBattleSequence": "EBattleSequence::LS_ABILITY_PIERCING_LANCE",
+     "eElementalType": "EElementalType::THUNDER",
+     "fPower": 2.0,
+     "fUseTP": 4.0,
+     "eEffectableRangeType": "EEffectableRangeType::POINT",
+     "fEffectiveRangeLevel": 0.0,
+     "StatusEffectId": "BATTLE_STATUSEFFECTATK_APLLY_PARALYSIS_N205P",
+     "eAutoFocusType": "EAutoFocusType::NONE",
+     "SourceId": "None"
+    }
+   }
+  }
+ ],
+ "classes": [
+  {
+   "rank": 1,
+   "template": "BATTLE_JOB_CH_P021_1",
+   "learn": [
+    [
+     1,
+     "BATTLE_ABILITY_PANZERSTECHER"
+    ],
+    [
+     1,
+     "BATTLE_ABILITY_CAUSAL_RETRIBUTION"
+    ],
+    [
+     3,
+     "BATTLE_ABILITY_SECRET_CURSE_N205P"
+    ]
+   ],
+   "name_text": "TEXT_JOB_NAME_N205_M"
+  },
+  {
+   "rank": 2,
+   "template": "BATTLE_JOB_CH_P021_2",
+   "learn": [
+    [
+     14,
+     "BATTLE_ABILITY_JUMP_IMPACT"
+    ],
+    [
+     18,
+     "BATTLE_ABILITY_RAIJIN"
+    ]
+   ],
+   "name": "Lord Lancer"
+  },
+  {
+   "rank": 3,
+   "template": "BATTLE_JOB_CH_P021_3",
+   "learn": [
+    [
+     22,
+     "BATTLE_ABILITY_RESIST_PARALYSIS_SILENSE_BLIND"
+    ],
+    [
+     22,
+     "BATTLE_ABILITY_RESIST_CHARM_DEATH"
+    ]
+   ],
+   "name": "Minister of Order"
+  }
+ ],
+ "class_help": "The Saintly Seven's Minister of Domestic Affairs. Public order, enforced at the point of a lance.",
+ "job_type": "EJobType::LANCER",
+ "weapon": {
+  "attack_template": "BATTLE_ATTACKPARAM_WEAPON_N_205",
+  "power": 5.0,
+  "icon": "EWeaponIconType::SPEAR",
+  "ranks": [
+   {
+    "template": "BATTLE_WEAPON_P021",
+    "name_text": "TEXT_WEAPON_NAME_N205"
+   },
+   {
+    "template": "BATTLE_WEAPON_RANK2_P021",
+    "name": "Lance of Order",
+    "rankup_material": "ITEM_UPGRADEMATERIAL_RANKUP_STEEL"
+   },
+   {
+    "template": "BATTLE_WEAPON_RANK3_P021",
+    "name": "Lance of the Saintly Seven",
+    "rankup_material": "ITEM_UPGRADEMATERIAL_RANKUP_OBSIDIAN",
+    "weapon_skill": "BATTLE_ABILITY_PENETRATE_SPEAR_N205P"
+   }
+  ]
+ },
+ "tree_abilities": [
+  {
+   "id": "BATTLE_ABILITY_ABILITY_DAMAGE_UP_PANZERSTECHER_N205P",
+   "template": "BATTLE_ABILITY_ABILITY_DAMAGE_UP_INTIMIDATION_SWORD",
+   "targets": [
+    "BATTLE_ABILITY_PANZERSTECHER"
+   ],
+   "name": "Unstoppable Spear Damage Up",
+   "help": "Increases damage dealt by Unstoppable Spear."
+  },
+  {
+   "id": "BATTLE_ABILITY_TP_REDUCTION_PANZERSTECHER_N205P",
+   "template": "BATTLE_ABILITY_TP_REDUCTION_TWO_STAGE_THRUST",
+   "targets": [
+    "BATTLE_ABILITY_PANZERSTECHER"
+   ],
+   "name": "Unstoppable Spear TP -1",
+   "help": "Decreases TP cost of Unstoppable Spear by 1."
+  },
+  {
+   "id": "BATTLE_ABILITY_ABILITY_RANGE_UP_CURFEW_N205P",
+   "template": "BATTLE_ABILITY_ABILITY_RANGE_UPASSAULT",
+   "targets": [
+    "BATTLE_ABILITY_SECRET_CURSE_N205P"
+   ],
+   "name": "Curfew Range +1",
+   "help": "Increases the range of Curfew by 1."
+  },
+  {
+   "id": "BATTLE_ABILITY_TP_REDUCTION_JUMP_IMPACT_N205P",
+   "template": "BATTLE_ABILITY_TP_REDUCTION_TWO_STAGE_THRUST",
+   "targets": [
+    "BATTLE_ABILITY_JUMP_IMPACT"
+   ],
+   "name": "Landing Impact TP -1",
+   "help": "Decreases TP cost of Landing Impact by 1."
+  }
+ ],
+ "tree": [
+  {
+   "template": "BATTLE_WEAPONABILITYTREE_P001_RANK1",
+   "nodes": [
+    "BATTLE_ABILITY_WEAPON_POWER_CORRECTION_DAMAGE_UP",
+    "BATTLE_ABILITY_WEAPON_BONUS_HP_UP",
+    "BATTLE_ABILITY_WEAPON_BONUS_STR_UP",
+    "BATTLE_ABILITY_WEAPON_BONUS_DEF_UP",
+    "BATTLE_ABILITY_ABILITY_DAMAGE_UP_PANZERSTECHER_N205P"
+   ]
+  },
+  {
+   "template": "BATTLE_WEAPONABILITYTREE_P001_RANK2",
+   "nodes": [
+    "BATTLE_ABILITY_WEAPON_POWER_CORRECTION_DAMAGE_UP_RANK2",
+    "BATTLE_ABILITY_WEAPON_BONUS_STR_UP_II",
+    "BATTLE_ABILITY_TP_REDUCTION_PANZERSTECHER_N205P",
+    "BATTLE_ABILITY_ABILITY_RANGE_UP_CURFEW_N205P",
+    "BATTLE_ABILITY_WEAPON_BONUS_MDF_UP"
+   ]
+  },
+  {
+   "template": "BATTLE_WEAPONABILITYTREE_P001_RANK3",
+   "nodes": [
+    "BATTLE_ABILITY_WEAPON_POWER_CORRECTION_DAMAGE_UP_II",
+    "BATTLE_ABILITY_TP_REDUCTION_JUMP_IMPACT_N205P",
+    "BATTLE_ABILITY_PENETRATE_SPEAR_N205P"
+   ]
+  }
+ ],
+ "param_set": {
+  "eUnitCamp": "EUnitCamp::FRIEND",
+  "fUnitResistStatus": 1.0,
+  "DropItem": "None",
+  "EquippedAccessary1": "None",
+  "fJumpForceUp": 2.0,
+  "fJumpForceDown": 2.0
+ },
+ "extra_edits": [
+  {
+   "table": "GOP_Battle_StatusEffectAtk",
+   "add_row": "BATTLE_STATUSEFFECTATK_APLLY_PARALYSIS_N205P",
+   "copy_from": "BATTLE_STATUSEFFECTATK_APLLY_PARALYSIS"
+  },
+  {
+   "table": "GOP_Battle_StatusEffectAtk",
+   "row": "BATTLE_STATUSEFFECTATK_APLLY_PARALYSIS_N205P",
+   "field": "fApplyPer1",
+   "value": 0.5
+  }
+ ]
+}

@@ -1,0 +1,7 @@
+{
+ "name": "TSMod_FastCh1",
+ "note": "Optional fast Chapter 1 battle (mods/fast_ch1_proposal.md): on only when the save has TEST_FLAG set (save editor checkbox 'Fast Chapter 1 battle'). Inside the battle only: 1-HP enemies, won on the first defeat, no in-battle talk or tutorial. No other mod touches ms01_x01_battle_01.",
+ "lua_append": {
+  "src/battle_01_append.lua": "Newera_Handling/Scenario/Story/ms01_x01/ms01_x01_battle_01"
+ }
+}

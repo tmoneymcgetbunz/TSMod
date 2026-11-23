@@ -1,0 +1,222 @@
+{
+ "id": "N102",
+ "unit_master": "UNIT_MASTER_CH_N102",
+ "party_param": "BATTLE_UNITPARAM_CH_N102_PARTY",
+ "param_template": "BATTLE_UNITPARAM_CH_N102",
+ "stats": {
+  "elite_source": "BATTLE_UNITGROWTH_CH_N102",
+  "keep_from_source": [
+   "fMoveForce",
+   "fJumpForceUp",
+   "fJumpForceDown",
+   "fGainTacticalPoint"
+  ],
+  "scale": {
+   "fMaxHitPoint": 0.51,
+   "fStrength": 0.97,
+   "fIntelligence": 0.98,
+   "fDefence": 0.94,
+   "fMagicDefence": 0.93
+  },
+  "speed_at_50": 25
+ },
+ "own_abilities": [
+  {
+   "id": "BATTLE_ABILITY_WEAKEN_DANCE_N102P",
+   "copy_from": "BATTLE_ABILITY_WEAKEN_DANCE",
+   "name": "Withering Glance",
+   "set": {
+    "iSortNumber": 1101
+   },
+   "attack": {
+    "id": "BATTLE_ATTACKPARAM_ABILITY_WEAKEN_DANCE_N102P",
+    "copy_from": "BATTLE_ATTACKPARAM_ABILITY_WEAKEN_DANCE",
+    "set": {
+     "FlipbookId": "ABL_HATE",
+     "eBattleSequence": "EBattleSequence::LS_ABILITY_HATE"
+    }
+   }
+  },
+  {
+   "id": "BATTLE_ABILITY_BOMB_THROW_N102P",
+   "copy_from": "BATTLE_ABILITY_BOMB_THROW",
+   "name": "Smoke Bomb",
+   "help": "Deal non-elemental magic damage to all enemies within range, and have a chance to blind them for %_STATUS_EFFECT_TURN_% turn(s).",
+   "attack": {
+    "id": "BATTLE_ATTACKPARAM_ABILITY_BOMB_THROW_N102P",
+    "copy_from": "BATTLE_ATTACKPARAM_ITEM_ATTACK_SLEEP",
+    "set": {
+     "eEffectableRangeType": "EEffectableRangeType::CIRCLE",
+     "fEffectiveRangeLevel": 1.0,
+     "eAttackEvaluationType": "EAttackEvaluationType::DAMAGE",
+     "eAttackBaseType": "EAttackBaseType::MAGIC",
+     "eDamageType": "EDamageType::MAGIC_BASE",
+     "fPower": 0.8,
+     "fBasePowerRate": 1.0,
+     "bDamageReaction": true,
+     "StatusEffectId": "BATTLE_STATUSEFFECTATK_APLLY_BLIND",
+     "fUseTP": 3.0,
+     "fHitRate": 100.0,
+     "eAutoFocusType": "EAutoFocusType::AREA_DAMAGE",
+     "ActionTypeForActionVoice": "EActionTypeForActionVoice::ABILITY1",
+     "HitEffect": "BlindArrow_End",
+     "SourceId": "None"
+    }
+   },
+   "set": {
+    "eFunctionIconType": "EFunctionIconType::NOATTRIBUTE"
+   }
+  }
+ ],
+ "classes": [
+  {
+   "rank": 1,
+   "template": "BATTLE_JOB_CH_P011_1",
+   "learn": [
+    [
+     1,
+     "BATTLE_ABILITY_BOMB_THROW"
+    ],
+    [
+     1,
+     "BATTLE_ABILITY_OIL_N102"
+    ],
+    [
+     3,
+     "BATTLE_ABILITY_BRO_FEELINGS"
+    ]
+   ],
+   "name_text": "TEXT_JOB_NAME_N102_F"
+  },
+  {
+   "rank": 2,
+   "template": "BATTLE_JOB_CH_P011_2",
+   "learn": [
+    [
+     14,
+     "BATTLE_ABILITY_WEAKEN_DANCE_N102P"
+    ],
+    [
+     18,
+     "BATTLE_ABILITY_FIRE_UNIT"
+    ]
+   ],
+   "name": "Flame Bomber"
+  },
+  {
+   "rank": 3,
+   "template": "BATTLE_JOB_CH_P011_3",
+   "learn": [
+    [
+     22,
+     "BATTLE_ABILITY_RESIST_PARALYSIS_SILENSE_BLIND"
+    ],
+    [
+     22,
+     "BATTLE_ABILITY_RESIST_CHARM_DEATH"
+    ]
+   ],
+   "name": "Grand Bomber"
+  }
+ ],
+ "class_help": "Archduke Gustadolph's younger sister. She judges others by their lineage, and her bombs do not discriminate.",
+ "job_type": "EJobType::SWORDSMAN",
+ "weapon": {
+  "attack_template": "BATTLE_ATTACKPARAM_WEAPON_N_102",
+  "power": 5.0,
+  "icon": "EWeaponIconType::SWORD",
+  "ranks": [
+   {
+    "template": "BATTLE_WEAPON_P011",
+    "name_text": "TEXT_WEAPON_NAME_N102"
+   },
+   {
+    "template": "BATTLE_WEAPON_RANK2_P011",
+    "name": "Serpent's Pride",
+    "rankup_material": "ITEM_UPGRADEMATERIAL_RANKUP_CRYSTAL"
+   },
+   {
+    "template": "BATTLE_WEAPON_RANK3_P011",
+    "name": "Aesfrosti Fang",
+    "rankup_material": "ITEM_UPGRADEMATERIAL_RANKUP_RESIN",
+    "weapon_skill": "BATTLE_ABILITY_BOMB_THROW_N102P"
+   }
+  ]
+ },
+ "tree_abilities": [
+  {
+   "id": "BATTLE_ABILITY_ABILITY_DAMAGE_UP_BOMB_THROW_N102P",
+   "template": "BATTLE_ABILITY_ABILITY_DAMAGE_UP_INTIMIDATION_SWORD",
+   "targets": [
+    "BATTLE_ABILITY_BOMB_THROW"
+   ],
+   "name": "Playing with Fire Damage Up",
+   "help": "Increases damage dealt by Playing with Fire."
+  },
+  {
+   "id": "BATTLE_ABILITY_TP_REDUCTION_BOMB_THROW_N102P",
+   "template": "BATTLE_ABILITY_TP_REDUCTION_TWO_STAGE_THRUST",
+   "targets": [
+    "BATTLE_ABILITY_BOMB_THROW"
+   ],
+   "name": "Playing with Fire TP -1",
+   "help": "Decreases TP cost of Playing with Fire by 1."
+  },
+  {
+   "id": "BATTLE_ABILITY_ABILITY_RANGE_UP_OIL_N102_N102P",
+   "template": "BATTLE_ABILITY_ABILITY_RANGE_UPASSAULT",
+   "targets": [
+    "BATTLE_ABILITY_OIL_N102"
+   ],
+   "name": "Oil Range +1",
+   "help": "Increases the range of Oil by 1."
+  },
+  {
+   "id": "BATTLE_ABILITY_TP_REDUCTION_WEAKEN_DANCE_N102P",
+   "template": "BATTLE_ABILITY_TP_REDUCTION_TWO_STAGE_THRUST",
+   "targets": [
+    "BATTLE_ABILITY_WEAKEN_DANCE_N102P"
+   ],
+   "name": "Withering Glance TP -1",
+   "help": "Decreases TP cost of Withering Glance by 1."
+  }
+ ],
+ "tree": [
+  {
+   "template": "BATTLE_WEAPONABILITYTREE_P001_RANK1",
+   "nodes": [
+    "BATTLE_ABILITY_WEAPON_POWER_CORRECTION_DAMAGE_UP",
+    "BATTLE_ABILITY_WEAPON_BONUS_HP_UP",
+    "BATTLE_ABILITY_WEAPON_BONUS_STR_UP",
+    "BATTLE_ABILITY_WEAPON_BONUS_DEF_UP",
+    "BATTLE_ABILITY_ABILITY_DAMAGE_UP_BOMB_THROW_N102P"
+   ]
+  },
+  {
+   "template": "BATTLE_WEAPONABILITYTREE_P001_RANK2",
+   "nodes": [
+    "BATTLE_ABILITY_WEAPON_POWER_CORRECTION_DAMAGE_UP_RANK2",
+    "BATTLE_ABILITY_WEAPON_BONUS_STR_UP_II",
+    "BATTLE_ABILITY_TP_REDUCTION_BOMB_THROW_N102P",
+    "BATTLE_ABILITY_ABILITY_RANGE_UP_OIL_N102_N102P",
+    "BATTLE_ABILITY_WEAPON_BONUS_MDF_UP"
+   ]
+  },
+  {
+   "template": "BATTLE_WEAPONABILITYTREE_P001_RANK3",
+   "nodes": [
+    "BATTLE_ABILITY_WEAPON_POWER_CORRECTION_DAMAGE_UP_II",
+    "BATTLE_ABILITY_TP_REDUCTION_WEAKEN_DANCE_N102P",
+    "BATTLE_ABILITY_BOMB_THROW_N102P"
+   ]
+  }
+ ],
+ "param_set": {
+  "eUnitCamp": "EUnitCamp::FRIEND",
+  "fUnitResistStatus": 1.0,
+  "DropItem": "None",
+  "EquippedAccessary1": "None",
+  "fJumpForceUp": 2.0,
+  "fJumpForceDown": 2.0
+ }
+}

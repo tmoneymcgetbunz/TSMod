@@ -1,0 +1,171 @@
+{
+ "id": "N207",
+ "unit_master": "UNIT_MASTER_CH_N207",
+ "party_param": "BATTLE_UNITPARAM_CH_N207_PARTY",
+ "param_template": "BATTLE_UNITPARAM_CH_N207",
+ "stats": {
+  "elite_source": "BATTLE_UNITGROWTH_CH_N207",
+  "keep_from_source": [
+   "fMoveForce",
+   "fJumpForceUp",
+   "fJumpForceDown",
+   "fGainTacticalPoint"
+  ],
+  "scale": {
+   "fMaxHitPoint": 0.51,
+   "fStrength": 0.97,
+   "fIntelligence": 0.98,
+   "fDefence": 0.94,
+   "fMagicDefence": 0.93
+  },
+  "speed_at_50": 27
+ },
+ "own_abilities": [],
+ "classes": [
+  {
+   "rank": 1,
+   "template": "BATTLE_JOB_CH_P029_1",
+   "learn": [
+    [
+     1,
+     "BATTLE_ABILITY_SLOW_MAGIC"
+    ],
+    [
+     1,
+     "BATTLE_ABILITY_DELAY_DAMAGE_N207"
+    ],
+    [
+     3,
+     "BATTLE_ABILITY_ADVANCED_MAGIC"
+    ]
+   ],
+   "name_text": "TEXT_JOB_NAME_N207_F"
+  },
+  {
+   "rank": 2,
+   "template": "BATTLE_JOB_CH_P029_2",
+   "learn": [
+    [
+     14,
+     "BATTLE_ABILITY_TIME_BREAK_N207"
+    ],
+    [
+     18,
+     "BATTLE_ABILITY_RESIST_POISON_SILENSE_TAUNT"
+    ]
+   ],
+   "name": "Chrono Caster"
+  },
+  {
+   "rank": 3,
+   "template": "BATTLE_JOB_CH_P029_3",
+   "learn": [
+    [
+     22,
+     "BATTLE_ABILITY_RESIST_CHARM_DEATH"
+    ]
+   ],
+   "name": "Overseer"
+  }
+ ],
+ "class_help": "The Great Caster of the Ministry of Medicine, who built the automaton and the Aelfric crystals. Quahaug's mother.",
+ "job_type": "EJobType::WIZARD",
+ "weapon": {
+  "attack_template": "BATTLE_ATTACKPARAM_WEAPON_N_207",
+  "power": 5.0,
+  "icon": "EWeaponIconType::ROD",
+  "ranks": [
+   {
+    "template": "BATTLE_WEAPON_P029",
+    "name_text": "TEXT_WEAPON_NAME_N207"
+   },
+   {
+    "template": "BATTLE_WEAPON_RANK2_P029",
+    "name": "Scepter of Hours",
+    "rankup_material": "ITEM_UPGRADEMATERIAL_RANKUP_CRYSTAL"
+   },
+   {
+    "template": "BATTLE_WEAPON_RANK3_P029",
+    "name": "Scepter of the Ministry",
+    "rankup_material": "ITEM_UPGRADEMATERIAL_RANKUP_STAR",
+    "weapon_skill": "BATTLE_ABILITY_TIME_BREAK"
+   }
+  ]
+ },
+ "tree_abilities": [
+  {
+   "id": "BATTLE_ABILITY_ABILITY_DAMAGE_UP_SLOW_MAGIC_N207P",
+   "template": "BATTLE_ABILITY_ABILITY_DAMAGE_UP_FIRE_MAGIC",
+   "targets": [
+    "BATTLE_ABILITY_SLOW_MAGIC"
+   ],
+   "name": "Slow Damage Up",
+   "help": "Increases damage dealt by Slow."
+  },
+  {
+   "id": "BATTLE_ABILITY_TP_REDUCTION_DELAY_DAMAGE_N207P",
+   "template": "BATTLE_ABILITY_TP_REDUCTION_TWO_STAGE_THRUST",
+   "targets": [
+    "BATTLE_ABILITY_DELAY_DAMAGE_N207"
+   ],
+   "name": "Delayed Casting TP -1",
+   "help": "Decreases TP cost of Delayed Casting by 1."
+  },
+  {
+   "id": "BATTLE_ABILITY_ABILITY_RANGE_UP_SLOW_MAGIC_N207P",
+   "template": "BATTLE_ABILITY_ABILITY_RANGE_UPASSAULT",
+   "targets": [
+    "BATTLE_ABILITY_SLOW_MAGIC"
+   ],
+   "name": "Slow Range +1",
+   "help": "Increases the range of Slow by 1."
+  },
+  {
+   "id": "BATTLE_ABILITY_TP_REDUCTION_TIME_BREAK_N207P",
+   "template": "BATTLE_ABILITY_TP_REDUCTION_TWO_STAGE_THRUST",
+   "targets": [
+    "BATTLE_ABILITY_TIME_BREAKP"
+   ],
+   "name": "Stop Time TP -1",
+   "help": "Decreases TP cost of Stop Time by 1."
+  }
+ ],
+ "tree": [
+  {
+   "template": "BATTLE_WEAPONABILITYTREE_P001_RANK1",
+   "nodes": [
+    "BATTLE_ABILITY_WEAPON_POWER_CORRECTION_DAMAGE_UP",
+    "BATTLE_ABILITY_WEAPON_BONUS_HP_UP",
+    "BATTLE_ABILITY_WEAPON_BONUS_INT_UP",
+    "BATTLE_ABILITY_WEAPON_BONUS_MDF_UP",
+    "BATTLE_ABILITY_ABILITY_DAMAGE_UP_SLOW_MAGIC_N207P"
+   ]
+  },
+  {
+   "template": "BATTLE_WEAPONABILITYTREE_P001_RANK2",
+   "nodes": [
+    "BATTLE_ABILITY_WEAPON_POWER_CORRECTION_DAMAGE_UP_RANK2",
+    "BATTLE_ABILITY_WEAPON_BONUS_INT_UP_II",
+    "BATTLE_ABILITY_TP_REDUCTION_DELAY_DAMAGE_N207P",
+    "BATTLE_ABILITY_ABILITY_RANGE_UP_SLOW_MAGIC_N207P",
+    "BATTLE_ABILITY_WEAPON_BONUS_DEF_UP"
+   ]
+  },
+  {
+   "template": "BATTLE_WEAPONABILITYTREE_P001_RANK3",
+   "nodes": [
+    "BATTLE_ABILITY_WEAPON_POWER_CORRECTION_DAMAGE_UP_II",
+    "BATTLE_ABILITY_TP_REDUCTION_TIME_BREAK_N207P",
+    "BATTLE_ABILITY_TIME_BREAK"
+   ]
+  }
+ ],
+ "param_set": {
+  "eUnitCamp": "EUnitCamp::FRIEND",
+  "fUnitResistStatus": 1.0,
+  "DropItem": "None",
+  "EquippedAccessary1": "None",
+  "fJumpForceUp": 2.0,
+  "fJumpForceDown": 2.0
+ }
+}

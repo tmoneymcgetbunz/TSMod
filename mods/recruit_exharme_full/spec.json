@@ -1,0 +1,258 @@
+{
+ "id": "N204",
+ "unit_master": "UNIT_MASTER_CH_N204",
+ "party_param": "BATTLE_UNITPARAM_CH_N204_PARTY",
+ "param_template": "BATTLE_UNITPARAM_CH_P042",
+ "role": "frontline duelist / commander",
+ "param_set": {
+  "eSpecificEffectType2": "ESpecificEffectType2::CAVALRY"
+ },
+ "param_note": "Cavalry like his enemy forms (user decision 2026-11-16). The CAVALRY tag is what makes battle use his _HORSE flipbook set (N204 has DEFAULT + HORSE flipbooks; the guest P042 has no tag and shows on foot). Mounting only at Elite would need a Lua OverrideAnimationType hack (untested), so it was skipped.",
+ "stats": {
+  "elite_source": "BATTLE_UNITGROWTH_CH_N204",
+  "note": "guest table = Elite baseline; Recruit/Veteran scaled by the average recruit rank ratios",
+  "keep_from_source": [
+   "fMoveForce",
+   "fJumpForceUp",
+   "fJumpForceDown",
+   "fUnitSpeed",
+   "fGainTacticalPoint"
+  ]
+ },
+ "own_abilities": [
+  {
+   "id": "BATTLE_ABILITY_CHARMP",
+   "copy_from": "BATTLE_ABILITY_CHARM",
+   "note": "rebalanced Charisma: same area, 30% per enemy (vanilla 60%); Elite tree node adds +0.3",
+   "set": {
+    "bEnableCopy": false
+   },
+   "attack": {
+    "id": "BATTLE_ATTACKPARAM_ABILITY_CHARMP",
+    "copy_from": "BATTLE_ATTACKPARAM_ABILITY_CHARM",
+    "set": {
+     "StatusEffectId": "BATTLE_STATUSEFFECTATK_APLLY_TEMPTATION"
+    }
+   }
+  },
+  {
+   "id": "BATTLE_ABILITY_ALL_OUT_ATTACKP",
+   "copy_from": "BATTLE_ABILITY_ALL_OUT_ATTACK",
+   "note": "user 2026-11-16: keep vanilla Rouse Troops (1 TP, map-wide, +1 TP/STR/MOV) but don't hit the caster (vanilla min range 0 includes him -> infinite TP). Round 3 (Test 15: AROUND radius 99 highlighted every square and lagged): back to vanilla EVERY/EXISTS_UNIT targeting with only iMinTargetRange 1, the combination Stop Time (TIME_BREAK, 'everyone but yourself') uses.",
+   "attack": {
+    "id": "BATTLE_ATTACKPARAM_ABILITY_ALL_OUT_ATTACKP",
+    "copy_from": "BATTLE_ATTACKPARAM_ABILITY_ALL_OUT_ATTACK",
+    "set": {
+     "iMinTargetRange": 1
+    }
+   }
+  },
+  {
+   "id": "BATTLE_ABILITY_INCIDENTALLY_STAB_ATTACK_N204P",
+   "copy_from": "BATTLE_ABILITY_INCIDENTALLY_STAB_ATTACK",
+   "note": "Opportune Attack on horseback (user 2026-11-22, Test 45b): the vanilla strike (INCIDENTALLY_STAB_ATTACK) animates with ATK_SPEAR, which has no frames in his TypeHorse set (grey sprite; anim_check). Own copies: the passive points its strike (FNameParam1) at his own strike row, whose AttackParam uses ATK_SWORD (clean on TypeHorse). Same name and text. The vanilla rows stay Roland's (BATTLE_JOB_CH_P002_1).",
+   "attack": {
+    "id": "BATTLE_ATTACKPARAM_ABILITY_INCIDENTALLY_STAB_N204P",
+    "copy_from": "BATTLE_ATTACKPARAM_ABILITY_INCIDENTALLY_STAB",
+    "set": {
+     "FlipbookId": "ATK_SWORD"
+    }
+   }
+  },
+  {
+   "id": "BATTLE_ABILITY_INCIDENTALLY_STAB_N204P",
+   "copy_from": "BATTLE_ABILITY_INCIDENTALLY_STAB",
+   "note": "Opportune Attack on horseback (user 2026-11-22, Test 45b): the vanilla strike (INCIDENTALLY_STAB_ATTACK) animates with ATK_SPEAR, which has no frames in his TypeHorse set (grey sprite; anim_check). Own copies: the passive points its strike (FNameParam1) at his own strike row, whose AttackParam uses ATK_SWORD (clean on TypeHorse). Same name and text. The vanilla rows stay Roland's (BATTLE_JOB_CH_P002_1).",
+   "set": {
+    "FNameParam1": "BATTLE_ABILITY_INCIDENTALLY_STAB_ATTACK_N204P"
+   }
+  }
+ ],
+ "classes": [
+  {
+   "rank": 1,
+   "template": "BATTLE_JOB_CH_P001_1",
+   "name_text": "TEXT_JOB_NAME_N204_M",
+   "learn": [
+    [
+     1,
+     "BATTLE_ABILITY_BURST_ATTACK"
+    ],
+    [
+     1,
+     "BATTLE_ABILITY_WEAK_RIDE"
+    ],
+    [
+     3,
+     "BATTLE_ABILITY_INCIDENTALLY_STAB_N204P"
+    ]
+   ]
+  },
+  {
+   "rank": 2,
+   "template": "BATTLE_JOB_CH_P001_2_M",
+   "name_text": "TEXT_JOB_NAME_N204_M_2",
+   "learn": [
+    [
+     14,
+     "BATTLE_ABILITY_CHARMP"
+    ],
+    [
+     18,
+     "BATTLE_ABILITY_RESIST_IMMOVABLE_BLIND_TAUNT"
+    ]
+   ]
+  },
+  {
+   "rank": 3,
+   "template": "BATTLE_JOB_CH_P001_3_M",
+   "name_text": "TEXT_JOB_NAME_N204_M_3",
+   "learn": [
+    [
+     22,
+     "BATTLE_ABILITY_RESIST_CHARM_DEATH"
+    ]
+   ]
+  }
+ ],
+ "class_help": "A proud Aesfrosti swordsman who wears down foes with his blade and rallies allies with his presence.",
+ "job_type": "EJobType::SWORDSMAN",
+ "weapon": {
+  "attack_template": "BATTLE_ATTACKPARAM_WEAPON_N_204",
+  "power": 5.0,
+  "icon": "EWeaponIconType::SWORD",
+  "ranks": [
+   {
+    "template": "BATTLE_WEAPON_P001",
+    "name_text": "TEXT_WEAPON_NAME_N204"
+   },
+   {
+    "template": "BATTLE_WEAPON_RANK2_P001",
+    "name": "Jade Viper",
+    "rankup_material": "ITEM_UPGRADEMATERIAL_RANKUP_STONE"
+   },
+   {
+    "template": "BATTLE_WEAPON_RANK3_P001",
+    "name": "Emerald Serpent",
+    "rankup_material": "ITEM_UPGRADEMATERIAL_RANKUP_JADE",
+    "weapon_skill": "BATTLE_ABILITY_ALL_OUT_ATTACKP"
+   }
+  ]
+ },
+ "tree_abilities": [
+  {
+   "id": "BATTLE_ABILITY_ABILITY_DAMAGE_UP_BURST_ATTACK",
+   "template": "BATTLE_ABILITY_ABILITY_DAMAGE_UP_INTIMIDATION_SWORD",
+   "targets": [
+    "BATTLE_ABILITY_BURST_ATTACK"
+   ],
+   "name": "Sandstorm Damage Up",
+   "help": "Increases damage dealt by Sandstorm."
+  },
+  {
+   "id": "BATTLE_ABILITY_TP_REDUCTION_BURST_ATTACK",
+   "template": "BATTLE_ABILITY_TP_REDUCTION_TWO_STAGE_THRUST",
+   "targets": [
+    "BATTLE_ABILITY_BURST_ATTACK"
+   ],
+   "name": "Sandstorm TP -1",
+   "help": "Decreases TP cost of Sandstorm by 1."
+  },
+  {
+   "id": "BATTLE_ABILITY_ABILITY_EFFECT_UP_BURST_ATTACK",
+   "template": "BATTLE_ABILITY_ABILITY_EFFECT_UP_WEAKEN_DANCE",
+   "targets": [
+    "BATTLE_ABILITY_BURST_ATTACK",
+    "BATTLE_BUFFEFFECTATK_DB_BURST_ATTACK_II"
+   ],
+   "name": "Sandstorm Effect Up",
+   "help": "Increases the effect of Sandstorm."
+  },
+  {
+   "id": "BATTLE_ABILITY_ABILITY_EXTENSION_CHARMP",
+   "template": "BATTLE_ABILITY_ABILITY_EXTENSION_CHARM",
+   "targets": [
+    "BATTLE_ABILITY_CHARMP"
+   ],
+   "set": {
+    "fParam1": 0.3
+   },
+   "name": "Charisma Success Rate Up",
+   "help": "Increases the success rate of Charisma."
+  }
+ ],
+ "tree": [
+  {
+   "template": "BATTLE_WEAPONABILITYTREE_P001_RANK1",
+   "nodes": [
+    "BATTLE_ABILITY_WEAPON_POWER_CORRECTION_DAMAGE_UP",
+    "BATTLE_ABILITY_WEAPON_BONUS_HP_UP",
+    "BATTLE_ABILITY_WEAPON_BONUS_STR_UP",
+    "BATTLE_ABILITY_WEAPON_BONUS_DEF_UP",
+    "BATTLE_ABILITY_ABILITY_DAMAGE_UP_BURST_ATTACK"
+   ]
+  },
+  {
+   "template": "BATTLE_WEAPONABILITYTREE_P001_RANK2",
+   "nodes": [
+    "BATTLE_ABILITY_WEAPON_POWER_CORRECTION_DAMAGE_UP_RANK2",
+    "BATTLE_ABILITY_WEAPON_BONUS_STR_UP_II",
+    "BATTLE_ABILITY_TP_REDUCTION_BURST_ATTACK",
+    "BATTLE_ABILITY_ABILITY_EFFECT_UP_BURST_ATTACK",
+    "BATTLE_ABILITY_WEAPON_BONUS_SPD_UP"
+   ]
+  },
+  {
+   "template": "BATTLE_WEAPONABILITYTREE_P001_RANK3",
+   "nodes": [
+    "BATTLE_ABILITY_WEAPON_POWER_CORRECTION_DAMAGE_UP_II",
+    "BATTLE_ABILITY_ABILITY_EXTENSION_CHARMP",
+    "BATTLE_ABILITY_ALL_OUT_ATTACKP"
+   ]
+  }
+ ],
+ "sprite_clones": [
+  {
+   "char": "N204",
+   "from": "HORSE",
+   "to": [
+    "HORSE_RANK2",
+    "HORSE_RANK3"
+   ],
+   "note": "animation assets for the new variants, like P017's"
+  },
+  {
+   "char": "N204",
+   "frames_from": "TypeHorse",
+   "to_folder": "",
+   "only": "UIC_",
+   "note": "menu fix [tested 12e]"
+  }
+ ],
+ "bp_sprite": [
+  {
+   "char": "N204",
+   "copy_override": "HORSE",
+   "to": [
+    "HORSE_RANK2",
+    "HORSE_RANK3"
+   ],
+   "note": "12h: the actor only uses variants listed in BP_N204 FlipbookOverrideDatas (only HORSE); promoted cavalry asks for HORSE_RANK2/3 -> fell back to on foot. Mirrors Hossabara (P017)."
+  }
+ ],
+ "flipbook_static": [
+  {
+   "char": "N204",
+   "copy_override": "HORSE",
+   "to": [
+    "HORSE_RANK2",
+    "HORSE_RANK3"
+   ],
+   "rename_paths": true,
+   "note": "table entries for the new variants, like P017's"
+  }
+ ],
+ "vanilla_covered": {
+  "BATTLE_ABILITY_BURST_ATTACK_II": "unlocked by the tree node \"Sandstorm Effect Up\" (swaps in the II debuff); Charisma-style split, user 2026-11-17"
+ }
+}

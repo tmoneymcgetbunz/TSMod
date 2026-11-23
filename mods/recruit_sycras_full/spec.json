@@ -1,0 +1,221 @@
+{
+ "id": "N106",
+ "unit_master": "UNIT_MASTER_CH_N106",
+ "party_param": "BATTLE_UNITPARAM_CH_N106_PARTY",
+ "param_template": "BATTLE_UNITPARAM_CH_P038",
+ "role": "support/disruptor",
+ "stats": {
+  "elite_source": "BATTLE_UNITGROWTH_CH_N106",
+  "note": "guest table = Elite baseline; Recruit/Veteran scaled by the average recruit rank ratios per level and stat; TP per rank follows recruits",
+  "keep_from_source": [
+   "fMoveForce",
+   "fJumpForceUp",
+   "fJumpForceDown",
+   "fUnitSpeed",
+   "fGainTacticalPoint"
+  ]
+ },
+ "classes": [
+  {
+   "rank": 1,
+   "template": "BATTLE_JOB_CH_P005_1",
+   "name_text": "TEXT_JOB_NAME_N106_M",
+   "learn": [
+    [
+     1,
+     "BATTLE_ABILITY_CHEERING"
+    ],
+    [
+     1,
+     "BATTLE_ABILITY_ARREST"
+    ],
+    [
+     3,
+     "BATTLE_ABILITY_NET_LAUNCHER_N106P"
+    ]
+   ]
+  },
+  {
+   "rank": 2,
+   "template": "BATTLE_JOB_CH_P005_2",
+   "name_text": "TEXT_JOB_NAME_N106_M_2",
+   "learn": [
+    [
+     14,
+     "BATTLE_ABILITY_KB_N106"
+    ],
+    [
+     18,
+     "BATTLE_ABILITY_RESIST_POISON_SILENSE_SLEEP"
+    ],
+    [
+     18,
+     "BATTLE_ABILITY_LOSS_OF_BATTLE_N106P"
+    ]
+   ]
+  },
+  {
+   "rank": 3,
+   "template": "BATTLE_JOB_CH_P005_3",
+   "name": "Cudgel Master",
+   "learn": [
+    [
+     22,
+     "BATTLE_ABILITY_RESIST_CHARM_DEATH"
+    ]
+   ]
+  }
+ ],
+ "class_help": "The honest head of the constabulary. He rallies allies, and keeps the peace by detaining anyone who threatens it.",
+ "job_type": "EJobType::SWORDSMAN",
+ "weapon": {
+  "attack_template": "BATTLE_ATTACKPARAM_WEAPON_N_106",
+  "power": 5.0,
+  "icon": "EWeaponIconType::CLUB",
+  "ranks": [
+   {
+    "template": "BATTLE_WEAPON_P005",
+    "name_text": "TEXT_WEAPON_NAME_N106"
+   },
+   {
+    "template": "BATTLE_WEAPON_RANK2_P005",
+    "name": "Ironbound Rod",
+    "rankup_material": "ITEM_UPGRADEMATERIAL_RANKUP_CRYSTAL"
+   },
+   {
+    "template": "BATTLE_WEAPON_RANK3_P005",
+    "name": "Warden's Cudgel",
+    "rankup_material": "ITEM_UPGRADEMATERIAL_RANKUP_STEEL",
+    "weapon_skill": "BATTLE_ABILITY_LEAVE_IT_N106P"
+   }
+  ]
+ },
+ "tree_abilities": [
+  {
+   "id": "BATTLE_ABILITY_ABILITY_RANGE_UP_CHEERING",
+   "template": "BATTLE_ABILITY_ABILITY_RANGE_UPASSAULT",
+   "targets": [
+    "BATTLE_ABILITY_CHEERING"
+   ],
+   "name": "Cheer Range Up",
+   "help": "Increases the range of Cheer by 1."
+  },
+  {
+   "id": "BATTLE_ABILITY_TP_REDUCTION_ARREST",
+   "template": "BATTLE_ABILITY_TP_REDUCTION_TWO_STAGE_THRUST",
+   "targets": [
+    "BATTLE_ABILITY_ARREST"
+   ],
+   "name": "Apprehend TP -1",
+   "help": "Decreases TP cost of Apprehend by 1."
+  },
+  {
+   "id": "BATTLE_ABILITY_ABILITY_DAMAGE_UP_ARREST",
+   "template": "BATTLE_ABILITY_ABILITY_DAMAGE_UP_INTIMIDATION_SWORD",
+   "targets": [
+    "BATTLE_ABILITY_ARREST"
+   ],
+   "name": "Apprehend Damage Up",
+   "help": "Increases damage dealt by Apprehend."
+  },
+  {
+   "id": "BATTLE_ABILITY_ABILITY_EFFECT_UP_CHEERING",
+   "template": "BATTLE_ABILITY_ABILITY_EFFECT_UP_FIGHTING_SPIRIT",
+   "targets": [
+    "BATTLE_ABILITY_CHEERING",
+    "BATTLE_BUFFEFFECTATK_B_CHEERING_II"
+   ],
+   "name": "Cheer Effect Up",
+   "help": "Increases the effect of Cheer."
+  }
+ ],
+ "tree": [
+  {
+   "template": "BATTLE_WEAPONABILITYTREE_P001_RANK1",
+   "nodes": [
+    "BATTLE_ABILITY_WEAPON_POWER_CORRECTION_DAMAGE_UP",
+    "BATTLE_ABILITY_WEAPON_BONUS_HP_UP",
+    "BATTLE_ABILITY_WEAPON_BONUS_DEF_UP",
+    "BATTLE_ABILITY_WEAPON_BONUS_MDF_UP",
+    "BATTLE_ABILITY_ABILITY_RANGE_UP_CHEERING"
+   ]
+  },
+  {
+   "template": "BATTLE_WEAPONABILITYTREE_P001_RANK2",
+   "nodes": [
+    "BATTLE_ABILITY_WEAPON_POWER_CORRECTION_DAMAGE_UP_RANK2",
+    "BATTLE_ABILITY_WEAPON_BONUS_HP_UP_II",
+    "BATTLE_ABILITY_TP_REDUCTION_ARREST",
+    "BATTLE_ABILITY_ABILITY_DAMAGE_UP_ARREST",
+    "BATTLE_ABILITY_WEAPON_BONUS_DEF_UP_II"
+   ]
+  },
+  {
+   "template": "BATTLE_WEAPONABILITYTREE_P001_RANK3",
+   "nodes": [
+    "BATTLE_ABILITY_WEAPON_POWER_CORRECTION_DAMAGE_UP_II",
+    "BATTLE_ABILITY_ABILITY_EFFECT_UP_CHEERING",
+    "BATTLE_ABILITY_LEAVE_IT_N106P"
+   ]
+  }
+ ],
+ "own_abilities": [
+  {
+   "id": "BATTLE_ABILITY_NET_LAUNCHER_N106P",
+   "copy_from": "BATTLE_ABILITY_NET_LAUNCHER",
+   "name": "Detain",
+   "help": "Delay the turn of a single enemy.",
+   "set": {
+    "iSortNumber": 1101
+   }
+  },
+  {
+   "id": "BATTLE_ABILITY_LOSS_OF_BATTLE_N106P",
+   "copy_from": "BATTLE_ABILITY_LOSS_OF_BATTLE",
+   "name": "Keep the Peace",
+   "set": {
+    "iSortNumber": 1102
+   }
+  },
+  {
+   "id": "BATTLE_ABILITY_LEAVE_IT_N106P",
+   "copy_from": "BATTLE_ABILITY_LEAVE_IT",
+   "name": "Crackdown",
+   "help": "Chance to paralyze all enemies within range for 1 turn.",
+   "note": "user design 2026-11-16: King's Shield range (2 around self), 4 TP, paralysis 1 turn at 70% base; no invincibility",
+   "set": {
+    "eAbilityClassType": "EAbilityClassType::NONE",
+    "FNameParam1": "None",
+    "eFunctionIconType": "EFunctionIconType::DEBUFF"
+   },
+   "attack": {
+    "id": "BATTLE_ATTACKPARAM_ABILITY_LEAVE_IT_N106P",
+    "copy_from": "BATTLE_ATTACKPARAM_ABILITY_LEAVE_IT",
+    "set": {
+     "StatusEffectId": "BATTLE_STATUSEFFECTATK_APLLY_PARALYSIS_1T_N106P",
+     "eAttackEvaluationType": "EAttackEvaluationType::STATUS_EFFECT",
+     "eAdoptableRangeType": "EAdoptableRangeType::LEAST_ONE_UNIT",
+     "bDamageReaction": false,
+     "FlipbookId": "ABL_HATE",
+     "eBattleSequence": "EBattleSequence::LS_ABILITY_HATE"
+    }
+   }
+  }
+ ],
+ "extra_edits": [
+  {
+   "table": "GOP_Battle_StatusEffectAtk",
+   "add_row": "BATTLE_STATUSEFFECTATK_APLLY_PARALYSIS_1T_N106P",
+   "copy_from": "BATTLE_STATUSEFFECTATK_APLLY_PARALYSIS_1T"
+  },
+  {
+   "table": "GOP_Battle_StatusEffectAtk",
+   "row": "BATTLE_STATUSEFFECTATK_APLLY_PARALYSIS_1T_N106P",
+   "field": "fApplyPer1",
+   "value": 0.7
+  }
+ ],
+ "vanilla_covered": {
+  "BATTLE_ABILITY_CHEERING_II": "unlocked by the tree node \"Cheer Effect Up\" (swaps in the II buff); Charisma-style split, user 2026-11-17"
+ }
+}
