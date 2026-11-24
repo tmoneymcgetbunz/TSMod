@@ -1,0 +1,8 @@
+{
+ "name": "TSMod_Deploy_Fix",
+ "note": "Release: deploy-screen cursor placement for recruits without the crash (the menu rebuilds unit names as UNIT_MASTER_CH_P%03d; mods/TESTING.md 2026-11-23, docs/MECHANICS.md). Records each battle's deploy squares (ClassBattlePreparation) and reorders placements so the game's safe path puts the added unit on the cursor square (BattlePreparation). Build after release_log, before test_logging.",
+ "lua_append": {
+  "src/classprep_append.lua": "Newera_Handling/Scenario/CommonDef/ClassBattlePreparation",
+  "src/battleprep_append.lua": "Newera_Handling/Battle/BattlePreparation"
+ }
+}

@@ -11,7 +11,7 @@ on Linux / Steam Deck inside the game's Proton prefix. Read-only on everything e
 """
 import datetime, getpass, glob, hashlib, os, re, zipfile
 
-EDITOR_VERSION = '1.0'
+EDITOR_VERSION = '1.0.1'
 CONTEXT = 'CrashContext.runtime-xml'
 DUMP = 'UE4Minidump.dmp'
 LOG_NAMES = ('TSMod_log.txt', 'TSMod_log.old.txt')

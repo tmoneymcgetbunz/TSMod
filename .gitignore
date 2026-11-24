@@ -30,6 +30,7 @@
 !/mods/fast_ch1/
 !/mods/unlock_repair/
 !/mods/release_log/
+!/mods/deploy_fix/
 # old spec copies and the cut battles' intermediate levels (only maps/out is built)
 /mods/recruit_*_full/spec_*backup*.json
 /mods/cut_battles/maps/rt/

@@ -61,7 +61,7 @@ first. Before every write it backs up the whole save folder, and it won't write 
 Setup and details: [tools/saveeditor/README.md](tools/saveeditor/README.md).
 
 ## Install
-1. Download `TSMod_v1.zip` from the [Releases](../../releases) page and unzip it.
+1. Download the latest `TSMod_v*.zip` from the [Releases](../../releases) page and unzip it.
 2. Close the game. In Steam, right-click Triangle Strategy → Manage → Browse local files, and open
    `TRIANGLE_STRATEGY\Content\Paks`.
 3. Copy `TSMod_P.pak` into that folder, next to `TRIANGLE_STRATEGY-WindowsNoEditor.pak`. Keep the name as it is.
@@ -113,7 +113,7 @@ Requirements:
 If the game isn't in a standard Steam folder, set `TS_PAKS_DIR` to its `Content\Paks` folder. The full release pak:
 
 ```
-python tools/build_mod.py mods/recruit_*_full mods/join_release mods/ch17g_split mods/dragan_trap mods/landroi_heroic_end mods/b2_hooks mods/c_hooks mods/d_hooks mods/cut_battles mods/npc_prohibit mods/fast_ch1 mods/unlock_repair mods/release_log --name TSMod --out build
+python tools/build_mod.py mods/recruit_*_full mods/join_release mods/ch17g_split mods/dragan_trap mods/landroi_heroic_end mods/b2_hooks mods/c_hooks mods/d_hooks mods/cut_battles mods/npc_prohibit mods/fast_ch1 mods/unlock_repair mods/release_log mods/deploy_fix --name TSMod --out build
 python tools/verify_stage.py build
 ```
 

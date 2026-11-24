@@ -6,7 +6,7 @@ Everything below happens in **Desktop Mode**. The game itself is then played in 
 Hold the power button and pick **Switch to Desktop**.
 
 ## 2. Download the mod
-Open Firefox (or another browser), download `TSMod_v1.zip` from the [Releases](../../releases) page, and open your
+Open Firefox (or another browser), download the latest `TSMod_v*.zip` from the [Releases](../../releases) page, and open your
 Downloads folder. Right-click the zip → **Extract → Extract archive here**.
 
 ## 3. Install the pak
