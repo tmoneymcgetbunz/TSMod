@@ -12,6 +12,7 @@
 
 # Character pages for players (docs/ is the private developer notes)
 !/characters/
+!/STEAM_DECK.md
 
 # Mod sources (data edits and Lua; the game's own files are never included)
 !/mods/

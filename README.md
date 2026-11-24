@@ -68,6 +68,8 @@ Setup and details: [tools/saveeditor/README.md](tools/saveeditor/README.md).
 4. The `SaveEditor` folder can go anywhere. On Windows, start it with `TSMod Save Editor.bat` (it needs Python 3.11 or
    newer and offers to install it); on Steam Deck / Linux, run `sh "TSMod Save Editor.sh"`.
 
+**Steam Deck:** step-by-step guide in [STEAM_DECK.md](STEAM_DECK.md).
+
 **Back up your saves first** (`Documents\My Games\TRIANGLE_STRATEGY\Steam\<id>\SaveGames`).
 
 **Turn off Steam Cloud for Triangle Strategy before editing saves** (right-click the game → Properties → General →
