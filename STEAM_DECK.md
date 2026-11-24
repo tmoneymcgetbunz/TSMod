@@ -51,8 +51,9 @@ The nine "(Cut Content)" battles are in the Story Battles list.
 
 ## Notes
 - **Black title screen:** if the title screen's background video is black (the music still plays), that's a Proton
-  video issue, not the mod. Forcing **Proton Experimental** or **GE-Proton** (installed with ProtonUp-Qt from
-  Discover) in the game's Properties → Compatibility usually fixes it.
+  video issue that happens without the mod too, and it doesn't affect play. Forcing **Proton Experimental** or
+  **GE-Proton** (installed with ProtonUp-Qt from Discover) in the game's Properties → Compatibility might fix it
+  (untested).
 - **Crash reports:** the editor's **Export crash logs…** button is untested on the Deck so far. The game's crash folder
   is next to the saves, under `.../TRIANGLE_STRATEGY/Steam/Crashes`.
 - **Uninstall:** delete `TSMod_P.pak` from the `Paks` folder. A save with the recruits in it needs the pak to load,
