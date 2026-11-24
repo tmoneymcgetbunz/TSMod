@@ -1,74 +1,82 @@
-# TSMod: recruit Triangle Strategy's named characters
+# TSMod: new recruits, cut battles and a save editor for Triangle Strategy
 
-A mod for **Triangle Strategy** (PC / Steam, v1.1.0) that turns 20 of the game's named NPCs and bosses into
-permanent members of your army. Each one has:
+A mod for **Triangle Strategy** (PC / Steam, v1.1.0) with three parts:
 
-- **three classes**, promoted with the usual medals, with their own learned moves;
-- **their real moves from the game**, under their own names, plus new abilities that fit the character;
-- **a weapon with an upgrade tree** and a **weapon skill** of their own;
-- stats balanced to sit alongside the main cast, and their own battle and menu sprites (mounted ones included).
+- **20 new recruits:** named characters and bosses from the story join your army for good.
+- **9 cut-content battles:** battles the developers drafted and cut, restored and playable.
+- **A save editor:** edit any value in a save, with every edit rated Safe / Risky / Dangerous.
 
-| Recruit | Classes | Weapon | Weapon skill |
-|---|---|---|---|
-| Booker | Poisoner → Venomist → Master Poisoner | Emperor's Sting | At Your Service |
-| Clarus | Magnate → Trade Magnate → Consortium Grandee | Brokker's Bargain | Smuggle |
-| Dragan | Flame Wielder → Ash Scholar → Ember Sage | Tome of Cinders | Ignite |
-| Erika | Bomber → Flame Bomber → Grand Bomber | Aesfrosti Fang | Smoke Bomb |
-| Exharme | Swordsman → Swordfighter → Swordmaster | Emerald Serpent | Rouse Troops |
-| Gustadolph | Frostruler → Frost Archduke → Sovereign of Winter | Frostruler's Edge | Fire the Deathsknell |
-| Idore | Priest → High Priest → Demigod | Divine Ruler | Puppet Master |
-| Jerrom | Lancer → Rosellan Lancer → Lance Master | Heartpiercer | Uprising |
-| Kamsell | Master Lancer → Lord Lancer → Minister of Order | Lance of the Saintly Seven | Summary Judgment |
-| Landroi | Archer → Falkes Archer → Bow Lord | Crown's Bow | Heroic End |
-| Lyla | Great Caster → Chrono Caster → Overseer | Scepter of the Ministry | Stop Time |
-| Patriatte | Marksman → Royalist Marksman → Lord Marksman | Sovereign Fox Bow | Patriatte's Gambit |
-| Plinius | Cryomancer → Frost Scholar → Ministry Savant | Staff of Inquiry | Cryostasis |
-| Rufus | Staffwielder → Cudgel Fighter → Cudgel Lord | Brigand's Maul | Knock Back |
-| Silvio | Artificer → Master Artificer → Lord of Telliore | Edge of Restoration | Embezzle |
-| Sorsley | Shortsword → Dagger Fighter → Minister of Salt | Sorsley's Seal | Salt Tax |
-| Svarog | Iron Fighter → Iron Master → Iron Lord | Magma Hammer | Eruption |
-| Sycras | Staffwielder → Cudgel Fighter → Cudgel Master | Warden's Cudgel | Crackdown |
-| Symon | Divine Blade → Exalted Blade → Divine Hero | Exalted Greatsword | Under Conviction's Banner |
-| Thalas | Windcaster → Gale Minister → Prime Minister | Peafowl Ascendant | Gale of State |
+## The recruits
+Booker, Clarus, Dragan, Erika, Exharme, Gustadolph, Idore, Jerrom, Kamsell, Landroi, Lyla, Patriatte, Plinius, Rufus,
+Silvio, Sorsley, Svarog, Sycras, Symon and Thalas.
 
-Full kits (every move, stats, weapon trees): [docs/CHARACTERS.md](docs/CHARACTERS.md).
+Each one fights with their own moves from the game, plus new abilities that fit the character. They promote with
+medals like the main cast and have their own weapon, upgrade tree and weapon skill. Their battle and menu sprites are
+their own, mounted ones included. Every recruit's classes, moves, weapon tree and stats: [characters/](characters/README.md).
+
+- **New Game:** nothing to do. All 20 join right after the Chapter 1 battle (when Anna joins), at the level the game
+  gives its own late joiners.
+- **A save started without the mod, or a New Game+ from one:** the game only creates character slots at New Game, so
+  add the recruits once with the save editor ("Add TSMod recruits"). They join at the next story scene or world-map
+  visit, at the same level a New Game would give them.
+- **Golden route:** at the Chapter 17 three-squad split, the recruits join the squads automatically. The save editor
+  can move any of them to another squad.
+
+## Cut-content battles
+Nine battles found in the game files, playable from the **Story Battles** list with "(Cut Content)" in the title:
+
+| Battle | What it is |
+|---|---|
+| The Tourney Final | A final round cut from Chapter 2: Serenoa and Roland face Maxwell and Julio for the title. |
+| Roland's Defiance | A cut Chapter 17 duel: when the vote favours Benedict's plan, Roland stands against Serenoa one on one. |
+| Frederica's Defiance | The same duel when the vote favours Roland's plan. |
+| Benedict's Defiance | The same duel when the vote favours Frederica's plan. |
+| Routing the Roselle (Draft) | An early draft of the battle against Jerrom: rain, barricades and Rufus at your side, on an older map. |
+| The Norzelia River (Test) | A test version of the battle against Avlora's ship: much the same fight, with a plain polygon staircase in place of the boarding mechanic. |
+| Fighting Idore (Early) | An earlier battle at the waterfall, with a different Hyzantine force and Roselle fighters against you. |
+| Fighting Lyla (Early) | An earlier battle in the streets of Hyzante, with a different enemy force. |
+| The Final Battle (Early) | An earlier final battle: Idore and the Hierophant together in the audience hall, surrounded by Automatons. |
+
+They're listed from the start, so their titles can spoil the story. Clearing one gives its rewards but no crown.
+What else was cut, and how these were restored: [CUT_CONTENT.md](CUT_CONTENT.md).
+
+## Save editor
+A standalone editor for any Triangle Strategy save, with or without the mod. It runs on Windows and on Steam Deck /
+Linux (Desktop Mode). Every edit is rated **Safe / Risky / Dangerous** from the game's own data, and Dangerous edits ask
+first. Before every write it backs up the whole save folder, and it won't write while the game is running.
+
+- **Units:** level, EXP, stats, class and weapon; learn or unlearn moves; **Learn all qualifying moves**;
+  promote and demote; un-buy weapon-tree nodes; export a unit to a file and import it into another save.
+- **Recruits:** add the TSMod recruits to any save; remove them; back up and restore a recruit; pick each recruit's
+  Golden route squad; **Scrub TSMod data**, which removes everything TSMod added to a save, as a way back to the unmodded game (not yet proven in game).
+- **Items and shop:** counts of items, materials, medals and accessories; set shop stock, or restock everything sold out.
+- **Quietus and unlocks:** Quietus orders, mental mock battles and character-story episodes.
+- **Story:** go back to any story point with a world-map marker, choosing from a tree of every chapter; jump forward
+  (experimental), replaying the branches and party changes on the way.
+- **Overview:** gold, the Scales of Conviction, script variables, story flags, and a Fast Chapter 1 battle switch.
+- **Issues:** a legality report for the whole save, with one-click fixes for common problems.
+- **Backups, Compare, Undo:** restore any backup; compare the save with another slot or a backup; undo and redo edits.
+- **Export crash logs:** packs the game's crash reports into one zip with your machine ids and user name removed.
+
+Setup and details: [tools/saveeditor/README.md](tools/saveeditor/README.md).
 
 ## Install
-1. Download `TSMod_P.pak` from the [Releases](../../releases) page.
+1. Download `TSMod_v1.zip` from the [Releases](../../releases) page and unzip it.
 2. Close the game. In Steam, right-click Triangle Strategy → Manage → Browse local files, and open
    `TRIANGLE_STRATEGY\Content\Paks`.
 3. Copy `TSMod_P.pak` into that folder, next to `TRIANGLE_STRATEGY-WindowsNoEditor.pak`. Keep the name as it is.
+4. The `SaveEditor` folder can go anywhere. On Windows, start it with `TSMod Save Editor.bat` (it needs Python 3.11 or
+   newer and offers to install it); on Steam Deck / Linux, run `sh "TSMod Save Editor.sh"`.
 
 **Back up your saves first** (`Documents\My Games\TRIANGLE_STRATEGY\Steam\<id>\SaveGames`).
-
-## Getting the recruits
-- **New Game:** nothing else to do. All 20 join right after the Chapter 1 battle (when Anna joins), at the level the
-  game gives its own late joiners.
-- **New Game+:** being confirmed.
-- **A save started before installing the mod:** the game only creates character slots at New Game, so these saves need
-  the recruits added once with the included save editor (`tools/saveeditor`, "Add TSMod recruits to this save"; it
-  backs up your save folder first). They then join at the next story scene or world-map visit.
-
-## Cut-content battles
-Nine battles the developers drafted and cut are playable from the **Story Battles** list, marked "(Cut Content)":
-the Chapter 2 Tourney Final, three duels (Benedict's, Frederica's and Roland's Defiance), a draft of Routing the Roselle,
-a test version of the Norzelia River battle, and early versions of the Idore, Lyla and final battles. They're listed from
-the start, so their titles can spoil the story. Clearing one gives its rewards but no crown. Details:
-[CUT_CONTENT.md](CUT_CONTENT.md).
 
 ## Good to know
 - A save that contains the recruits needs the pak installed to load. Don't remove the pak while you play such a save.
 - To uninstall, delete `TSMod_P.pak` and play saves made before installing (or a backup).
 - Recruit weapon trees cost gold only (the game's Materials screen has room for a fixed number of characters).
-- Golden route: at the Chapter 17 three-squad split, the recruits join the squads automatically (a balanced default).
-  The save editor's "Golden Route Regiment Leader" setting picks a different squad for any of them.
 - Exharme and Clarus are shown on foot in the roster and smithy lists; they ride in battle and in the detail menus.
-
-## Save editor
-`tools/saveeditor` is a standalone editor for Triangle Strategy saves. Every value can be edited, and each edit is rated
-Safe / Risky / Dangerous from the game's own data; it backs up before writing and will not write while the game is
-running. It runs on Windows and on Steam Deck / Linux (Desktop Mode). Requirements and usage:
-[tools/saveeditor/README.md](tools/saveeditor/README.md).
+- **Reporting a crash:** in the save editor, click **Export crash logs…** on the Overview tab and attach the zip to
+  your report.
 
 ## For modders
 - [SYSTEMS.md](SYSTEMS.md): how the game's battle data, AI, sprites, maps and scripts fit together, and what can be modded.

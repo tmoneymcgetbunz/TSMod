@@ -17,8 +17,8 @@ import glob, json, os, re
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, "..", ".."))
 STORY = os.path.join(ROOT, "decompiled", "Newera_Handling", "Scenario", "Story")
-ch = open(os.path.join(ROOT, "docs", "CHARACTERS.md"), encoding="utf-8").read()
-RECRUITS = dict((i, n) for n, i in re.findall(r"^\| \[([^\]]+)\]\(#[^)]*\) \| ([A-Z]\d{3}) \|", ch, re.M))
+RECRUITS = {json.load(open(f, encoding="utf-8"))["id"]: os.path.basename(os.path.dirname(f))[8:-5].capitalize()
+            for f in glob.glob(os.path.join(ROOT, "mods", "recruit_*_full", "spec.json"))}
 assert len(RECRUITS) == 20, RECRUITS
 SPAWN = re.compile(r'(?:SpawnUnit|CreateUnitData)\(\s*"([^"]+)",\s*"UNIT_MASTER_CH_([A-Z]\d{3})(?:_\w+)?",\s*"([^"]+)"')
 SKIP = {"ms10_x17/ms10_x17_battle_01"}   # prototype script with no level (never loaded)

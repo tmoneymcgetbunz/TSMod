@@ -118,13 +118,14 @@ So the shipped Chapter 12 has no "hand them over" choice. The cut `ms12_h01` vot
 - Jerrom gives himself up, and Roland kills him;
 - in the branch's closing scene (`ms12_x23_c0_0010`), **Idore, speaking for the Pontiff, makes Serenoa one of Hyzante's Seven Saints**. Exharme objects that it's premature; Idore recalls having said the same about Exharme.
 
-### 1d. Chapter 14: a second Norzelia River battle vs Avlora [read]
+### 1d. Chapter 14: a test version of the Norzelia River battle vs Avlora [read]
 `ms14_x29_battle_02.lua` and map:
 - Avlora as boss (enemy stats N107);
 - 9 Aesfrost rank-2 soldiers;
 - placeholder field name (`MAP_NAME_B1000`).
 
-Never loaded.
+Never loaded by the shipped game. Played through TSMod, it is much the same battle as the shipped one, with a plain
+polygon staircase in place of the ship-boarding mechanic [tested].
 
 ### 1e. Other cut branches and scenes [read]
 - **A Chapter 11 bad ending** (`ms11_f02`, Japanese only, never played):

@@ -143,6 +143,77 @@ def main(out_dir):
         L += ['', '**Design notes:**', f'<!-- notes:{cid} -->', notes.get(cid, '_(none yet)_').strip(), '<!-- /notes -->']
     open(OUT, 'w', encoding='utf-8', newline='\n').write('\n'.join(L).rstrip() + '\n')
     print('wrote', OUT, len(rows), 'recruits')
+    public_pages(rows, dict(t=t, txt=txt, nm=nm, tj=tj, tw=tw, common=common, passive=passive, help_=help_,
+                            cell=cell, tp_range=tp_range, item_name=item_name, G=G))
+
+
+PUB = os.path.join(ROOT, 'characters')
+
+
+def public_pages(rows, c):
+    """characters/<Name>.md + characters/README.md: the player-facing sheets (no ids, templates or design notes)."""
+    t, txt, nm, tj, tw, cell = c['t'], c['txt'], c['nm'], c['tj'], c['tw'], c['cell']
+    J = t['GOP_Battle_Job']
+    os.makedirs(PUB, exist_ok=True)
+    idx = ['# TSMod recruits', '',
+           "Twenty named characters from Triangle Strategy who join your army with TSMod. Each page lists the character's",
+           'classes, every move they learn, their weapon line with its upgrade tree, and their stats.', '',
+           "Moves marked ★ come from the character's own kit in the base game (as an enemy or guest); the rest are new.", '',
+           '| Character | Classes | Weapon skill |', '|---|---|---|']
+    for name, s, P, jobs, ws, g in rows:
+        cid = s['id']
+        full = c['common'].get(f'TEXT_COMMON_CH_FULLNAME_{cid}', {}).get('Text', name)
+        orig = {nm(a) for a, st, where in kit_gaps.gaps(cid, s, c['G'])}
+        star = lambda a: nm(a) + (' ★' if nm(a) in orig else '')
+        cls = [txt(tj, J[j]['JobName']) for j in jobs]
+        fn = name.replace(' ', '_') + '.md'
+        idx.append(f"| [{name}]({fn}) | {' → '.join(cls)} | {nm(ws) if ws != 'None' else '—'} |")
+        L = [f'# {full}', '', '[All recruits](README.md)', '']
+        prof = txt(tj, J[jobs[0]]['JobHelp'])
+        if prof: L += [f'> {prof}', '']
+        L += ['**Classes:** ' + ' → '.join(
+              cls[i] + ('' if i == 0 else f" (level {J[j]['iNecessaryUnitLevel']}, {c['item_name'](J[j]['NecessaryItem'])})")
+              for i, j in enumerate(jobs)), '']
+        if ws != 'None':
+            tp, rg = c['tp_range'](ws)
+            L += ['## Weapon skill', '', f"**{star(ws)}** ({tp} TP, range {rg}): {c['help_'](ws)}", '',
+                  "Bought as the last node of the rank-3 weapon's upgrade tree.", '']
+        L += ['## Moves', '', '| Level | Class | Move | Type | TP | Range, area | Effect |', '|---|---|---|---|---|---|---|']
+        for j in jobs:
+            r = J[j]
+            for i in range(1, 11):
+                a = r.get(f'LearnableAbility{i}', 'None')
+                if a and a != 'None':
+                    tp, rg = c['tp_range'](a)
+                    L.append(f"| {r[f'iLearnableLevel{i}']} | {txt(tj, r['JobName'])} | {star(a)} | "
+                             f"{'passive' if c['passive'](a) else 'command'} | {tp} | {rg} | {cell(c['help_'](a))} |")
+        L += ['', '## Weapon and upgrade tree', '',
+              '| Weapon | How to get it | Tree node | Cost | Effect |', '|---|---|---|---|---|']
+        for i, wid in enumerate((f'BATTLE_WEAPON_{P}', f'BATTLE_WEAPON_RANK2_{P}', f'BATTLE_WEAPON_RANK3_{P}')):
+            w = t['GOP_Battle_Weapon'][wid]; tr = t['GOP_Battle_WeaponAbilityTree'][w['WeaponAbilityTree']]
+            m = t['GOP_Battle_WeaponAbilityMaterial'].get(w.get('WeaponAbilityMaterial'), {})
+            if i == 0: unlock = 'starting weapon'
+            else:
+                mat = w.get('RankUpMaterial1', 'None')
+                unlock = f"rank up: {w.get('iRankUpMoney', 0)} gold" + ('' if mat in (None, 'None') else
+                         f" + {w.get('iRankUpMatrialNum1', 1)}× {c['item_name'](mat)}")
+            first = True
+            for k in range(1, 6):
+                a = tr.get(f'AbilityId{k}', 'None')
+                if a in (None, 'None'): continue
+                L.append(f"| {txt(tw, w['WeaponName']) if first else ''} | {unlock if first else ''} | "
+                         f"{star(a)}{' (weapon skill)' if a == ws else ''} | {m.get(f'iMoney_{k}', 0)} gold | "
+                         f"{cell(c['help_'](a))} |")
+                first = False
+        L += ['', 'On the rank-2 weapon, the third and fourth nodes are either/or, as in the base game.', '',
+              '## Stats at level 50 (third class)', '',
+              '| HP | Strength | Magic | Defense | Magic defense | Speed | TP | Move |', '|---|---|---|---|---|---|---|---|',
+              '| ' + ' | '.join(f'{g[f]:g}' for f in ('fMaxHitPoint', 'fStrength', 'fIntelligence', 'fDefence',
+              'fMagicDefence', 'fUnitSpeed', 'fMaxTacticalPoint')) + f" | {g['fMoveForce'] / 100:g} |"]
+        open(os.path.join(PUB, fn), 'w', encoding='utf-8', newline='\n').write('\n'.join(L) + '\n')
+    idx += ['', "Generated from the release build by `tools/char_sheet.py`; names and effects are the game's own text."]
+    open(os.path.join(PUB, 'README.md'), 'w', encoding='utf-8', newline='\n').write('\n'.join(idx) + '\n')
+    print('wrote', PUB, len(rows), 'pages')
 
 
 if __name__ == '__main__':

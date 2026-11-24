@@ -80,7 +80,8 @@ BATTLES = [
          level="ms14_x29_battle_02", map_name="TEXT_COMMON_PLACE_A0_EX_SHIP01", map_img="P_ms14_x29_battle_01",
          forced=["UNIT_MASTER_CH_P002"],
          victory="TEXT_COMMON_BATTLE_UI_VICTORY_CONDITION_14", levels=(22, 47, 50), sortie=None, fieldinfo=False,
-         desc="A cut second battle on the Norzelia River: Serenoa's forces board Avlora's ship. "
+         desc="A test version of the Norzelia River battle against Avlora's ship: much the same fight, with a plain "
+              "polygon staircase in place of the boarding mechanic. "
               "Restored from unused game data."),
     # Round 2 (user 2026-11-22): three older versions of late-game battles. Their levels were never shipped; each runs on
     # a renamed copy of the shipped level its units fit (maps/clone_levels.py). "script" = the old Lua script.

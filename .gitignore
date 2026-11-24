@@ -10,10 +10,8 @@
 # The 256-byte XOR key of the game's Lua scripts (user, 2026-11-23: publish it; tools/lubcrypt.py needs it)
 !/lub_key.bin
 
-# Docs for players
-!/docs/
-/docs/*
-!/docs/CHARACTERS.md
+# Character pages for players (docs/ is the private developer notes)
+!/characters/
 
 # Mod sources (data edits and Lua; the game's own files are never included)
 !/mods/

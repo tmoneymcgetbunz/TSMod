@@ -1449,7 +1449,7 @@
    "table": "Newera/Data/DataTables/Text/en/GOP_Text_EventOverview",
    "row": "TEXT_EVENTOVERVIEW_TSMOD_CUT_RIVER",
    "field": "Text",
-   "value": "A cut second battle on the Norzelia River: Serenoa's forces board Avlora's ship. Restored from unused game data."
+   "value": "A test version of the Norzelia River battle against Avlora's ship: much the same fight, with a plain polygon staircase in place of the boarding mechanic. Restored from unused game data."
   },
   {
    "table": "Newera/Data/DataTables/GOP_Quest_Info",
