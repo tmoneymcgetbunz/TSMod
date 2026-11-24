@@ -1,7 +1,7 @@
 """Save safety for the editor: game-running check, timestamped backups (with restore and pins), the slot 1 lock,
 and verified writes. Nothing here writes outside the save folder and the editor's own data folder.
 """
-import datetime, glob, hashlib, json, os, shutil, subprocess, sys
+import datetime, glob, hashlib, json, os, re, shutil, subprocess, sys
 
 from . import model
 
@@ -82,8 +82,11 @@ class Safety:
 
     # ---- slot 1 lock
     def is_locked(self, path):
-        """Slot 1 by name, or any file that is a byte copy of the protected save (wherever it is)."""
-        if os.path.basename(path) == 'TRIANGLE_STRATEGY-SaveData_0.sav': return True
+        """Slot 1 by name, or a byte copy of the protected save outside the game's slots (a backup copy). Another game
+        slot holding a copy (Copy to slot) is not locked: slot 1 still has the original, and that copy is where edits go."""
+        name = os.path.basename(path)
+        if name == 'TRIANGLE_STRATEGY-SaveData_0.sav': return True
+        if re.fullmatch(r'TRIANGLE_STRATEGY-SaveData_\d+\.sav', name): return False
         try:
             return os.path.isfile(path) and sha256(path) == self.protected_sha
         except OSError:

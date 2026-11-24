@@ -884,7 +884,7 @@ class App(MoreTabs):
         if pick is None: return
         fn = files[pick]; dst = os.path.join(self.dir_var.get(), fn)
         if self.safety.is_locked(dst):
-            if not self.unlock_slot1(): return
+            if not self.unlock_slot1(dst): return
         if not messagebox.askyesno(APP, f'Replace {model.SLOT_FILES.get(fn, fn)} in the save folder with the copy from '
                                         f'{os.path.basename(sel[0])}?\nThe current folder is backed up first.'):
             self.safety.slot1_unlocked = False; return
@@ -895,10 +895,11 @@ class App(MoreTabs):
             messagebox.showerror(APP, str(e))
 
     # ------------------------------------------------------------------------------------------ writing
-    def unlock_slot1(self):
-        reason = self.safety.locked_reason(os.path.join(self.dir_var.get(), 'TRIANGLE_STRATEGY-SaveData_0.sav'))
-        if not messagebox.askyesno(APP, f'{reason}\n\nUnlock slot 1 for this one write?', icon='warning'): return False
-        typed = simpledialog.askstring(APP, 'Type UNLOCK to confirm writing slot 1:', parent=self.root)
+    def unlock_slot1(self, path):
+        reason = self.safety.locked_reason(path)
+        what = 'slot 1' if os.path.basename(path) == 'TRIANGLE_STRATEGY-SaveData_0.sav' else 'this copy of slot 1'
+        if not messagebox.askyesno(APP, f'{reason}\n\nUnlock {what} for this one write?', icon='warning'): return False
+        typed = simpledialog.askstring(APP, f'Type UNLOCK to confirm writing {what}:', parent=self.root)
         if (typed or '').strip().upper() != 'UNLOCK': return False
         self.safety.slot1_unlocked = True
         return True
@@ -927,7 +928,7 @@ class App(MoreTabs):
         if not self.save or not self.path: return
         if not self.save.dirty: messagebox.showinfo(APP, 'No changes to write.'); return
         if safety.game_running(): messagebox.showerror(APP, 'The game is running. Close it first.'); return
-        if self.safety.is_locked(self.path) and not self.unlock_slot1(): return
+        if self.safety.is_locked(self.path) and not self.unlock_slot1(self.path): return
         worst, check = self.fresh_check()
         lines = '\n'.join(f'  {LABELS[s]}: {d}' for d, s in self.save.history[-25:])
         if not messagebox.askyesno(APP, f'Write {len(self.save.history)} change(s) to {self.slot_name()}?\n'
@@ -952,7 +953,7 @@ class App(MoreTabs):
         if pick is None: return
         dest = os.path.join(d, targets[pick][0])
         if safety.game_running(): messagebox.showerror(APP, 'The game is running. Close it first.'); return
-        if self.safety.is_locked(dest) and not self.unlock_slot1(): return
+        if self.safety.is_locked(dest) and not self.unlock_slot1(dest): return
         worst, check = self.fresh_check()
         if not messagebox.askyesno(APP, f'Write this save into {targets[pick][1]}?\nWorst rating: {LABELS[worst]}{check}\n\n'
                                         'The whole save folder is backed up first.',
