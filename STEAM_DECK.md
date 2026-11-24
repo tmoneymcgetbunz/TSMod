@@ -29,14 +29,15 @@ Downloads folder. Right-click the zip → **Extract → Extract archive here**.
 ## 5. Run the save editor (if you need it)
 You need the editor to add the recruits to a save you started before installing the mod. A New Game doesn't need it.
 
-1. Open the extracted `SaveEditor` folder in Dolphin.
-2. Right-click an empty spot → **Open Terminal Here**.
-3. Type the following and press Enter:
-   ```
-   sh "TSMod Save Editor.sh"
-   ```
-   File names on the Deck are case-sensitive: type the capitals exactly as shown. Easier: type `sh TS` and press
-   **Tab**, and the terminal fills in the rest.
+Open the extracted `SaveEditor` folder in Dolphin and double-click `TSMod Save Editor.sh`. The editor opens.
+
+If double-clicking doesn't start it, use a terminal instead: right-click an empty spot in the folder → **Open
+Terminal Here**, type the following and press Enter:
+```
+sh "TSMod Save Editor.sh"
+```
+File names on the Deck are case-sensitive: type the capitals exactly as shown, or type `sh TS` and press **Tab** to
+fill in the rest.
 
 SteamOS's own Python runs the editor; there's nothing to install. It finds the game and your saves on its own
 (internal storage and SD card). Close the game before writing a save; the editor checks, and backs up the whole save
