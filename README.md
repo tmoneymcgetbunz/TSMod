@@ -70,6 +70,10 @@ Setup and details: [tools/saveeditor/README.md](tools/saveeditor/README.md).
 
 **Back up your saves first** (`Documents\My Games\TRIANGLE_STRATEGY\Steam\<id>\SaveGames`).
 
+**Turn off Steam Cloud for Triangle Strategy before editing saves** (right-click the game → Properties → General →
+Steam Cloud). Otherwise Steam can replace a save the editor just wrote with its older cloud copy, or upload a modded
+save that then needs the pak on every PC you play on.
+
 ## Good to know
 - A save that contains the recruits needs the pak installed to load. Don't remove the pak while you play such a save.
 - To uninstall, delete `TSMod_P.pak` and play saves made before installing (or a backup).
