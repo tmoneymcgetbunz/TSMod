@@ -6,6 +6,8 @@ A mod for **Triangle Strategy** (PC / Steam, v1.1.0) with three parts:
 - **9 cut-content battles:** battles the developers drafted and cut, restored and playable.
 - **A save editor:** edit any value in a save, with every edit rated Safe / Risky / Dangerous.
 
+Screenshots of the new content: [imgur album](https://imgur.com/a/MJwAZbd).
+
 ## The recruits
 Booker, Clarus, Dragan, Erika, Exharme, Gustadolph, Idore, Jerrom, Kamsell, Landroi, Lyla, Patriatte, Plinius, Rufus,
 Silvio, Sorsley, Svarog, Sycras, Symon and Thalas.
