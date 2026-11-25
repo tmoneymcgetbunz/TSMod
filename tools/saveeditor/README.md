@@ -42,7 +42,11 @@ items, story, every id anywhere in the file including saved battle state), with 
   buying stays in the game); equipped accessories (shown); **Export / Import unit** (a `.tsunit.json` file, to copy a
   built character between saves); **Add TSMod recruits…** (adds every recruit of the installed TSMod pak that the save
   lacks, from game-made level-1 records, pointed at the recruit's own class, weapon and first move: the way to use TSMod
-  with a save from before it).
+  with a save from before it); **Recruit base-game characters…** (puts the base-game characters this run never
+  recruited in the party now, without moving the story. With the option ticked they join like the game's own late
+  recruits: raised to the story point's recommended level (Avlora +2), the late recruits promoted to their second
+  class, class moves learned. When the story would recruit them later, the game skips it because they're already in
+  the party, as on New Game+, where everyone starts in the party. Characters who left through the story aren't listed).
 - **Overview, TSMod (needs the TSMod pak):** the **TSMod options** box (the **Fast Chapter 1 battle** switch, Safe) and
   the recruit buttons:
   - **Add TSMod recruits…** (as on the Units tab);

@@ -20,6 +20,7 @@ class MoreTabs:
     def _unit_actions(self, parent):
         b = ttk.Frame(parent); b.pack(fill='x', pady=(2, 0))
         ttk.Button(b, text='Add TSMod recruits…', command=self.add_recruits).pack(fill='x')
+        ttk.Button(b, text='Recruit base-game characters…', command=self.recruit_base_game).pack(fill='x', pady=(4, 0))
         b2 = ttk.Frame(parent); b2.pack(fill='x', pady=(4, 0))
         ttk.Button(b2, text='Export unit…', command=self.export_unit).pack(side='left', fill='x', expand=True)
         ttk.Button(b2, text='Import unit…', command=self.import_unit).pack(side='left', fill='x', expand=True, padx=(4, 0))
@@ -146,6 +147,34 @@ class MoreTabs:
         def go():
             for p in plan: F.add_recruit(self.save, self.T, p[0], RISKY)
         self.edit(RISKY, 'adds unit records', go)
+
+    def recruit_base_game(self):
+        """Put the base-game characters this run never recruited in the party now, without moving the story
+        (story.recruit_now: as the game's own join does it)."""
+        if not self.save or not self.T: return
+        cand = story.recruit_candidates(self.save)
+        if not cand:
+            messagebox.showinfo(APP, 'Every base-game character with a record in this save has already joined (or left '
+                                     'through the story).'); return
+        try: rec = story.recommended_level(story.anchors()[self.save.sysvar('SCENARIO_ANCHOR')['value']]) or 1
+        except Exception: rec = 1
+        r = self._recruit_checklist(
+            'Recruit base-game characters',
+            'These characters have never joined this run. The picked ones join your party now; the story stays where '
+            'it is. When the story would recruit them later, the game sees they are already in the party and skips it '
+            '(the same as on New Game+, where everyone starts in the party). Characters who left through the story are '
+            'not listed: that is the story\'s choice.',
+            cand, extra=f'Join like the game\'s own late recruits: raise to Lv {rec} (this story point\'s recommended '
+                        'level; Avlora +2), promote the late recruits to their second class, and learn their class '
+                        'moves up to that level')
+        if not r or not r[0]: return
+        uids, like_game = r
+        names = ', '.join(self.T.name_of(u) for u in uids)
+        if not messagebox.askyesno(APP, f'Recruit {len(uids)} character(s) now?\n\n{names}\n\n'
+                                        'Nothing is written until Write to slot (your save folder is backed up first).'):
+            return
+        self.edit(RISKY, 'party changes are normally made by the story',
+                  lambda: story.recruit_now(self.save, self.T, uids, rec if like_game else None, RISKY))
 
     # ------------------------------------------------------------------------------------------ recruit records
     # Remove / back up / restore / scrub (recruit_tools; mods/recruit_records_proposal.md). Remove, restore and scrub

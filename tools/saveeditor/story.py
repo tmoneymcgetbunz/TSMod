@@ -506,6 +506,48 @@ def recruit_candidates(save):
     return out
 
 
+# The game's own join (Scenario/CommonDef/ScenarioBlockJoinParty.lua) [read]: a unit already in the party is skipped;
+# the late recruits are raised to the last main battle's recommended level (Avlora +2, capped at 50) and promoted to
+# their second-rank class; Rudolph, Corentin and Milo only join (they were levelled as guests in their battle); the
+# Chapter 1-2 cast gets level 1 or 2 on a first playthrough.
+JOIN_PROMOTES = {f'UNIT_MASTER_CH_P{i:03d}' for i in [11] + list(range(13, 31))}
+JOIN_LEVEL_BONUS = {'UNIT_MASTER_CH_P016': 2}
+
+
+def recruit_now(save, T, uids, level, status):
+    """Put never-joined base-game units in the party where the save is now, as the game's own join would: party state 1,
+    then (with level) each one below the level is raised to it (EXP 0) and the late recruits get their second-rank
+    class, and they learn their class moves up to that level. Returns [(uid, old level, new level, new class or None)].
+    Story safety: an NG+ save starts with every unit in the party, so every story script runs with them present, and
+    the story's later join of an added unit does nothing (ScenarioBlockJoinParty returns if IsPartyIn)."""
+    from . import features
+    done = []
+    for uid in uids:
+        s, e = save.unit_record(uid)
+        if save.s1[e + PARTY_STATE_AT] != 0: continue          # only never-joined units; "left" (2) is the story's call
+        save.s1[e + PARTY_STATE_AT] = 1
+        done.append(uid)
+    out = []
+    for uid in done:
+        info = save.unit_info(uid)
+        old = new = info['stats']['level']; cls = None
+        if level:
+            target = min(50, int(level) + JOIN_LEVEL_BONUS.get(uid, 0))
+            if old < target:
+                save.set_unit_stat(uid, 'level', target, status); save.set_unit_stat(uid, 'exp', 0, status); new = target
+            job = info['jobs'][0] if info['jobs'] else None
+            if T is not None and uid in JOIN_PROMOTES and job and features.demote_target(T, job) is None:
+                nxt = features.promote_targets(T, job)
+                if nxt:
+                    save.replace_in_unit(uid, job, nxt[0], status); cls = nxt[0]
+            if T is not None: features.learn_all(save, T, uid, status)
+        out.append((uid, old, new, cls))
+    save.reparse()
+    save.history.append((f"recruited {len(out)} base-game unit(s) now: " + ', '.join(u[15:] for u, *_ in out)
+                         + (f", level {level}" if level else ''), status))
+    return out
+
+
 def forward_jump(save, index, choices, status, T=None, recruits=(), level=None, keep_party=False):
     """Apply forward_plan(), then the story warp (position, markers, resume, title). Options: recruits = unit ids to put
     in the party (side characters the story would have offered); level = raise every party member below it to it
